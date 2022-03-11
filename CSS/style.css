@@ -16,6 +16,10 @@ a, a:hover {
   transform: translate(0, -25%);
 }
 
+#controls{
+  text-align: center;
+}
+
 
 /* Class Based CSS */
 .tab button:hover {
@@ -111,6 +115,13 @@ a, a:hover {
   padding: 1%;
   text-align: center;
   border-radius: 50%;
+}
+
+.slick-prev:before {
+  color: red
+}
+.slick-next:before {
+  color: red
 }
  
 /* Go from zero to full opacity */

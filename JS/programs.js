@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', domloaded, false);
 function domloaded() {
     
-    document.getElementById("defaultOpen").click();
+  document.getElementById("defaultOpen").click();
+  new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 3,
+    focusAt: 'center',
+    autoplay: 2000,
+    hoverpause: true,
+    keyboard: true,
+  }).mount();
 }
 
 function openTab(evt, cityName) {
