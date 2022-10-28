@@ -1,0 +1,68 @@
+{
+    "CourseraSpecialization": 
+    {
+        "img": [
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~2TZPSPAP4ULP/CERTIFICATE_LANDING_PAGE~2TZPSPAP4ULP.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~4U8YN34YC5ML/CERTIFICATE_LANDING_PAGE~4U8YN34YC5ML.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~KP6EKNYBYMYM/CERTIFICATE_LANDING_PAGE~KP6EKNYBYMYM.jpeg"
+        ],
+        "name": [
+            "Deep Learning", 
+            "AI for Medicine",
+            "Natural Language Processing"
+        ],
+        "link": [
+            "https://www.coursera.org/account/accomplishments/specialization/2TZPSPAP4ULP",
+            "https://www.coursera.org/account/accomplishments/specialization/4U8YN34YC5ML",
+            "https://www.coursera.org/account/accomplishments/specialization/KP6EKNYBYMYM"
+        ]
+    },
+    "CourseraProfessionalCertifiacte": 
+    {
+        "img": [
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZGR7RBLV5LJ9/CERTIFICATE_LANDING_PAGE~ZGR7RBLV5LJ9.jpeg"
+        ],
+        "name": [
+            "DeepLearning.AI TensorFlow Developer"
+        ],
+        "link": [
+            "https://www.coursera.org/account/accomplishments/professional-cert/ZGR7RBLV5LJ9"
+        ]
+    },
+    "CourseraCourse": 
+    {
+        "img": [
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FSXGAPHGRF46/CERTIFICATE_LANDING_PAGE~FSXGAPHGRF46.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~4EKSBNK2DW4Z/CERTIFICATE_LANDING_PAGE~4EKSBNK2DW4Z.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~6WUZ5GPENEYJ/CERTIFICATE_LANDING_PAGE~6WUZ5GPENEYJ.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~B56C9GZ3K8ZW/CERTIFICATE_LANDING_PAGE~B56C9GZ3K8ZW.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~F9SZF3D2K8W8/CERTIFICATE_LANDING_PAGE~F9SZF3D2K8W8.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7M45ASZDL4AH/CERTIFICATE_LANDING_PAGE~7M45ASZDL4AH.jpeg",
+            "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~AC8FNGX33DUY/CERTIFICATE_LANDING_PAGE~AC8FNGX33DUY.jpeg"
+        ],
+        "name": [
+            "Machine Learning",
+            "Structuring Machine Learning Projects",
+            "AI For Everyone",
+            "Neural Networks and Deep Learning",
+            "Natural Language Processing in TensorFlow",
+            "Convolutional Neural Networks",
+            "Convolutional Neural Networks in TensorFlow"
+        ],
+        "link": [
+            "https://www.coursera.org/account/accomplishments/verify/FSXGAPHGRF46",
+            "https://www.coursera.org/account/accomplishments/verify/4EKSBNK2DW4Z",
+            "https://www.coursera.org/account/accomplishments/verify/6WUZ5GPENEYJ",
+            "https://www.coursera.org/account/accomplishments/verify/B56C9GZ3K8ZW",
+            "https://www.coursera.org/account/accomplishments/verify/F9SZF3D2K8W8",
+            "https://www.coursera.org/account/accomplishments/verify/7M45ASZDL4AH",
+            "https://www.coursera.org/account/accomplishments/verify/AC8FNGX33DUY"
+        ]
+    },
+    "HackerRank": 
+    {
+        "img": [],
+        "name": [],
+        "link": []
+    }
+}
