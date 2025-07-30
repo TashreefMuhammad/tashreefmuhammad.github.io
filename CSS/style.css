@@ -1,4 +1,10 @@
 /* General Styles */
+
+u {
+  text-decoration: underline;
+  text-decoration-thickness: 3px; /* Adjust the value as needed */
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7;
@@ -35,6 +41,12 @@ h2 {
 
 .navbar a:hover {
   color: #007bff !important;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* Sections */
@@ -77,13 +89,11 @@ footer a:hover {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-.navbar-links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
+/* Dropdown Customization */
+.dropdown {
+  position: relative;
 }
 
-/* Dropdown Customization */
 .dropdown:hover .dropdown-menu-custom {
   display: block;
 }
@@ -98,6 +108,7 @@ footer a:hover {
   z-index: 1000;
   min-width: 200px;
   border-radius: 0.25rem;
+  right: 0;
 }
 
 .dropdown-menu-custom a {
@@ -111,21 +122,72 @@ footer a:hover {
   background-color: #f8f9fa;
 }
 
-.dropdown {
-  position: relative;
+/* Expand/Collapse for Research Papers */
+.research-category .paper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  margin-left: 1rem;
 }
 
-.paper {
-  max-height: 0; /* Initially hidden */
-  overflow: hidden; /* Hide overflow content */
-  transition: max-height 0.3s ease-out; /* Smooth transition */
+.research-category.expanded .paper {
+  max-height: 1000px; /* adjust as needed */
 }
 
-.research-category.expanded .paper{
-  max-height: 500px; /* Adjust as needed to accommodate content */
-  /* Or, if using JavaScript to set height dynamically, you might use height: auto; */
+/* Research Section Header */
+.category-header {
+  cursor: pointer;
+  background-color: #f8f9fa;
+  padding: 10px 12px;
+  border-left: 5px solid #007bff;
+  margin: 1rem 0;
+  transition: background-color 0.2s ease;
 }
 
+.category-header:hover {
+  background-color: #e2e6ea;
+}
+
+/* Research Profile Links */
+#research-profiles h2 {
+  border-left: none;
+  padding-left: 0;
+}
+
+#research-profiles {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.profile-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+.profile-carousel a {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+}
+
+.profile-carousel a:hover {
+  transform: scale(1.1);
+}
+
+.profile-carousel img {
+  height: 40px;
+  width: auto;
+}
+
+.profile-carousel a:hover img {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .navbar .nav-link {
     display: block;
@@ -143,5 +205,10 @@ footer a:hover {
   img.rounded-circle {
     max-width: 150px;
     margin-bottom: 1rem;
+  }
+
+  .dropdown-menu-custom {
+    right: auto;
+    left: 0;
   }
 }
