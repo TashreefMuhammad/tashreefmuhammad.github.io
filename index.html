@@ -2,369 +2,223 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tashreef Muhammad</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.core.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.theme.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="CSS/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tashreef Muhammad</title>
+  <meta name="description" content="Personal website of Tashreef Muhammad - CSE Graduate, Lecturer, and Tech Enthusiast.">
+  <meta name="keywords" content="Tashreef Muhammad, CSE, Portfolio, AI, Lecturer, Bangladesh">
+  <meta name="author" content="Tashreef Muhammad">
+  <link rel="icon" href="Images/ProfilePic.jpg" type="image/jpeg">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="https://unpkg.com/@glidejs/glide"></script>
-    <script type="text/javascript" src="JS/programs.js"></script>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
 </head>
 
-<body style="background-color: gray;">
-    <div class="container">
-        <!-- A Short Introduction to myself -->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-                    <div class="row">
-                        <div id="profilepic" class="col-md-6">
-                            <img src="Images/ProfilePic.jpg" alt="Tashreef Muhammad" class="img-fluid">
-                        </div>
-                        <div class="col-md-6">
-                            <h5 style="font-family: Lucida, cursive;"> Welcome to my website. I am,</h5>
-                            <h1 class="display-4">Tashreef Muhammad</h1>
-                            <br>
-                            <p class="lead">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Dhaka, Bangladesh</span><br>
-                                <i class="fa fa-envelope"></i>
-                                <span><a
-                                        href="mailto:tashreef.muhammad@gmail.com">tashreef.muhammad@gmail.com</a></span><br>
-                                <i class="fas fa-user-graduate"></i>
-                                <span><abbr
-                                        title="Bachelor of Science in Computer Science and Engineering, Ahsanullah University of Science and Technology">B.Sc.
-                                        in CSE, <a href="https://aust.edu/" target="_blank">AUST</a></abbr></span><br>
-                                <i class="fas fa-briefcase"></i>
-                                <span><abbr
-                                        title="Lecturer, Department of Computer Science and Enginnering, Southeast University">Lecturer,
-                                        CSE, <a href="https://seu.edu.bd/" target="_blank">SEU</a></abbr></span><br>
-                                <br>
-                            </p>
-                            <a href="https://www.facebook.com/tashreef.dragneel" title="Facebook | Tashreef Muhammad"
-                                class="fa fa-facebook-square" style="font-size: 50px;" target="_blank"></a>
-                            <a href="https://linkedin.com/in/tashreefmuhammad" title="Linkedin | Tashreef Muhammad"
-                                class="fa fa-linkedin-square" style="font-size: 50px;" target="_blank"></a>
-                            <a href="https://github.com/TashreefMuhammad" title="GitHub | TashreefMuhammad"
-                                class="fa fa-github-square" style="font-size: 50px;" target="_blank"></a>
-                            <a href="https://www.instagram.com/nocturnal___blaze/" title="Instagram | nocturnal___blaze"
-                                class="fab fa-instagram-square" style="font-size: 50px;" target="_blank"></a>
-                            <a href="https://twitter.com/dragontashreef" title="Twitter | DragonTashreef"
-                                class="fa fa-twitter-square" style="font-size: 50px;" target="_blank"></a>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p style="font-family:'Courier New', Courier, monospace">I am a simple boy with
-                                big dreams, just like many others. I have recently finished my undergraduate studies
-                                and I hope to make some worthile contribution to the sector of CS and IT.
-                                I hate being confined to limiters and love to explore new things. I am very much
-                                fond of challanges as I believe it makes me stronger while trying to overcome
-                                them.</p>
-                            <hr>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-light fixed-top shadow-sm">
+    <a class="navbar-brand font-weight-bold" href="#">Tashreef Muhammad</a>
+    <div class="navbar-links">
+      <a href="#myself" class="nav-link d-inline">About</a>
+      <a href="#education" class="nav-link d-inline">Education</a>
+      <a href="#experience" class="nav-link d-inline">Experience</a>
+      <div class="dropdown d-inline-block position-relative">
+        <a href="#" class="nav-link d-inline">Research</a>
+        <div class="dropdown-menu-custom">
+          <a href="#journal-papers">Journal Papers</a>
+          <a href="#conference-papers">Conference Papers</a>
+          <a href="#book-chapters">Book Chapters</a>
+          <a href="#conference-proceedings">Conference Proceedings</a>
+          <a href="#preprint-papers">Preprints</a>
+        </div>
+      </div>
+      <a href="#achievements" class="nav-link d-inline">Achievements</a>
+    </div>
+  </nav>
 
-            <div class="tab">
-                <div class="row" style="margin-left: auto; margin-right: auto;">
-                    <div class="col-md-3 col-sm-12"><button class="tablinks" onclick="openTab(event, 'myself')"
-                            id="defaultOpen">Myself</button></div>
-                    <div class="col-md-3 col-sm-12"> <button class="tablinks"
-                            onclick="openTab(event, 'education')">Education</button></div>
-                    <div class="col-md-3 col-sm-12"><button class="tablinks"
-                            onclick="openTab(event, 'experience')">Experience</button></div>
-                    <div class="col-md-3 col-sm-12"><button class="tablinks"
-                            onclick="openTab(event, 'achievements')">Achievements</button>
-                    </div>
-                </div>
-            </div>
+  <!-- Main Content -->
+  <div class="container pt-5 mt-5">
+    <!-- About Section -->
+    <section id="myself" class="my-5">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="Images/ProfilePic.jpg" alt="Tashreef Muhammad" class="img-fluid rounded-circle shadow-sm" style="max-width: 400px;">
+        </div>
+        <div class="col-md-6">
+          <h2>About Me</h2>
+          <p>
+            I am someone with big dreams and a deep curiosity about the world of Computer Science. Having completed my undergraduate studies, I am driven by the desire to make meaningful contributions to the fields of CS and IT.
+          </p>
+          <p>
+            I thrive outside of conventional boundaries and enjoy exploring new ideas and technologies.
+          </p>
+          <p>
+            I am eager to engage in research-based activities, collaborations, and academic opportunities that align with my interests. I look forward to learning, contributing, and growing through meaningful technical and research-oriented engagements.
+          </p>
+        </div>
+      </div>
+    </section>
 
-            <!-- ======================== -->
-            <!-- Tab Content for 'Myself' -->
-            <!-- ======================== -->
-            <div class="col-md-12">
-                <div id="myself" class="tabcontent col-md-12 jumbotron">
-                    <hr>
-                    <h1 align="center" class="display-3"><strong>About Myself</strong></h1>
-                    <hr>
-                    <h3 class="display-4"><u>My Background</u></h3>
-                    <br>
-                    <p>
-                        I was born and raised in Dhaka, Bangladesh. I spend my whole life in Dhaka, from primary to
-                        graduation. I am the third child and both of my elder sisters have bright academic records. My
-                        eldest sister is a doctor and the other one is a <abbr
-                            title="Computer Science and Engineering">CSE</abbr> graduate. My mother is a house-wife and
-                        my father currently concerns himself in his business. <br><br>
-                        I support religious views and I follow the ideals of <em>Islam</em> as I myself thought of it as
-                        a religion that is true. However, I like to respect everyone's own opinion and I think we should
-                        all have an open-mind regarding thoughts and beliefs. Everyone is entitled to their own
-                        understanding. I think it is completely okay to try making someone follow the same beliefs as
-                        yourself, but forcing is not the way to go. That is my philosophy. <br><br>
-                        I want to grow up to be an ideal human being. I want to do something that will help many people,
-                        something that will bring smile to many faces. I dream of a beutiful future where everyone can
-                        prosper with the help of advancement of different fields of study and especially technologies.
-                        <br>
-                    </p>
-                    <hr>
-                    <h3 class="display-4"><u>Leisure</u></h3>
-                    <p class="lead">
-                        <i class="fas fa-gamepad"></i> <span> &emsp; Playing PC Games</span><br>
-                        <i class="fas fa-bed"></i> <span> &emsp; Sleeping</span><br>
-                        <i class="fas fa-film"></i> <span> &emsp; Watching Anime</span><br>
-                        <i class="fas fa-desktop"></i> <span> &emsp; Doing stuffs on Desktop and Laptop</span><br>
-                    </p>
-                    <hr>
-                    <h3 class="display-4"><u>My Skills</u></h3>
-                    <ul class="lead">
-                        <li>Adaptive and Fast Learning</li>
-                        <li>Critical Thinking</li>
-                        <li>Modular Programming</li>
-                        <li>Problem Solving</li>
-                        <li>Research Mindset</li>
-                        <li>Team Player</li>
-                    </ul>
-                    <hr>
-                    <h3 class="display-4"><u>My Interests</u></h3>
-                    <p class="lead">
-                        <i class="fas fa-code"></i><span> &emsp; Competitive Programming </span><br>
-                        <i class="fas fa-dna"></i><span> &nbsp;&emsp; Evolutionary Algorithms </span><br>
-                        <i class="fas fa-cogs"></i><span> &emsp; Machine Learning </span><br>
-                        <i class="fas fa-robot"></i><span> &emsp; Robotics </span><br>
-                    </p>
-                    <hr>
-                </div>
+    <!-- Education Section -->
+    <section id="education" class="my-5">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.Sc. in CSE</strong> — Ahsanullah Universiyt of Science and Technology, 2022</li>
+        <li><strong>Online Certifications</strong> — <a href="https://www.coursera.org/learner/tashreef-muhammad" target="_blank">Coursera Profile</a></li>
+      </ul>
+    </section>
 
-                <!-- =========================== -->
-                <!-- Tab Content for 'Education' -->
-                <!-- =========================== -->
-                <div id="education" class="tabcontent col-md-12 jumbotron">
-                    <hr>
-                    <h1 align="center" class="display-3"><strong>My Educational Background</strong></h1>
-                    <hr>
-                    <h3 class="display-4"><u>Academic Timeline</u></h3>
-                    <iframe
-                        src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1_2DUk6TOPWF_5NyZFUbKafCfth0Nxj3Y4DDr7tqifZA&font=Default&lang=en&initial_zoom=2&height=500'
-                        width='100%' height='500' webkitallowfullscreen mozallowfullscreen allowfullscreen
-                        frameborder='0'></iframe>
-                    <h3 class="display-4"><u>Online Certification</u></h3>
+    <!-- Experience Section -->
+    <section id="experience" class="my-5">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Intern</strong> — Akij Assets Limited, Dhaka, Bangladesh (2021 - 2022)</li>
+        <li><strong>Adjunct Faculty</strong> — Ahsanullah University of Science and Technology, Dhaka, Bangladesh (2022 - 2022)</li>
+        <li><strong>Lecturer</strong> — Southeast University, Dhaka, Bangladesh (2022 - Present)</li>
+      </ul>
+    </section>
 
-                    <h5>Coursera Specializations</h5>
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide">
-                                    <div class="box">
-                                        <div class="card-head">
-                                            <img class="img-thumbnail" alt="Deep Learning Specialization Certificate"
-                                                src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~2TZPSPAP4ULP/CERTIFICATE_LANDING_PAGE~2TZPSPAP4ULP.jpeg">
-                                        </div>
-                                        <div class="card-body">
-                                            <p align="center" style="color: blue;"><a
-                                                    href="https://www.coursera.org/account/accomplishments/specialization/2TZPSPAP4ULP"
-                                                    target="_blank">Deep Learning</a></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="box">
-                                        <div class="card-head">
-                                            <img class="img-thumbnail" alt="AI for Medicine Specialization Certificate"
-                                                src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~4U8YN34YC5ML/CERTIFICATE_LANDING_PAGE~4U8YN34YC5ML.jpeg">
-                                        </div>
-                                        <div class="card-body">
-                                            <p align="center" style="color: blue;"><a
-                                                    href="https://www.coursera.org/account/accomplishments/specialization/4U8YN34YC5ML"
-                                                    target="_blank">AI for Medicine</a></p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="glide__slide">
-                                    <div class="box">
-                                        <div class="card-head">
-                                            <img class="img-thumbnail"
-                                                alt="Natural Language Processing Specialization Certificate"
-                                                src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~KP6EKNYBYMYM/CERTIFICATE_LANDING_PAGE~KP6EKNYBYMYM.jpeg">
-                                        </div>
-                                        <div class="card-body">
-                                            <p align="center" style="color: blue;"><a
-                                                    href="https://www.coursera.org/account/accomplishments/specialization/KP6EKNYBYMYM"
-                                                    target="_blank">Natural Language Processing</a></p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left glide__arrow--prev"
-                                data-glide-dir="<">prev</button>
-                            <button class="glide__arrow glide__arrow--right glide__arrow--next"
-                                data-glide-dir=">">next</button>
-                        </div>
-                        <br>
-                        <div class="glide__bullets" data-glide-el="controls[nav]">
-                            <button class="glide__bullet" data-glide-dir="=0"></button>
-                            <button class="glide__bullet" data-glide-dir="=1"></button>
-                            <button class="glide__bullet" data-glide-dir="=2"></button>
-                        </div>
-                    </div>
-                    <!--<h5>Coursera Professional Certificate</h5>
-                    <div id="owl-example" class="owl-carousel">
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail"
-                                    alt="DeepLearning.AI TensorFlow Developer Professional Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~ZGR7RBLV5LJ9/CERTIFICATE_LANDING_PAGE~ZGR7RBLV5LJ9.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/professional-cert/ZGR7RBLV5LJ9"
-                                        target="_blank">DeepLearning.AI TensorFlow Developer</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <h5>Coursera Course Certificate</h5>
-                    <div id="owl-example" class="owl-carousel">
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail" alt="Machine Learning Course Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~FSXGAPHGRF46/CERTIFICATE_LANDING_PAGE~FSXGAPHGRF46.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/verify/FSXGAPHGRF46"
-                                        target="_blank">Machine Learning</a></p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail"
-                                    alt="Structuring Machine Learning Projects Course Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~4EKSBNK2DW4Z/CERTIFICATE_LANDING_PAGE~4EKSBNK2DW4Z.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/verify/4EKSBNK2DW4Z"
-                                        target="_blank">Structuring Machine Learning Projects</a></p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail" alt="AI For Everyone Course Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~6WUZ5GPENEYJ/CERTIFICATE_LANDING_PAGE~6WUZ5GPENEYJ.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/verify/6WUZ5GPENEYJ"
-                                        target="_blank">AI For Everyone</a></p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail" alt="Neural Networks and Deep Learning Course Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~B56C9GZ3K8ZW/CERTIFICATE_LANDING_PAGE~B56C9GZ3K8ZW.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/verify/B56C9GZ3K8ZW"
-                                        target="_blank">Neural Networks and Deep Learning</a></p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail"
-                                    alt="Natural Language Processing in TensorFlow Course Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~F9SZF3D2K8W8/CERTIFICATE_LANDING_PAGE~F9SZF3D2K8W8.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/verify/F9SZF3D2K8W8"
-                                        target="_blank">Natural Language Processing in TensorFlow</a></p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail" alt="Convolutional Neural Networks Course Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~7M45ASZDL4AH/CERTIFICATE_LANDING_PAGE~7M45ASZDL4AH.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/verify/7M45ASZDL4AH"
-                                        target="_blank">Convolutional Neural Networks</a></p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="card-head">
-                                <img class="img-thumbnail"
-                                    alt="Convolutional Neural Networks in TensorFlow Course Certificate"
-                                    src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~AC8FNGX33DUY/CERTIFICATE_LANDING_PAGE~AC8FNGX33DUY.jpeg">
-                            </div>
-                            <div class="card-body">
-                                <p align="center" style="color: blue;"><a
-                                        href="https://www.coursera.org/account/accomplishments/verify/AC8FNGX33DUY"
-                                        target="_blank">Convolutional Neural Networks in TensorFlow</a></p>
-                            </div>
-                        </div>
-                    </div>-->
-
-                </div>
+    <!-- Research Section -->
+    <section id="research-profile" class="section">
+        <div class="container">
+          <h2 class="section-title">Research Profile</h2>
+          <p class="section-summary">
+            I have been actively involved in a wide range of research activities focused on Machine Learning, Computer Vision, Natural Language Processing, and their applications in healthcare and language computing. I collaborate on interdisciplinary projects and am always open to engaging in new research ventures.
+          </p>
+      
+          <div class="research-category" id = "journal-papers">
+            <h3>Journal Articles</h3>
+            <div class = "paper">
+            <ul>
+              <li>
+                <strong>Transformer-Based Deep Learning Model for Stock Price Prediction: A Case Study on Bangladesh Stock Market</strong><br>
+                <em>International Journal of Computational Intelligence and Applications</em>, 2023<br>
+                Authors: <strong>Tashreef Muhammad</strong>, Anika Bintee Aftab, Muhammad Ibrahim, Md. Mainul Ahsan, Maishameem Meherin Muhu, Shahidul Islam Khan, Mohammad Shafiul Alam<br>
+                <a href="https://doi.org/10.1142/s146902682350013x" target="_blank">DOI: 10.1142/s146902682350013x</a>
+              </li>
+            </ul>
             </div>
         </div>
-        <div id="experience" class="tabcontent col-md-12 jumbotron">
-            <hr>
-            <h1 align="center" class="display-4">My Hand-on Experiences</h1>
-            <hr>
-            under development
-            <!--<p class="lead">
-                            <i class="fas fa-code"></i>
-                            <span>Programming Languages</span><br>
-                            <i class="fas fa-database"></i>
-                            <span>Databases</span><br>
-                            <i class="fas fa-desktop"></i>
-                            <span>Web Development</span><br>
-                            <i class="fas fa-mobile-alt"></i>
-                        </p>-->
-        </div>
+      
+          <div class="research-category" id="conference-papers">
+            <h3 class = "paper">Conference Papers</h3>
+            <ul>
+              <li>
+                <strong>Explainable AI-Enhanced Deep Learning for Pumpkin Leaf Disease Detection: A Comparative Analysis of CNN Architectures</strong><br>
+                <em>2024 27th International Conference on Computer and Information Technology (ICCIT)</em>, 2024<br>
+                Authors: Md. Arafat Alam Khandaker, Ziyan Shirin Raha, Shifat Islam, <strong>Tashreef Muhammad</strong><br>
+                <a href="https://doi.org/10.1109/iccit64611.2024.11021957" target="_blank">DOI: 10.1109/iccit64611.2024.11021957</a>
+              </li>
+              <li>
+                <strong>Improving Bangla Regional Dialect Detection Using BERT, LLMs, and XAI</strong><br>
+                <em>2024 IEEE International Conference on Computing, Applications and Systems (COMPAS)</em>, 2024<br>
+                Authors: Bidyarthi Paul, Faika Fairuj Preotee, Shuvashis Sarker, <strong>Tashreef Muhammad</strong><br>
+                <a href="https://doi.org/10.1109/compas60761.2024.10796843" target="_blank">DOI: 10.1109/compas60761.2024.10796843</a>
+              </li>
+              <li>
+                <strong>An Exploratory Approach Towards Investigating and Explaining Vision Transformer and Transfer Learning for Brain Disease Detection</strong><br>
+                <em>2024 27th International Conference on Computer and Information Technology (ICCIT)</em>, 2024<br>
+                Authors: Shuvashis Sarker, Shamim Rahim Refat, Faika Fairuj Preotee, Shifat Islam, <strong>Tashreef Muhammad</strong>, Mohammad Ashraful Hoque<br>
+                <a href="https://doi.org/10.1109/iccit64611.2024.11022039" target="_blank">DOI: 10.1109/iccit64611.2024.11022039</a>
+              </li>
+              <li>
+                <strong>Deep Learning-based Multi-Class Brain Abnormality Diagnosis on Bangladeshi MRI Images</strong><br>
+                <em>2024 IEEE International Conference on Biomedical Engineering, Computer and Information Technology for Health (BECITHCON)</em>, 2024<br>
+                Authors: Md Rakibul Hasan, Nusrat Jahan, Shifat Islam, <strong>Tashreef Muhammad</strong><br>
+                <a href="https://doi.org/10.1109/becithcon64160.2024.10962710" target="_blank">DOI: 10.1109/becithcon64160.2024.10962710</a>
+              </li>
+              <li>
+                <strong>A Data-Centric Method to Identify Lung Cancer Using a Variety of Machine Learning Approaches</strong><br>
+                <em>2025 International Conference on Electrical, Computer and Communication Engineering (ECCE)</em>, 2025<br>
+                Authors: Istiack Amin, Al-Amain, <strong>Tashreef Muhammad</strong>, Khandaker Mohammad Mohi Uddin<br>
+                <a href="https://doi.org/10.1109/ecce64574.2025.11013866" target="_blank">DOI: 10.1109/ecce64574.2025.11013866</a>
+              </li>
+              <li>
+                <strong>An Approach Towards Identifying Bangladeshi Leaf Diseases through Transfer Learning and XAI</strong><br>
+                <em>2024 27th International Conference on Computer and Information Technology (ICCIT)</em>, 2024<br>
+                Authors: Faika Fairuj Preotee, Shuvashis Sarker, Shamim Rahim Refat, <strong>Tashreef Muhammad</strong>, Shifat Islam<br>
+                <a href="https://doi.org/10.1109/iccit64611.2024.11022335" target="_blank">DOI: 10.1109/iccit64611.2024.11022335</a>
+              </li>
+              <li>
+                <strong>Bridging Dialects: Translating Standard Bangla to Regional Variants Using Neural Models</strong><br>
+                <em>2024 27th International Conference on Computer and Information Technology (ICCIT)</em>, 2024<br>
+                Authors: Md. Arafat Alam Khandaker, Ziyan Shirin Raha, Bidyarthi Paul, <strong>Tashreef Muhammad</strong><br>
+                <a href="https://doi.org/10.1109/iccit64611.2024.11022371" target="_blank">DOI: 10.1109/iccit64611.2024.11022371</a>
+              </li>
+              <li>
+                <strong>Modified Bat Algorithm with Hybridization of Gaussian Probability and Doppler Effect</strong><br>
+                <em>2019 International Conference on Sustainable Technologies for Industry 4.0 (STI)</em>, 2019<br>
+                Authors: Tahsin Aziz, Md. Rashedul Karim Chowdhury, <strong>Tashreef Muhammad</strong>, Nazmus Sakib<br>
+                <a href="https://doi.org/10.1109/sti47673.2019.9068014" target="_blank">DOI: 10.1109/sti47673.2019.9068014</a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="research-category" id = "book-chapters">
+            <h3 class = "paper">Book Chapters</h3>
+            <ul>
+              <li>
+                <strong>Can Transformer Models Effectively Detect Software Aspects in StackOverflow Discussion?</strong><br>
+                <em>Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering</em>, 2023<br>
+                Authors: Nibir Chandra Mandal, <strong>Tashreef Muhammad</strong>, G. M. Shahariar<br>
+                <a href="https://doi.org/10.1007/978-3-031-34622-4_18" target="_blank">DOI: 10.1007/978-3-031-34622-4_18</a>
+              </li>
+              <li>
+                <strong>Enhancing Bengali Sentiment Analysis: An Insightful Study of Bengali and English VADER</strong><br>
+                <em>Lecture Notes in Networks and Systems</em>, 2025<br>
+                Authors: Faizul Ahmed Robin, Al-Amain, <strong>Tashreef Muhammad</strong>, Rajon Bardhan<br>
+                <a href="https://doi.org/10.1007/978-981-96-2721-9_28" target="_blank">DOI: 10.1007/978-981-96-2721-9_28</a>
+              </li>
+            </ul>
+          </div>
+      
+          <div class="research-category" id = "conference-proceedings">
+            <h3 class = "paper">Conference Proceedings (ACM)</h3>
+            <ul>
+              <li>
+                <strong>Advanced CNN and Explainable AI Based Architecture for Interpretable Brain MRI Analysis</strong><br>
+                <em>Proceedings of the 3rd International Conference on Computing Advancements</em>, 2024<br>
+                Authors: Shuvashis Sarker Shuvo, Shamim Rahim Refat, Faika Fairuj Preotee, <strong>Tashreef Muhammad</strong><br>
+                <a href="https://doi.org/10.1145/3723178.3723220" target="_blank">DOI: 10.1145/3723178.3723220</a>
+              </li>
+            </ul>
+          </div>
 
-        <div id="achievements" class="tabcontent col-md-12 jumbotron">
-            <hr>
-            <h1 align="center" class="display-4">My Life Achivements</h1>
-            <hr>
-            under development
-            <!--<p class="lead">
-                            <i class="fas fa-code"></i>
-                            <span>Programming Languages</span><br>
-                            <i class="fas fa-database"></i>
-                            <span>Databases</span><br>
-                            <i class="fas fa-desktop"></i>
-                            <span>Web Development</span><br>
-                            <i class="fas fa-mobile-alt"></i>
-                        </p>
-                        </div> -->
-        </div>
-    </div>
+          <div class="research-category" id = "preprint-papers">
+            <h3 class = "paper">Preprints</h3>
+            <ul>
+              <li>
+              </li>
+            </ul>
+          </div>
 
-    <!-- <div class="row">
-                <div class="col-md-12">
-                    <p class="final">
-                        The template for this website is available in GitHub.
-                    </p>
-                </div>
-                </div> -->
-    </div>
-    </div>
+        </div>
+      </section>
+
+      <!-- Achievements Section -->
+    <section id="achievements" class="my-5">
+        <h2>Achievements</h2>
+        <ul>
+          <li>20+ peer-reviewed publications (IEEE, Scopus, ACM)</li>
+          <li>Google Scholar Citations: 100+ | Scopus Citations: 40+</li>
+          <li>Developed innovative Numerical Methods course with ML applications</li>
+          <li>Successfully mentored 50+ students in final year projects</li>
+        </ul>
+      </section>
+      
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 mb-3">
+      <hr />
+      <p>© 2025 Tashreef Muhammad | <a href="https://github.com/TashreefMuhammad" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="JS/programs.js"></script>
 </body>
 
 </html>

@@ -1,133 +1,147 @@
-
-div {
-  text-align: justify;
-  text-justify: inter-word;
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7;
+  background-color: #fdfdfd;
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
 
-a, a:hover {
+h2 {
+  border-left: 5px solid #3498db;
+  padding-left: 10px;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0.75rem 1rem;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  color: #007bff !important;
+}
+
+/* Sections */
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Image Styling */
+img.rounded-circle {
+  border: 4px solid #3498db;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+footer a {
+  color: #007bff;
   text-decoration: none;
-  color: inherit;
 }
 
-
-/* ID Based CSS */
-#profilepic {
-  transform: translate(0, -25%);
+footer a:hover {
+  text-decoration: underline;
 }
 
-#controls{
-  text-align: center;
+/* Utility */
+.shadow-sm {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-
-/* Class Based CSS */
-.tab button:hover {
-  background-color: #ccc;
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
-.tablinks {
-  background-color: #555;
-  color: black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  width: 90%;
-  font-family:'Times New Roman', Times, serif;
-  font-size: x-large;
+/* Dropdown Customization */
+.dropdown:hover .dropdown-menu-custom {
+  display: block;
 }
 
-.tab button.active {
-  background-color: white;
-}
-  
-.tabcontent {
+.dropdown-menu-custom {
   display: none;
-  padding: 14px 16px;
-  border-top: none;
-  animation: fadeEffect 1s;
-} 
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-top: 5%;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.img-fluid {
-  border-radius: 50%;
-}
-
-.tab {
-  width: 100%;
-  overflow: hidden;
-}
-
-.tab button{
-  width: 100%;
-  background-color: inherit;
-  border-radius: 10px 10px 0 0;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
-}
-
-.tab button:hover {
-  background-color: #ccc;
-}
-
-.tablinks {
-  background-color: #555;
-  color: black;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  width: 90%;
-  font-family:'Times New Roman', Times, serif;
-  font-size: x-large;
-}
-
-.tab button.active {
+  position: absolute;
   background-color: white;
-}
-  
-.tabcontent {
-  display: none;
-  padding: 14px 16px;
-  border-top: none;
-  animation: fadeEffect 1s;
-} 
-
-.final{
-  background-color: black;
-  color:white;
-  font-family:'Times New Roman', Times, serif;
-  padding: 1%;
-  text-align: center;
-  border-radius: 50%;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  z-index: 1000;
+  min-width: 200px;
+  border-radius: 0.25rem;
 }
 
-.slick-prev:before {
-  color: red
-}
-.slick-next:before {
-  color: red
-}
- 
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
+.dropdown-menu-custom a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-decoration: none;
 }
 
- 
+.dropdown-menu-custom a:hover {
+  background-color: #f8f9fa;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.paper {
+  max-height: 0; /* Initially hidden */
+  overflow: hidden; /* Hide overflow content */
+  transition: max-height 0.3s ease-out; /* Smooth transition */
+}
+
+.research-category.expanded .paper{
+  max-height: 500px; /* Adjust as needed to accommodate content */
+  /* Or, if using JavaScript to set height dynamically, you might use height: auto; */
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-link {
+    display: block;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  img.rounded-circle {
+    max-width: 150px;
+    margin-bottom: 1rem;
+  }
+}

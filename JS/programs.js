@@ -33,3 +33,7 @@ function openTab(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+document.querySelector('.research-category').addEventListener('click', function() {
+  this.classList.toggle('expanded');
+});
