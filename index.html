@@ -17,41 +17,51 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-light bg-light fixed-top shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
     <a class="navbar-brand font-weight-bold" href="#">Tashreef Muhammad</a>
-    <div class="navbar-links">
-      <a href="#myself" class="nav-link d-inline">About</a>
-      <a href="#education" class="nav-link d-inline">Education</a>
-      <a href="#experience" class="nav-link d-inline">Experience</a>
-      <div class="dropdown d-inline-block position-relative">
-        <a href="#" class="nav-link d-inline">Research</a>
-        <div class="dropdown-menu-custom">
-          <a href="#journal-papers">Journal Papers</a>
-          <a href="#conference-papers">Conference Papers</a>
-          <a href="#book-chapters">Book Chapters</a>
-          <a href="#conference-proceedings">Conference Proceedings</a>
-          <a href="#preprint-papers">Preprints</a>
-          <a href="#datasets">Datasets</a>
-        </div>
-      </div>
-      <a href="#achievements" class="nav-link d-inline">Achievements</a>
-    </div>
-  </nav>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a href="#myself" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+      <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Research</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#journal-papers">Journal Papers</a></li>
+          <li><a class="dropdown-item" href="#conference-papers">Conference Papers</a></li>
+          <li><a class="dropdown-item" href="#book-chapters">Book Chapters</a></li>
+          <li><a class="dropdown-item" href="#conference-proceedings">Conference Proceedings</a></li>
+          <li><a class="dropdown-item" href="#preprint-papers">Preprints</a></li>
+          <li><a class="dropdown-item" href="#datasets">Datasets</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+  
 
   <!-- Main Content -->
   <div class="container pt-5 mt-5">
     <!-- About Section -->
     <section id="myself" class="my-5">
       <div class="row align-items-center">
-        <div class="col-md-6 text-center">
-          <img src="Images/ProfilePic.jpg" alt="Tashreef Muhammad" class="img-fluid rounded-circle shadow-sm"
-            style="max-width: 400px;">
+        <div class="col-md-4 text-center">
+          <img src="Images/ProfilePic.jpg" alt="Tashreef Muhammad" class="img-fluid rounded-circle shadow-sm">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
           <h2>About Me</h2>
           <p>
             I am someone with big dreams and a deep curiosity about the world of Computer Science. Having completed my
@@ -72,7 +82,7 @@
     <!-- Research Profiles Section -->
     <section id="research-profiles">
       <h2>Research Profiles</h2>
-      <div class="profile-carousel">
+      <div class="profile-scroll-container">
         <a href="https://scholar.google.com/citations?hl=en&user=W_IaQKAAAAAJ" target="_blank" title="Google Scholar">
           <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg" alt="Google Scholar">
         </a>

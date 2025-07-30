@@ -159,32 +159,58 @@ footer a:hover {
   text-align: center;
 }
 
-.profile-carousel {
+.profile-scroll-container {
   display: flex;
+  flex-wrap: nowrap;
   overflow-x: auto;
-  gap: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  gap: 1.5rem;
   padding: 1rem 0;
-  scroll-snap-type: x mandatory;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-.profile-carousel a {
+.profile-scroll-container.auto-scroll {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll-marquee 20s linear infinite;
+}
+
+.profile-scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.profile-scroll-container:hover {
+  animation-play-state: paused; /* Pause scroll on hover */
+}
+.profile-scroll-container a {
   flex: 0 0 auto;
-  scroll-snap-align: start;
+  display: inline-block;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
-.profile-carousel a:hover {
+.profile-scroll-container a:hover {
   transform: scale(1.1);
 }
 
-.profile-carousel img {
-  height: 40px;
+.profile-scroll-container img {
+  height: 48px;
   width: auto;
+  max-width: 100%;
+  border-radius: 6px;
 }
 
-.profile-carousel a:hover img {
-  transform: scale(1.2);
-  filter: grayscale(0%);
+/* Animation */
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Responsive Design */
