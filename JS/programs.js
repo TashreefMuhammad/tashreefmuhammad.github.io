@@ -1,35 +1,25 @@
-document.addEventListener('DOMContentLoaded', domloaded, false);
-function domloaded() {
-    
-  document.getElementById("defaultOpen").click();
-  new Glide('.glide', {
-    type: 'carousel',
-    startAt: 0,
-    perView: 3,
-    focusAt: 'center',
-    autoplay: 2000,
-    hoverpause: true,
-    keyboard: true,
-  }).mount();
+function toggleCategory(header) {
+  const category = header.closest('.research-category');
+  if (category) {
+    category.classList.toggle('expanded');
+  }
 }
 
-function openTab(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
+  window.addEventListener('scroll', function () {
+    const scrollBar = document.getElementById('scroll-bar');
+    const totalHeight = document.body.scrollHeight - window.innerHeight;
+    const progress = (window.scrollY / totalHeight) * 100;
+    scrollBar.style.width = progress + '%';
+  });
 
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+function enableAutoScrollIfNeeded() {
+  const container = document.querySelector('.profile-scroll-container');
+  if (container.scrollWidth > container.clientWidth) {
+    container.classList.add('auto-scroll');
+  } else {
+    container.classList.remove('auto-scroll');
+  }
 }
+
+window.addEventListener('load', enableAutoScrollIfNeeded);
+window.addEventListener('resize', enableAutoScrollIfNeeded);
