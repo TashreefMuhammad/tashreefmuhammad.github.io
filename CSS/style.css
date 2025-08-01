@@ -68,12 +68,19 @@ h2 {
 
 .navbar a:hover {
   color: #007bff !important;
+  font-size: 1.05rem;;
+  background-color: #e0e0e0;
 }
 
 .navbar-links {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #0d6efd !important;
 }
 
 /* Sections */
@@ -115,6 +122,61 @@ footer a:hover {
 .shadow-sm {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
+
+.contact-info a {
+  margin: 0 10px;
+}
+
+.contact-icon {
+  font-size: 1.6rem; /* Slightly bigger */
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  color: #0077b5; /* Optional: Match LinkedIn or your theme */
+  transform: scale(1.2);
+}
+
+.collab-box {
+  background-color: #e3f2fd;
+  border-left: 5px solid #0077b5;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.collab-box:hover {
+  background-color: #eef6fc;
+  transform: translateY(-2px);
+}
+
+.collab-text {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Skills */
+#skills h2 {
+  border-left: none;
+  padding-left: 0;
+}
+
+#skills {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.skill-icon {
+  height: 50px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.skill-icon:hover {
+  filter: grayscale(0%);
+}
+
 
 /* Dropdown Customization */
 .dropdown {
@@ -275,3 +337,4 @@ footer a:hover {
     left: 0;
   }
 }
+
