@@ -31,6 +31,21 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Luxon (for date parsing) -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+
+    <!-- Chart.js MUST be loaded BEFORE the adapter -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
+      integrity="sha384-e6nUZLBkQ86NJ6TVVKAeSaK8jWa3NhkYWZFomE39AvDbQWeie9PlQqM3pmYW5d1g"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Luxon Adapter AFTER Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
   </head>
 
   <body>
@@ -189,7 +204,11 @@
               <p>Python</p>
             </div>
             <div class="col-6 col-md-3 mb-4">
-              <img src="https://cdn.imgbin.com/22/13/6/imgbin-the-c-programming-language-computer-icons-computer-programming-source-code-programming-c-logo-eZjx3GXN6szp5q0e8JdmnCazc.jpg" alt="C++" class="skill-icon mb-2" />
+              <img
+                src="https://cdn.imgbin.com/22/13/6/imgbin-the-c-programming-language-computer-icons-computer-programming-source-code-programming-c-logo-eZjx3GXN6szp5q0e8JdmnCazc.jpg"
+                alt="C++"
+                class="skill-icon mb-2"
+              />
               <p>C++</p>
             </div>
             <div class="col-6 col-md-3 mb-4">
@@ -354,7 +373,7 @@
         <h2>Education</h2>
         <ul>
           <li>
-            <strong>B.Sc. in CSE</strong> — Ahsanullah Universiyt of Science and
+            <strong>B.Sc. in CSE</strong> — Ahsanullah University of Science and
             Technology, 2022
           </li>
           <li>
@@ -370,21 +389,57 @@
 
       <!-- Experience Section -->
       <section id="experience" class="my-5">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            <strong>Intern</strong> — Akij Assets Limited, Dhaka, Bangladesh
-            (2021 - 2022)
-          </li>
-          <li>
-            <strong>Adjunct Faculty</strong> — Ahsanullah University of Science
-            and Technology, Dhaka, Bangladesh (2022 - 2022)
-          </li>
-          <li>
-            <strong>Lecturer</strong> — Southeast University, Dhaka, Bangladesh
-            (2022 - Present)
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="mb-4">Experience Timeline</h2>
+          <table border="0" cellpadding="8" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Position</th>
+                <th>Department</th>
+                <th>Organization</th>
+                <th>Location</th>
+                <th style="width: 10%;">Start Date</th>
+                <th style="width: 10%;">End Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Intern</td>
+                <td>Information and Technology (IT)</td>
+                <td>Akij Assets Limited</td>
+                <td>Dhaka, Bangladesh</td>
+                <td>December 2021</td>
+                <td>February 2022</td>
+              </tr>
+              <tr>
+                <td>Adjunct Faculty</td>
+                <td>Computer Science and Engineering</td>
+                <td>Ahsanullah University of Science and Technology</td>
+                <td>Dhaka, Bangladesh</td>
+                <td>February 2022</td>
+                <td>September 2022</td>
+              </tr>
+              <tr>
+                <td>Assistant Moderator</td>
+                <td>Southeast Computer Club</td>
+                <td>Southeast University</td>
+                <td>Dhaka, Bangladesh</td>
+                <td>January 2025</td>
+                <td>December 2025</td>
+              </tr>
+              <tr>
+                <td>Lecturer and Coordinator</td>
+                <td>Computer Science and Engineering</td>
+                <td>Southeast University</td>
+                <td>Dhaka, Bangladesh</td>
+                <td>October 2022</td>
+                <td>Present</td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <canvas id="experienceChart" height="600"></canvas>
+        </div>
       </section>
 
       <!-- Research Section -->
@@ -441,8 +496,7 @@
                   Information Technology (ICCIT)</em
                 >, 2024<br />
                 <strong>Authors:</strong> Md. Arafat Alam Khandaker, Ziyan
-                Shirin Raha, Shifat Islam, <strong>Tashreef Muhammad</strong
-                ><br />
+                Shirin Raha, Shifat Islam, <u>Tashreef Muhammad</u><br />
                 <a
                   href="https://doi.org/10.1109/iccit64611.2024.11021957"
                   target="_blank"
@@ -477,8 +531,8 @@
                   Information Technology (ICCIT)</em
                 >, 2024<br />
                 <strong>Authors:</strong> Shuvashis Sarker, Shamim Rahim Refat,
-                Faika Fairuj Preotee, Shifat Islam,
-                <strong>Tashreef Muhammad</strong>, Mohammad Ashraful Hoque<br />
+                Faika Fairuj Preotee, Shifat Islam, <u>Tashreef Muhammad</u>,
+                Mohammad Ashraful Hoque<br />
                 <a
                   href="https://doi.org/10.1109/iccit64611.2024.11022039"
                   target="_blank"
@@ -538,9 +592,9 @@
                 >
               </li>
               <li>
-                <strong
+                <u
                   >Bridging Dialects: Translating Standard Bangla to Regional
-                  Variants Using Neural Models</strong
+                  Variants Using Neural Models</u
                 ><br />
                 <em
                   >2024 27th International Conference on Computer and
@@ -619,22 +673,22 @@
             </h3>
             <ol class="paper">
               <li>
-                <strong
-                  >Advanced CNN and Explainable AI Based Architecture for
-                  Interpretable Brain MRI Analysis</strong
+                <strong>
+                  Advanced CNN and Explainable AI Based Architecture for
+                  Interpretable Brain MRI Analysis </strong
                 ><br />
                 <em
                   >Proceedings of the 3rd International Conference on Computing
-                  Advancements</em
+                  Advancements </em
                 >, 2024<br />
                 <strong>Authors:</strong> Shuvashis Sarker Shuvo, Shamim Rahim
-                Refat, Faika Fairuj Preotee, <strong>Tashreef Muhammad</strong
-                ><br />
+                Refat, Faika Fairuj Preotee, <u>Tashreef Muhammad</u><br />
                 <a
                   href="https://doi.org/10.1145/3723178.3723220"
                   target="_blank"
-                  >DOI: 10.1145/3723178.3723220</a
                 >
+                  DOI: 10.1145/3723178.3723220
+                </a>
               </li>
             </ol>
           </div>
@@ -645,9 +699,8 @@
             </h3>
             <ol class="paper">
               <li>
-                <strong
-                  >BIDWESH: A Bangla Regional Based Hate Speech Detection
-                  Dataset</strong
+                <strong>
+                  BIDWESH: A Bangla Regional Based Hate Speech Detection Dataset </strong
                 ><br />
                 <em>arXiv</em>, 2025<br />
                 <strong>Authors:</strong> Azizul Hakim Fayaz, MD. Shorif Uddin,
@@ -656,14 +709,15 @@
                 <a
                   href="https://doi.org/10.48550/arXiv.2507.16183"
                   target="_blank"
-                  >DOI: 10.48550/arXiv.2507.16183</a
                 >
+                  DOI: 10.48550/arXiv.2507.16183
+                </a>
               </li>
               <li>
-                <strong
-                  >VR-FuseNet: A Fusion of Heterogeneous Fundus Data and
+                <strong>
+                  VR-FuseNet: A Fusion of Heterogeneous Fundus Data and
                   Explainable Deep Network for Diabetic Retinopathy
-                  Classification</strong
+                  Classification </strong
                 ><br />
                 <em>arXiv</em>, 2025<br />
                 <strong>Authors:</strong> Shamim Rahim Refat, Ziyan Shirin Raha,
@@ -672,8 +726,9 @@
                 <a
                   href="https://doi.org/10.48550/arXiv.2504.21464"
                   target="_blank"
-                  >DOI: 10.48550/arXiv.2504.21464</a
                 >
+                  DOI: 10.48550/arXiv.2504.21464
+                </a>
               </li>
               <li>
                 <strong
