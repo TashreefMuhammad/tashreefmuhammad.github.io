@@ -24,12 +24,14 @@ html {
 }
 
 section {
-  scroll-margin-top: 80px; /* Adjust based on your navbar height */
+  scroll-margin-top: 80px;
+  /* Adjust based on your navbar height */
 }
 
 u {
   text-decoration: underline;
-  text-decoration-thickness: 3px; /* Adjust the value as needed */
+  text-decoration-thickness: 3px;
+  /* Adjust the value as needed */
 }
 
 body {
@@ -42,7 +44,9 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   color: #2c3e50;
   margin-bottom: 1rem;
@@ -68,7 +72,8 @@ h2 {
 
 .navbar a:hover {
   color: #007bff !important;
-  font-size: 1.05rem;;
+  font-size: 1.05rem;
+  ;
   background-color: #e0e0e0;
 }
 
@@ -128,13 +133,15 @@ footer a:hover {
 }
 
 .contact-icon {
-  font-size: 1.6rem; /* Slightly bigger */
+  font-size: 1.6rem;
+  /* Slightly bigger */
   color: #333;
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .contact-icon:hover {
-  color: #0077b5; /* Optional: Match LinkedIn or your theme */
+  color: #0077b5;
+  /* Optional: Match LinkedIn or your theme */
   transform: scale(1.2);
 }
 
@@ -191,7 +198,7 @@ footer a:hover {
   display: none;
   position: absolute;
   background-color: white;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   padding: 0.5rem 0;
   margin-top: 0.5rem;
   z-index: 1000;
@@ -220,7 +227,8 @@ footer a:hover {
 }
 
 .research-category.expanded .paper {
-  max-height: 1000px; /* adjust as needed */
+  max-height: 1000px;
+  /* adjust as needed */
 }
 
 /* Research Section Header */
@@ -278,12 +286,15 @@ footer a:hover {
 }
 
 .profile-scroll-container::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
+  /* Chrome/Safari */
 }
 
 .profile-scroll-container:hover {
-  animation-play-state: paused; /* Pause scroll on hover */
+  animation-play-state: paused;
+  /* Pause scroll on hover */
 }
+
 .profile-scroll-container a {
   flex: 0 0 auto;
   display: inline-block;
@@ -302,11 +313,35 @@ footer a:hover {
   border-radius: 6px;
 }
 
+/* Experience Timeline */
+
+#experienceChart {
+  max-height: 500px;
+}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    /* border: 1px solid #ccc; */
+  }
+  thead {
+    background-color: #aaaaaa;
+  }
+  tbody tr:hover {
+    background-color: #cacaca;
+  }
+
 /* Animation */
 @keyframes scroll-marquee {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -337,4 +372,3 @@ footer a:hover {
     left: 0;
   }
 }
-
