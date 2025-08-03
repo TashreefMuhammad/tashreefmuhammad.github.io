@@ -319,22 +319,51 @@ footer a:hover {
   max-height: 500px;
 }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-  }
-  th, td {
-    padding: 10px;
-    text-align: left;
-    /* border: 1px solid #ccc; */
-  }
-  thead {
-    background-color: #aaaaaa;
-  }
-  tbody tr:hover {
-    background-color: #cacaca;
-  }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  /* border: 1px solid #ccc; */
+}
+
+thead {
+  background-color: #aaaaaa;
+}
+
+tbody tr:hover {
+  background-color: #cacaca;
+}
+
+.preprint-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 0.85em;
+  background-color: #343a40; /* Dark gray */
+  color: #fff;
+  border-radius: 50px; /* Oval shape */
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.preprint-btn:hover {
+  background-color: #6c63ff; /* A vibrant violet-blue hover color */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.ml-2 {
+  margin-left: 10px;
+}
+
+
 
 /* Animation */
 @keyframes scroll-marquee {

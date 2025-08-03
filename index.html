@@ -1,901 +1,628 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Tashreef Muhammad</title>
-    <meta
-      name="description"
-      content="Personal website of Tashreef Muhammad - CSE Graduate, Lecturer, and Tech Enthusiast."
-    />
-    <meta
-      name="keywords"
-      content="Tashreef Muhammad, CSE, Portfolio, AI, Lecturer, Bangladesh"
-    />
-    <meta name="author" content="Tashreef Muhammad" />
-    <link rel="icon" href="Images/ProfilePic.jpg" type="image/jpeg" />
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Tashreef Muhammad</title>
+  <meta name="description"
+    content="Personal website of Tashreef Muhammad - CSE Graduate, Lecturer, and Tech Enthusiast." />
+  <meta name="keywords" content="Tashreef Muhammad, CSE, Portfolio, AI, Lecturer, Bangladesh" />
+  <meta name="author" content="Tashreef Muhammad" />
+  <link rel="icon" href="Images/ProfilePic.jpg" type="image/jpeg" />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- Luxon (for date parsing) -->
-    <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Chart.js MUST be loaded BEFORE the adapter -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
-      integrity="sha384-e6nUZLBkQ86NJ6TVVKAeSaK8jWa3NhkYWZFomE39AvDbQWeie9PlQqM3pmYW5d1g"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Luxon (for date parsing) -->
+  <script src="https://cdn.jsdelivr.net/npm/luxon@3.4.4/build/global/luxon.min.js"></script>
 
-    <!-- Luxon Adapter AFTER Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
+  <!-- Chart.js MUST be loaded BEFORE the adapter -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"
+    integrity="sha384-e6nUZLBkQ86NJ6TVVKAeSaK8jWa3NhkYWZFomE39AvDbQWeie9PlQqM3pmYW5d1g"
+    crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
-  </head>
+  <!-- Luxon Adapter AFTER Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-luxon@1.3.1/dist/chartjs-adapter-luxon.umd.min.js"></script>
 
-  <body>
-    <div id="scroll-bar-container">
-      <div id="scroll-bar"></div>
+  <script
+    src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0/dist/chartjs-plugin-datalabels.min.js"></script>
+</head>
+
+<body>
+  <div id="scroll-bar-container">
+    <div id="scroll-bar"></div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <a class="navbar-brand font-weight-bold" href="#">Tashreef Muhammad</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="#myself" class="nav-link">About</a></li>
+        <li class="nav-item">
+          <a href="#research-profiles" class="nav-link">Research Profiles</a>
+        </li>
+        <li class="nav-item">
+          <a href="#education" class="nav-link">Education</a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Research</a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#journal-papers">Journal Papers</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#conference-papers">Conference Papers</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#book-chapters">Book Chapters</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#conference-proceedings">Conference Proceedings</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#preprint-papers">Preprints</a>
+            </li>
+            <li><a class="dropdown-item" href="#datasets">Datasets</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="#achievements" class="nav-link">Achievements</a>
+        </li>
+      </ul>
     </div>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm"
-    >
-      <a class="navbar-brand font-weight-bold" href="#">Tashreef Muhammad</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="#myself" class="nav-link">About</a></li>
-          <li class="nav-item">
-            <a href="#research-profiles" class="nav-link">Research Profiles</a>
-          </li>
-          <li class="nav-item">
-            <a href="#education" class="nav-link">Education</a>
-          </li>
-          <li class="nav-item">
-            <a href="#experience" class="nav-link">Experience</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              >Research</a
-            >
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="#journal-papers"
-                  >Journal Papers</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#conference-papers"
-                  >Conference Papers</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#book-chapters">Book Chapters</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#conference-proceedings"
-                  >Conference Proceedings</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#preprint-papers">Preprints</a>
-              </li>
-              <li><a class="dropdown-item" href="#datasets">Datasets</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#achievements" class="nav-link">Achievements</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  </nav>
 
-    <!-- Main Content -->
-    <div class="container pt-5 mt-5">
-      <!-- About Section -->
-      <section id="myself" class="my-5">
-        <div class="row align-items-center">
-          <!-- Profile Picture -->
-          <div class="col-md-4 text-center">
-            <img
-              src="Images/ProfilePic.jpg"
-              alt="Tashreef Muhammad"
-              class="img-fluid rounded-circle shadow-sm mb-3"
-            />
-          </div>
-
-          <!-- About Text -->
-          <div class="col-md-8">
-            <h2>About Me</h2>
-            <p>
-              I am someone with big dreams and a deep curiosity about the world
-              of Computer Science. Having completed my undergraduate studies, I
-              am driven by the desire to make meaningful contributions to the
-              fields of CS and IT.
-            </p>
-            <p>
-              I thrive outside of conventional boundaries and enjoy exploring
-              new ideas and technologies.
-            </p>
-            <p>
-              I am eager to engage in research-based activities, collaborations,
-              and academic opportunities that align with my interests. I look
-              forward to learning, contributing, and growing through meaningful
-              technical and research-oriented engagements.
-            </p>
-          </div>
+  <!-- Main Content -->
+  <div class="container pt-5 mt-5">
+    <!-- About Section -->
+    <section id="myself" class="my-5">
+      <div class="row align-items-center">
+        <!-- Profile Picture -->
+        <div class="col-md-4 text-center">
+          <img src="Images/ProfilePic.jpg" alt="Tashreef Muhammad" class="img-fluid rounded-circle shadow-sm mb-3" />
         </div>
-        <div class="row align-items-center">
-          <!-- Contact Icons below Image -->
-          <div
-            class="col-md-4 d-flex justify-content-center align-items-center contact-info"
-          >
-            <a
-              href="mailto:tashreef.muhammad@gmail.com"
-              target="_blank"
-              title="Email"
-            >
-              <i class="fas fa-envelope contact-icon"></i>
-            </a>
-            <a
-              href="https://linkedin.com/in/tashreefmuhammad"
-              target="_blank"
-              title="LinkedIn"
-            >
-              <i class="fab fa-linkedin contact-icon"></i>
-            </a>
-          </div>
 
-          <!-- Collab -->
-          <div class="col-md-8">
-            <div
-              class="collab-box d-flex align-items-center mt-4 p-3 shadow-sm rounded"
-            >
-              <i class="col-md-1 fas fa-handshake me-3 text-warning fs-4"></i>
-              <span class="col-md-12 collab-text">
-                Always excited to collaborate on new research ideas. Let’s build
-                something meaningful together!
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" class="my-5">
-        <div class="container">
-          <h2 class="section-title text-center">Skills</h2>
-          <div class="profile-scroll-container row text-center mt-4">
-            <div class="col-6 col-md-3 mb-4">
-              <img
-                src="https://www.citypng.com/public/uploads/preview/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png"
-                alt="Python"
-                class="skill-icon mb-2"
-              />
-              <p>Python</p>
-            </div>
-            <div class="col-6 col-md-3 mb-4">
-              <img
-                src="https://cdn.imgbin.com/22/13/6/imgbin-the-c-programming-language-computer-icons-computer-programming-source-code-programming-c-logo-eZjx3GXN6szp5q0e8JdmnCazc.jpg"
-                alt="C++"
-                class="skill-icon mb-2"
-              />
-              <p>C++</p>
-            </div>
-            <div class="col-6 col-md-3 mb-4">
-              <img
-                src="https://icon-library.com/images/spreadsheet-icon-png/spreadsheet-icon-png-13.jpg"
-                alt="Spreadsheets"
-                class="skill-icon mb-2"
-              />
-              <p>Spreadsheets</p>
-            </div>
-            <!-- Add more skills similarly -->
-          </div>
-        </div>
-      </section>
-
-      <!-- Research Profiles Section -->
-      <section id="research-profiles">
-        <h2>Research Profiles</h2>
-        <div class="profile-scroll-container">
-          <a
-            href="https://scholar.google.com/citations?hl=en&user=W_IaQKAAAAAJ"
-            target="_blank"
-            title="Google Scholar"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg"
-              alt="Google Scholar"
-            />
-          </a>
-          <a
-            href="https://www.scopus.com/authid/detail.uri?authorId=57216696139"
-            target="_blank"
-            title="Scopus"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/elsevier.svg"
-              alt="Scopus"
-            />
-          </a>
-          <a
-            href="https://orcid.org/0000-0002-9816-2547"
-            target="_blank"
-            title="ORCID"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/orcid.svg"
-              alt="ORCiD"
-            />
-          </a>
-          <a
-            href="https://www.semanticscholar.org/author/Tashreef-Muhammad/1642304975"
-            target="_blank"
-            title="Semantic Scholar"
-          >
-            <img
-              src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/semanticscholar.svg"
-              alt="Semantic Scholar"
-            />
-          </a>
-          <a
-            href="https://www.researchgate.net/profile/Tashreef-Muhammad"
-            target="_blank"
-            title="ResearchGate"
-          >
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaIFViT1Qon2tO0FqckXDXQZRW4t4-MqGOA&s"
-              alt="ResearchGate"
-            />
-          </a>
-          <a
-            href="https://ieeexplore.ieee.org/author/37088372778"
-            target="_blank"
-            title="IEEE Xplore"
-          >
-            <img
-              src="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/about/whatis/71858.gif"
-              alt="IEEE Xplore"
-            />
-          </a>
-          <a
-            href="https://dl.acm.org/profile/99661624659"
-            target="_blank"
-            title="ACM Digital Library"
-          >
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEji4gb1BwcpwupaMsIH3OX-OdVfKa25-bA&s"
-              alt="ACM DL"
-            />
-          </a>
-          <a
-            href="https://www.webofscience.com/wos/author/record/AGC-1761-2022"
-            target="_blank"
-            title="Web of Science"
-          >
-            <img
-              src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/clarivate-bl8ee0nvim6ul27qehapb9.png/clarivate-rnywarf6za3m73pspb79l.png?_a=DATAdtXyZAA0"
-              alt="Web of Science"
-            />
-          </a>
-        </div>
-      </section>
-
-      <!-- Problem Solving Profiles Section -->
-      <section id="problem-solving" class="section">
-        <h2>Problem Solving Profiles</h2>
-        <div class="profile-scroll-container">
-          <a
-            href="https://codeforces.com/profile/DragonDragneel"
-            target="_blank"
-            title="Codeforces"
-          >
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s"
-              alt="Codeforces"
-            />
-          </a>
-          <a
-            href="https://leetcode.com/u/TashreefMuhammad/"
-            target="_blank"
-            title="LeetCode"
-          >
-            <img
-              src="https://cdn.simpleicons.org/leetcode/FFA116"
-              alt="LeetCode"
-            />
-          </a>
-          <a
-            href="https://atcoder.jp/users/Dragneel"
-            target="_blank"
-            title="AtCoder"
-          >
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm_pVNsGfvZFQPUeet8KaNJJo5ohykVnIhHQ&s"
-              alt="AtCoder"
-            />
-          </a>
-          <a
-            href="https://www.codechef.com/users/total_looser"
-            target="_blank"
-            title="CodeChef"
-          >
-            <img
-              src="https://cdn.simpleicons.org/codechef/5B4638"
-              alt="CodeChef"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/profile/CorruptedDreamer"
-            target="_blank"
-            title="HackerRank"
-          >
-            <img
-              src="https://cdn.simpleicons.org/hackerrank/2EC866"
-              alt="HackerRank"
-            />
-          </a>
-        </div>
-      </section>
-
-      <!-- Education Section -->
-      <section id="education" class="my-5">
-        <h2>Education</h2>
-        <ul>
-          <li>
-            <strong>B.Sc. in CSE</strong> — Ahsanullah University of Science and
-            Technology, 2022
-          </li>
-          <li>
-            <strong>Online Certifications</strong> —
-            <a
-              href="https://www.coursera.org/learner/tashreef-muhammad"
-              target="_blank"
-              >Coursera Profile</a
-            >
-          </li>
-        </ul>
-      </section>
-
-      <!-- Experience Section -->
-      <section id="experience" class="my-5">
-        <div class="container">
-          <h2 class="mb-4">Experience Timeline</h2>
-          <table border="0" cellpadding="8" cellspacing="0">
-            <thead>
-              <tr>
-                <th>Position</th>
-                <th>Department</th>
-                <th>Organization</th>
-                <th>Location</th>
-                <th style="width: 10%;">Start Date</th>
-                <th style="width: 10%;">End Date</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Intern</td>
-                <td>Information and Technology (IT)</td>
-                <td>Akij Assets Limited</td>
-                <td>Dhaka, Bangladesh</td>
-                <td>December 2021</td>
-                <td>February 2022</td>
-              </tr>
-              <tr>
-                <td>Adjunct Faculty</td>
-                <td>Computer Science and Engineering</td>
-                <td>Ahsanullah University of Science and Technology</td>
-                <td>Dhaka, Bangladesh</td>
-                <td>February 2022</td>
-                <td>September 2022</td>
-              </tr>
-              <tr>
-                <td>Assistant Moderator</td>
-                <td>Southeast Computer Club</td>
-                <td>Southeast University</td>
-                <td>Dhaka, Bangladesh</td>
-                <td>January 2025</td>
-                <td>December 2025</td>
-              </tr>
-              <tr>
-                <td>Lecturer and Coordinator</td>
-                <td>Computer Science and Engineering</td>
-                <td>Southeast University</td>
-                <td>Dhaka, Bangladesh</td>
-                <td>October 2022</td>
-                <td>Present</td>
-              </tr>
-            </tbody>
-          </table>
-          <br />
-          <canvas id="experienceChart" height="600"></canvas>
-        </div>
-      </section>
-
-      <!-- Research Section -->
-      <section id="research-profile" class="section">
-        <div class="container">
-          <h2 class="section-title">Research Profile</h2>
-          <p class="section-summary">
-            I have been actively involved in a wide range of research activities
-            focused on Machine Learning, Computer Vision, Natural Language
-            Processing, and their applications in healthcare and language
-            computing. I collaborate on interdisciplinary projects and am always
-            open to engaging in new research ventures.
+        <!-- About Text -->
+        <div class="col-md-8">
+          <h2>About Me</h2>
+          <p>
+            I am someone with big dreams and a deep curiosity about the world
+            of Computer Science. Having completed my undergraduate studies, I
+            am driven by the desire to make meaningful contributions to the
+            fields of CS and IT.
           </p>
+          <p>
+            I thrive outside of conventional boundaries and enjoy exploring
+            new ideas and technologies.
+          </p>
+          <p>
+            I am eager to engage in research-based activities, collaborations,
+            and academic opportunities that align with my interests. I look
+            forward to learning, contributing, and growing through meaningful
+            technical and research-oriented engagements.
+          </p>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <!-- Contact Icons below Image -->
+        <div class="col-md-4 d-flex justify-content-center align-items-center contact-info">
+          <a href="mailto:tashreef.muhammad@gmail.com" target="_blank" title="Email">
+            <i class="fas fa-envelope contact-icon"></i>
+          </a>
+          <a href="https://linkedin.com/in/tashreefmuhammad" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin contact-icon"></i>
+          </a>
+        </div>
 
-          <div class="research-category" id="journal-papers">
-            <h3 class="category-header" onclick="toggleCategory(this)">
-              Journal Articles
-            </h3>
-            <ol class="paper">
-              <li>
-                <strong
-                  >Transformer-Based Deep Learning Model for Stock Price
-                  Prediction: A Case Study on Bangladesh Stock Market</strong
-                ><br />
-                <em
-                  >International Journal of Computational Intelligence and
-                  Applications</em
-                >, 2023<br />
-                <strong>Authors:</strong> <u>Tashreef Muhammad</u>, Anika Bintee
-                Aftab, Muhammad Ibrahim, Md. Mainul Ahsan, Maishameem Meherin
-                Muhu, Shahidul Islam Khan, Mohammad Shafiul Alam<br />
-                <a
-                  href="https://doi.org/10.1142/s146902682350013x"
-                  target="_blank"
-                  >DOI: 10.1142/s146902682350013x</a
-                >
-              </li>
-            </ol>
-          </div>
-
-          <div class="research-category" id="conference-papers">
-            <h3 class="category-header" onclick="toggleCategory(this)">
-              Conference Papers
-            </h3>
-            <ol class="paper">
-              <li>
-                <strong
-                  >Explainable AI-Enhanced Deep Learning for Pumpkin Leaf
-                  Disease Detection: A Comparative Analysis of CNN
-                  Architectures</strong
-                ><br />
-                <em
-                  >2024 27th International Conference on Computer and
-                  Information Technology (ICCIT)</em
-                >, 2024<br />
-                <strong>Authors:</strong> Md. Arafat Alam Khandaker, Ziyan
-                Shirin Raha, Shifat Islam, <u>Tashreef Muhammad</u><br />
-                <a
-                  href="https://doi.org/10.1109/iccit64611.2024.11021957"
-                  target="_blank"
-                  >DOI: 10.1109/iccit64611.2024.11021957</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Improving Bangla Regional Dialect Detection Using BERT, LLMs,
-                  and XAI</strong
-                ><br />
-                <em
-                  >2024 IEEE International Conference on Computing, Applications
-                  and Systems (COMPAS)</em
-                >, 2024<br />
-                <strong>Authors:</strong> Bidyarthi Paul, Faika Fairuj Preotee,
-                Shuvashis Sarker, <u>Tashreef Muhammad</u><br />
-                <a
-                  href="https://doi.org/10.1109/compas60761.2024.10796843"
-                  target="_blank"
-                  >DOI: 10.1109/compas60761.2024.10796843</a
-                >
-              </li>
-              <li>
-                <strong
-                  >An Exploratory Approach Towards Investigating and Explaining
-                  Vision Transformer and Transfer Learning for Brain Disease
-                  Detection</strong
-                ><br />
-                <em
-                  >2024 27th International Conference on Computer and
-                  Information Technology (ICCIT)</em
-                >, 2024<br />
-                <strong>Authors:</strong> Shuvashis Sarker, Shamim Rahim Refat,
-                Faika Fairuj Preotee, Shifat Islam, <u>Tashreef Muhammad</u>,
-                Mohammad Ashraful Hoque<br />
-                <a
-                  href="https://doi.org/10.1109/iccit64611.2024.11022039"
-                  target="_blank"
-                  >DOI: 10.1109/iccit64611.2024.11022039</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Deep Learning-based Multi-Class Brain Abnormality Diagnosis
-                  on Bangladeshi MRI Images</strong
-                ><br />
-                <em
-                  >2024 IEEE International Conference on Biomedical Engineering,
-                  Computer and Information Technology for Health (BECITHCON)</em
-                >, 2024<br />
-                <strong>Authors:</strong> Md Rakibul Hasan, Nusrat Jahan, Shifat
-                Islam, <u>Tashreef Muhammad</u><br />
-                <a
-                  href="https://doi.org/10.1109/becithcon64160.2024.10962710"
-                  target="_blank"
-                  >DOI: 10.1109/becithcon64160.2024.10962710</a
-                >
-              </li>
-              <li>
-                <strong
-                  >A Data-Centric Method to Identify Lung Cancer Using a Variety
-                  of Machine Learning Approaches</strong
-                ><br />
-                <em
-                  >2025 International Conference on Electrical, Computer and
-                  Communication Engineering (ECCE)</em
-                >, 2025<br />
-                <strong>Authors:</strong> Istiack Amin, Al-Amain,
-                <u>Tashreef Muhammad</u>, Khandaker Mohammad Mohi Uddin<br />
-                <a
-                  href="https://doi.org/10.1109/ecce64574.2025.11013866"
-                  target="_blank"
-                  >DOI: 10.1109/ecce64574.2025.11013866</a
-                >
-              </li>
-              <li>
-                <strong
-                  >An Approach Towards Identifying Bangladeshi Leaf Diseases
-                  through Transfer Learning and XAI</strong
-                ><br />
-                <em
-                  >2024 27th International Conference on Computer and
-                  Information Technology (ICCIT)</em
-                >, 2024<br />
-                <strong>Authors:</strong> Faika Fairuj Preotee, Shuvashis
-                Sarker, Shamim Rahim Refat, <u>Tashreef Muhammad</u>, Shifat
-                Islam<br />
-                <a
-                  href="https://doi.org/10.1109/iccit64611.2024.11022335"
-                  target="_blank"
-                  >DOI: 10.1109/iccit64611.2024.11022335</a
-                >
-              </li>
-              <li>
-                <u
-                  >Bridging Dialects: Translating Standard Bangla to Regional
-                  Variants Using Neural Models</u
-                ><br />
-                <em
-                  >2024 27th International Conference on Computer and
-                  Information Technology (ICCIT)</em
-                >, 2024<br />
-                <strong>Authors:</strong> Md. Arafat Alam Khandaker, Ziyan
-                Shirin Raha, Bidyarthi Paul, <strong>Tashreef Muhammad</strong
-                ><br />
-                <a
-                  href="https://doi.org/10.1109/iccit64611.2024.11022371"
-                  target="_blank"
-                  >DOI: 10.1109/iccit64611.2024.11022371</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Modified Bat Algorithm with Hybridization of Gaussian
-                  Probability and Doppler Effect</strong
-                ><br />
-                <em
-                  >2019 International Conference on Sustainable Technologies for
-                  Industry 4.0 (STI)</em
-                >, 2019<br />
-                <strong>Authors:</strong> Tahsin Aziz, Md. Rashedul Karim
-                Chowdhury, <u>Tashreef Muhammad</u>, Nazmus Sakib<br />
-                <a
-                  href="https://doi.org/10.1109/sti47673.2019.9068014"
-                  target="_blank"
-                  >DOI: 10.1109/sti47673.2019.9068014</a
-                >
-              </li>
-            </ol>
-          </div>
-
-          <div class="research-category" id="book-chapters">
-            <h3 class="category-header" onclick="toggleCategory(this)">
-              Book Chapters
-            </h3>
-            <ol class="paper">
-              <li>
-                <strong
-                  >Enhancing Bengali Sentiment Analysis: An Insightful Study of
-                  Bengali and English VADER</strong
-                ><br />
-                <em>Lecture Notes in Networks and Systems</em>, 2025<br />
-                <strong>Authors:</strong> Faizul Ahmed Robin, Al-Amain,
-                <u>Tashreef Muhammad</u>, Rajon Bardhan<br />
-                <a
-                  href="https://doi.org/10.1007/978-981-96-2721-9_28"
-                  target="_blank"
-                  >DOI: 10.1007/978-981-96-2721-9_28</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Can Transformer Models Effectively Detect Software Aspects in
-                  StackOverflow Discussion?</strong
-                ><br />
-                <em
-                  >Lecture Notes of the Institute for Computer Sciences, Social
-                  Informatics and Telecommunications Engineering</em
-                >, 2023<br />s <strong>Authors:</strong> Nibir Chandra Mandal,
-                <u>Tashreef Muhammad</u>, G. M. Shahariar<br />
-                <a
-                  href="https://doi.org/10.1007/978-3-031-34622-4_18"
-                  target="_blank"
-                  >DOI: 10.1007/978-3-031-34622-4_18</a
-                >
-              </li>
-            </ol>
-          </div>
-
-          <div class="research-category" id="conference-proceedings">
-            <h3 class="category-header" onclick="toggleCategory(this)">
-              Conference Proceedings
-            </h3>
-            <ol class="paper">
-              <li>
-                <strong>
-                  Advanced CNN and Explainable AI Based Architecture for
-                  Interpretable Brain MRI Analysis </strong
-                ><br />
-                <em
-                  >Proceedings of the 3rd International Conference on Computing
-                  Advancements </em
-                >, 2024<br />
-                <strong>Authors:</strong> Shuvashis Sarker Shuvo, Shamim Rahim
-                Refat, Faika Fairuj Preotee, <u>Tashreef Muhammad</u><br />
-                <a
-                  href="https://doi.org/10.1145/3723178.3723220"
-                  target="_blank"
-                >
-                  DOI: 10.1145/3723178.3723220
-                </a>
-              </li>
-            </ol>
-          </div>
-
-          <div class="research-category" id="preprint-papers">
-            <h3 class="category-header" onclick="toggleCategory(this)">
-              Preprints
-            </h3>
-            <ol class="paper">
-              <li>
-                <strong>
-                  BIDWESH: A Bangla Regional Based Hate Speech Detection Dataset </strong
-                ><br />
-                <em>arXiv</em>, 2025<br />
-                <strong>Authors:</strong> Azizul Hakim Fayaz, MD. Shorif Uddin,
-                Rayhan Uddin Bhuiyan, Zakia Sultana, Md. Samiul Islam, Bidyarthi
-                Paul, <u>Tashreef Muhammad</u>, Shahriar Manzoor <br />
-                <a
-                  href="https://doi.org/10.48550/arXiv.2507.16183"
-                  target="_blank"
-                >
-                  DOI: 10.48550/arXiv.2507.16183
-                </a>
-              </li>
-              <li>
-                <strong>
-                  VR-FuseNet: A Fusion of Heterogeneous Fundus Data and
-                  Explainable Deep Network for Diabetic Retinopathy
-                  Classification </strong
-                ><br />
-                <em>arXiv</em>, 2025<br />
-                <strong>Authors:</strong> Shamim Rahim Refat, Ziyan Shirin Raha,
-                Shuvashis Sarker, Faika Fairuj Preotee, MD. Musfikur Rahman,
-                <u>Tashreef Muhammad</u>, Mohammad Shafiul Alam <br />
-                <a
-                  href="https://doi.org/10.48550/arXiv.2504.21464"
-                  target="_blank"
-                >
-                  DOI: 10.48550/arXiv.2504.21464
-                </a>
-              </li>
-              <li>
-                <strong
-                  >ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named
-                  Entity Recognition</strong
-                ><br />
-                <em>arXiv</em>, 2025<br />
-                <strong>Authors:</strong> Bidyarthi Paul, Faika Fairuj Preotee,
-                Shuvashis Sarker, Shamim Rahim Refat, Shifat Islam,
-                <u>Tashreef Muhammad</u>, Mohammad Ashraful Hoque, Shahriar
-                Manzoor <br />
-                <a
-                  href="https://doi.org/10.48550/arXiv.2502.11198"
-                  target="_blank"
-                  >DOI: 10.48550/arXiv.2502.11198</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Vashantor: A Large-scale Multilingual Benchmark Dataset for
-                  Automated Translation of Bangla Regional Dialects to Bangla
-                  Language</strong
-                ><br />
-                <em>arXiv</em>, 2023<br />
-                <strong>Authors:</strong> Fatema Tuj Johora Faria, Mukaffi Bin
-                Moin, Ahmed Al Wase, Mehidi Ahmmed, Md. Rabius Sani,
-                <u>Tashreef Muhammad</u> <br />
-                <a
-                  href="https://doi.org/10.48550/arXiv.2311.11142"
-                  target="_blank"
-                  >DOI: 10.48550/arXiv.2311.11142</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Utilizing Technical Data to Discover Similar Companies in
-                  Dhaka Stock Exchange</strong
-                ><br />
-                <em>arXiv</em>, 2023<br />
-                <strong>Authors:</strong> <u>Tashreef Muhammad</u>, Tahsin Aziz,
-                Mohammad Shafiul Alam <br />
-                <a
-                  href="https://doi.org/10.48550/arXiv.2301.04455"
-                  target="_blank"
-                  >DOI: 10.48550/arXiv.2301.04455</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Frequency Distribution of Prime Numbers between an Integer
-                  and its Square: A Case Study</strong
-                ><br />
-                <em>arXiv</em>, 2022<br />
-                <strong>Authors:</strong> <u>Tashreef Muhammad</u>, G. M.
-                Shahariar, Tahsin Aziz, Mohammad Shafiul Alam
-                <br />
-                <a
-                  href="https://doi.org/10.48550/arXiv.2209.12494"
-                  target="_blank"
-                  >DOI: 10.48550/arXiv.2209.12494</a
-                >
-              </li>
-              <li>
-                <strong
-                  >An Approach of Adjusting the Switch Probability based on
-                  Dimension Size: A Case Study for Performance Improvement of
-                  the Flower Pollination Algorithm</strong
-                ><br />
-                <em>arXiv</em>, 2022<br />
-                <strong>Authors:</strong> Tahsin Aziz, <u>Tashreef Muhammad</u>,
-                Md. Rashedul Karim Chowdhury, Mohammad Shafiul Alam <br />
-                <a
-                  href="https://doi.org/10.48550/arXiv.2208.09699"
-                  target="_blank"
-                  >DOI: 10.48550/arXiv.2208.09699</a
-                >
-              </li>
-            </ol>
-          </div>
-          <div class="research-category" id="datasets">
-            <h3 class="category-header" onclick="toggleCategory(this)">
-              Datasets
-            </h3>
-            <ol class="paper">
-              <li>
-                <strong
-                  >BIDWESH: A Bangla Regional Based Hate Speech Detection
-                  Dataset</strong
-                ><br />
-                <em>Mendeley Data</em>, 2025<br />
-                <strong>Contributors:</strong> Azizul Hakim Fayaz, MD. Shorif
-                Uddin, Rayhan Uddin Bhuiyan, Zakia Sultana, Md. Samiul Islam,
-                Bidyarthi Paul, <u>Tashreef Muhammad</u>, Shahriar Manzoor
-                <br />
-                <a href="https://doi.org/10.17632/bpkrvf882k" target="_blank"
-                  >DOI: 10.17632/bpkrvf882k</a
-                >
-              </li>
-              <li>
-                <strong
-                  >ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named
-                  Entity Recognition</strong
-                ><br />
-                <em>Mendeley Data</em>, 2025<br />
-                <strong>Contributors:</strong> Bidyarthi Paul, Faika Fairuj
-                Preotee, Shuvashis Sarker, Shamim Rahim Refat, Shifat Islam,
-                <u>Tashreef Muhammad</u>, Mohammad Ashraful Hoque, Shahriar
-                Manzoor <br />
-                <a href="https://doi.org/10.17632/gbkszkt8z3" target="_blank"
-                  >DOI: 10.17632/gbkszkt8z3</a
-                >
-              </li>
-              <li>
-                <strong
-                  >Vashantor: A Large-scale Multilingual Benchmark Dataset for
-                  Automated Translation of Bangla Regional Dialects to Bangla
-                  Language</strong
-                ><br />
-                <em>Mendeley Data</em>, 2024<br />
-                <strong>Contributors:</strong> Fatema Tuj Johora Faria, Mukaffi
-                Bin Moin, Ahmed Al Wase, Md. Rabius Sani, Mehidi Ahmmed,
-                <u>Tashreef Muhammad</u> <br />
-                <a href="https://doi.org/10.17632/bj5jgk878b" target="_blank"
-                  >DOI: 10.17632/bj5jgk878b</a
-                >
-              </li>
-              <li>
-                <strong>Dhaka Stock Exchange Historical Data</strong><br />
-                <em>Mendeley Data</em>, 2024<br />
-                <strong>Contributors:</strong> <u>Tashreef Muhammad</u>, Rakibul
-                Islam, Mohammad Shafiul Alam <br />
-                <a href="https://doi.org/10.17632/23553sm4tn" target="_blank"
-                  >DOI: 10.17632/23553sm4tn</a
-                >
-              </li>
-            </ol>
+        <!-- Collab -->
+        <div class="col-md-8">
+          <div class="collab-box d-flex align-items-center mt-4 p-3 shadow-sm rounded">
+            <i class="col-md-1 fas fa-handshake me-3 text-warning fs-4"></i>
+            <span class="col-md-12 collab-text">
+              Always excited to collaborate on new research ideas. Let’s build
+              something meaningful together!
+            </span>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Achievements Section -->
-      <section id="achievements" class="my-5">
-        <h2>Achievements</h2>
-        <ul>
-          <li>20+ peer-reviewed publications (IEEE, Scopus, ACM)</li>
-          <li>Google Scholar Citations: 100+ | Scopus Citations: 40+</li>
-          <li>
-            Developed innovative Numerical Methods course with ML applications
-          </li>
-          <li>Successfully mentored 50+ students in final year projects</li>
-        </ul>
-      </section>
+    <section id="skills" class="my-5">
+      <div class="container">
+        <h2 class="section-title text-center">Skills</h2>
+        <div class="profile-scroll-container row text-center mt-4">
+          <div class="col-6 col-md-3 mb-4">
+            <img
+              src="https://www.citypng.com/public/uploads/preview/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png"
+              alt="Python" class="skill-icon mb-2" />
+            <p>Python</p>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <img
+              src="https://cdn.imgbin.com/22/13/6/imgbin-the-c-programming-language-computer-icons-computer-programming-source-code-programming-c-logo-eZjx3GXN6szp5q0e8JdmnCazc.jpg"
+              alt="C++" class="skill-icon mb-2" />
+            <p>C++</p>
+          </div>
+          <div class="col-6 col-md-3 mb-4">
+            <img src="https://icon-library.com/images/spreadsheet-icon-png/spreadsheet-icon-png-13.jpg"
+              alt="Spreadsheets" class="skill-icon mb-2" />
+            <p>Spreadsheets</p>
+          </div>
+          <!-- Add more skills similarly -->
+        </div>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="text-center mt-5 mb-3">
-        <hr />
-        <p>
-          © 2025 Tashreef Muhammad |
-          <a href="https://github.com/TashreefMuhammad" target="_blank"
-            >GitHub</a
-          >
+    <!-- Research Profiles Section -->
+    <section id="research-profiles">
+      <h2>Research Profiles</h2>
+      <div class="profile-scroll-container">
+        <a href="https://scholar.google.com/citations?hl=en&user=W_IaQKAAAAAJ" target="_blank" title="Google Scholar">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlescholar.svg"
+            alt="Google Scholar" />
+        </a>
+        <a href="https://www.scopus.com/authid/detail.uri?authorId=57216696139" target="_blank" title="Scopus">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/elsevier.svg" alt="Scopus" />
+        </a>
+        <a href="https://orcid.org/0000-0002-9816-2547" target="_blank" title="ORCID">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/orcid.svg" alt="ORCiD" />
+        </a>
+        <a href="https://www.semanticscholar.org/author/Tashreef-Muhammad/1642304975" target="_blank"
+          title="Semantic Scholar">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/semanticscholar.svg"
+            alt="Semantic Scholar" />
+        </a>
+        <a href="https://www.researchgate.net/profile/Tashreef-Muhammad" target="_blank" title="ResearchGate">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkaIFViT1Qon2tO0FqckXDXQZRW4t4-MqGOA&s"
+            alt="ResearchGate" />
+        </a>
+        <a href="https://ieeexplore.ieee.org/author/37088372778" target="_blank" title="IEEE Xplore">
+          <img src="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/about/whatis/71858.gif" alt="IEEE Xplore" />
+        </a>
+        <a href="https://dl.acm.org/profile/99661624659" target="_blank" title="ACM Digital Library">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFEji4gb1BwcpwupaMsIH3OX-OdVfKa25-bA&s"
+            alt="ACM DL" />
+        </a>
+        <a href="https://www.webofscience.com/wos/author/record/AGC-1761-2022" target="_blank" title="Web of Science">
+          <img
+            src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/clarivate-bl8ee0nvim6ul27qehapb9.png/clarivate-rnywarf6za3m73pspb79l.png?_a=DATAdtXyZAA0"
+            alt="Web of Science" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Problem Solving Profiles Section -->
+    <section id="problem-solving" class="section">
+      <h2>Problem Solving Profiles</h2>
+      <div class="profile-scroll-container">
+        <a href="https://codeforces.com/profile/DragonDragneel" target="_blank" title="Codeforces">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3LVEIg_6x2wqlPG8pruOUnUi-wEvnw1eC0w&s"
+            alt="Codeforces" />
+        </a>
+        <a href="https://leetcode.com/u/TashreefMuhammad/" target="_blank" title="LeetCode">
+          <img src="https://cdn.simpleicons.org/leetcode/FFA116" alt="LeetCode" />
+        </a>
+        <a href="https://atcoder.jp/users/Dragneel" target="_blank" title="AtCoder">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm_pVNsGfvZFQPUeet8KaNJJo5ohykVnIhHQ&s"
+            alt="AtCoder" />
+        </a>
+        <a href="https://www.codechef.com/users/total_looser" target="_blank" title="CodeChef">
+          <img src="https://cdn.simpleicons.org/codechef/5B4638" alt="CodeChef" />
+        </a>
+        <a href="https://www.hackerrank.com/profile/CorruptedDreamer" target="_blank" title="HackerRank">
+          <img src="https://cdn.simpleicons.org/hackerrank/2EC866" alt="HackerRank" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="my-5">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>B.Sc. in CSE</strong> — Ahsanullah University of Science and
+          Technology, 2022
+        </li>
+        <li>
+          <strong>Online Certifications</strong> —
+          <a href="https://www.coursera.org/learner/tashreef-muhammad" target="_blank">Coursera Profile</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="my-5">
+      <div class="container">
+        <h2 class="mb-4">Experience Timeline</h2>
+        <table border="0" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Position</th>
+              <th>Department</th>
+              <th>Organization</th>
+              <th>Location</th>
+              <th style="width: 10%;">Start Date</th>
+              <th style="width: 10%;">End Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Intern</td>
+              <td>Information and Technology (IT)</td>
+              <td>Akij Assets Limited</td>
+              <td>Dhaka, Bangladesh</td>
+              <td>December 2021</td>
+              <td>February 2022</td>
+            </tr>
+            <tr>
+              <td>Adjunct Faculty</td>
+              <td>Computer Science and Engineering</td>
+              <td>Ahsanullah University of Science and Technology</td>
+              <td>Dhaka, Bangladesh</td>
+              <td>February 2022</td>
+              <td>September 2022</td>
+            </tr>
+            <tr>
+              <td>Assistant Moderator</td>
+              <td>Southeast Computer Club</td>
+              <td>Southeast University</td>
+              <td>Dhaka, Bangladesh</td>
+              <td>January 2025</td>
+              <td>December 2025</td>
+            </tr>
+            <tr>
+              <td>Lecturer and Coordinator</td>
+              <td>Computer Science and Engineering</td>
+              <td>Southeast University</td>
+              <td>Dhaka, Bangladesh</td>
+              <td>October 2022</td>
+              <td>Present</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <canvas id="experienceChart" height="600"></canvas>
+      </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research-profile" class="section">
+      <div class="container">
+        <h2 class="section-title">Research Profile</h2>
+        <p class="section-summary">
+          I have been actively involved in a wide range of research activities
+          focused on Machine Learning, Computer Vision, Natural Language
+          Processing, and their applications in healthcare and language
+          computing. I collaborate on interdisciplinary projects and am always
+          open to engaging in new research ventures.
         </p>
-      </footer>
-    </div>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <script src="JS/programs.js"></script>
-  </body>
+        <div class="research-category" id="journal-papers">
+          <h3 class="category-header" onclick="toggleCategory(this)">
+            Journal Articles
+          </h3>
+          <ol class="paper">
+            <li>
+              <strong>Transformer-Based Deep Learning Model for Stock Price
+                Prediction: A Case Study on Bangladesh Stock Market</strong><br />
+              <em>International Journal of Computational Intelligence and
+                Applications</em>, 2023<br />
+              <strong>Authors:</strong> <u>Tashreef Muhammad</u>, Anika Bintee
+              Aftab, Muhammad Ibrahim, Md. Mainul Ahsan, Maishameem Meherin
+              Muhu, Shahidul Islam Khan, Mohammad Shafiul Alam<br />
+              <a href="https://doi.org/10.1142/s146902682350013x" target="_blank">DOI: 10.1142/s146902682350013x</a>
+              <a class="preprint-btn ml-2" href="https://arxiv.org/abs/2208.08300" target="_blank">Preprint</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="research-category" id="conference-papers">
+          <h3 class="category-header" onclick="toggleCategory(this)">
+            Conference Papers
+          </h3>
+          <ol class="paper">
+            <li>
+              <strong>A Data-Centric Method to Identify Lung Cancer Using a Variety
+                of Machine Learning Approaches</strong><br />
+              <em>2025 International Conference on Electrical, Computer and
+                Communication Engineering (ECCE)</em>, 2025<br />
+              <strong>Authors:</strong> Istiack Amin, Al-Amain,
+              <u>Tashreef Muhammad</u>, Khandaker Mohammad Mohi Uddin<br />
+              <a href="https://doi.org/10.1109/ecce64574.2025.11013866" target="_blank">DOI:
+                10.1109/ecce64574.2025.11013866</a>
+            </li>
+            <li>
+              <strong>Explainable AI-Enhanced Deep Learning for Pumpkin Leaf
+                Disease Detection: A Comparative Analysis of CNN
+                Architectures</strong><br />
+              <em>2024 27th International Conference on Computer and
+                Information Technology (ICCIT)</em>, 2024<br />
+              <strong>Authors:</strong> Md. Arafat Alam Khandaker, Ziyan
+              Shirin Raha, Shifat Islam, <u>Tashreef Muhammad</u><br />
+              <a href="https://doi.org/10.1109/iccit64611.2024.11021957" target="_blank">DOI:
+                10.1109/iccit64611.2024.11021957</a>
+              <a class="preprint-btn ml-2" href="https://arxiv.org/abs/2501.05449" target="_blank">Preprint</a>
+            </li>
+            <li>
+              <strong>An Exploratory Approach Towards Investigating and Explaining
+                Vision Transformer and Transfer Learning for Brain Disease
+                Detection</strong><br />
+              <em>2024 27th International Conference on Computer and
+                Information Technology (ICCIT)</em>, 2024<br />
+              <strong>Authors:</strong> Shuvashis Sarker, Shamim Rahim Refat,
+              Faika Fairuj Preotee, Shifat Islam, <u>Tashreef Muhammad</u>,
+              Mohammad Ashraful Hoque<br />
+              <a href="https://doi.org/10.1109/iccit64611.2024.11022039" target="_blank">DOI:
+                10.1109/iccit64611.2024.11022039</a>
+              <a class="preprint-btn ml-2" href="https://arxiv.org/abs/2505.16039" target="_blank">Preprint</a>
+            </li>
+            <li>
+              <strong>An Approach Towards Identifying Bangladeshi Leaf Diseases
+                through Transfer Learning and XAI</strong><br />
+              <em>2024 27th International Conference on Computer and
+                Information Technology (ICCIT)</em>, 2024<br />
+              <strong>Authors:</strong> Faika Fairuj Preotee, Shuvashis
+              Sarker, Shamim Rahim Refat, <u>Tashreef Muhammad</u>, Shifat
+              Islam<br />
+              <a href="https://doi.org/10.1109/iccit64611.2024.11022335" target="_blank">DOI:
+                10.1109/iccit64611.2024.11022335</a>
+              <a class="preprint-btn ml-2" href="https://arxiv.org/abs/2505.16033" target="_blank">Preprint</a>
+            </li>
+            <li>
+              <strong>Bridging Dialects: Translating Standard Bangla to Regional
+                Variants Using Neural Models</strong><br />
+              <em>2024 27th International Conference on Computer and
+                Information Technology (ICCIT)</em>, 2024<br />
+              <strong>Authors:</strong> Md. Arafat Alam Khandaker, Ziyan
+              Shirin Raha, Bidyarthi Paul, <u>Tashreef Muhammad</u><br />
+              <a href="https://doi.org/10.1109/iccit64611.2024.11022371" target="_blank">DOI:
+                10.1109/iccit64611.2024.11022371</a>
+              <a class="preprint-btn ml-2" href="https://arxiv.org/abs/2501.05749" target="_blank">Preprint</a>
+            </li>
+            <li>
+              <strong>Deep Learning-based Multi-Class Brain Abnormality Diagnosis
+                on Bangladeshi MRI Images</strong><br />
+              <em>2024 IEEE International Conference on Biomedical Engineering,
+                Computer and Information Technology for Health (BECITHCON)</em>, 2024<br />
+              <strong>Authors:</strong> Md Rakibul Hasan, Nusrat Jahan, Shifat
+              Islam, <u>Tashreef Muhammad</u><br />
+              <a href="https://doi.org/10.1109/becithcon64160.2024.10962710" target="_blank">DOI:
+                10.1109/becithcon64160.2024.10962710</a>
+            </li>
+            <li>
+              <strong>Improving Bangla Regional Dialect Detection Using BERT, LLMs,
+                and XAI</strong><br />
+              <em>2024 IEEE International Conference on Computing, Applications
+                and Systems (COMPAS)</em>, 2024<br />
+              <strong>Authors:</strong> Bidyarthi Paul, Faika Fairuj Preotee,
+              Shuvashis Sarker, <u>Tashreef Muhammad</u><br />
+              <a href="https://doi.org/10.1109/compas60761.2024.10796843" target="_blank">DOI:
+                10.1109/compas60761.2024.10796843</a>
+            </li>
+            <li>
+              <strong>Modified Bat Algorithm with Hybridization of Gaussian
+                Probability and Doppler Effect</strong><br />
+              <em>2019 International Conference on Sustainable Technologies for
+                Industry 4.0 (STI)</em>, 2019<br />
+              <strong>Authors:</strong> Tahsin Aziz, Md. Rashedul Karim
+              Chowdhury, <u>Tashreef Muhammad</u>, Nazmus Sakib<br />
+              <a href="https://doi.org/10.1109/sti47673.2019.9068014" target="_blank">DOI:
+                10.1109/sti47673.2019.9068014</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="research-category" id="book-chapters">
+          <h3 class="category-header" onclick="toggleCategory(this)">
+            Book Chapters
+          </h3>
+          <ol class="paper">
+            <li>
+              <strong>Enhancing Bengali Sentiment Analysis: An Insightful Study of
+                Bengali and English VADER</strong><br />
+              <em>Lecture Notes in Networks and Systems</em>, 2025<br />
+              <strong>Authors:</strong> Faizul Ahmed Robin, Al-Amain,
+              <u>Tashreef Muhammad</u>, Rajon Bardhan<br />
+              <a href="https://doi.org/10.1007/978-981-96-2721-9_28" target="_blank">DOI:
+                10.1007/978-981-96-2721-9_28</a>
+            </li>
+            <li>
+              <strong>Can Transformer Models Effectively Detect Software Aspects in
+                StackOverflow Discussion?</strong><br />
+              <em>Lecture Notes of the Institute for Computer Sciences, Social
+                Informatics and Telecommunications Engineering</em>, 2023<br />s <strong>Authors:</strong> Nibir Chandra
+              Mandal,
+              <u>Tashreef Muhammad</u>, G. M. Shahariar<br />
+              <a href="https://doi.org/10.1007/978-3-031-34622-4_18" target="_blank">DOI:
+                10.1007/978-3-031-34622-4_18</a>
+              <a class="preprint-btn ml-2" href="https://arxiv.org/abs/2209.12065" target="_blank">Preprint</a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="research-category" id="conference-proceedings">
+          <h3 class="category-header" onclick="toggleCategory(this)">
+            Conference Proceedings
+          </h3>
+          <ol class="paper">
+            <li>
+              <strong>
+                Advanced CNN and Explainable AI Based Architecture for
+                Interpretable Brain MRI Analysis </strong><br />
+              <em>Proceedings of the 3rd International Conference on Computing
+                Advancements </em>, 2024<br />
+              <strong>Authors:</strong> Shuvashis Sarker Shuvo, Shamim Rahim
+              Refat, Faika Fairuj Preotee, <u>Tashreef Muhammad</u><br />
+              <a href="https://doi.org/10.1145/3723178.3723220" target="_blank">
+                DOI: 10.1145/3723178.3723220
+              </a>
+            </li>
+          </ol>
+        </div>
+
+        <div class="research-category" id="preprint-papers">
+          <h3 class="category-header" onclick="toggleCategory(this)">
+            Preprints
+          </h3>
+          <ol class="paper">
+            <li>
+              <strong>
+                BIDWESH: A Bangla Regional Based Hate Speech Detection Dataset </strong><br />
+              <em>arXiv</em>, 2025<br />
+              <strong>Authors:</strong> Azizul Hakim Fayaz, MD. Shorif Uddin,
+              Rayhan Uddin Bhuiyan, Zakia Sultana, Md. Samiul Islam, Bidyarthi
+              Paul, <u>Tashreef Muhammad</u>, Shahriar Manzoor <br />
+              <a href="https://doi.org/10.48550/arXiv.2507.16183" target="_blank">
+                DOI: 10.48550/arXiv.2507.16183
+              </a>
+            </li>
+            <li>
+              <strong>
+                VR-FuseNet: A Fusion of Heterogeneous Fundus Data and
+                Explainable Deep Network for Diabetic Retinopathy
+                Classification </strong><br />
+              <em>arXiv</em>, 2025<br />
+              <strong>Authors:</strong> Shamim Rahim Refat, Ziyan Shirin Raha,
+              Shuvashis Sarker, Faika Fairuj Preotee, MD. Musfikur Rahman,
+              <u>Tashreef Muhammad</u>, Mohammad Shafiul Alam <br />
+              <a href="https://doi.org/10.48550/arXiv.2504.21464" target="_blank">
+                DOI: 10.48550/arXiv.2504.21464
+              </a>
+            </li>
+            <li>
+              <strong>ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named
+                Entity Recognition</strong><br />
+              <em>arXiv</em>, 2025<br />
+              <strong>Authors:</strong> Bidyarthi Paul, Faika Fairuj Preotee,
+              Shuvashis Sarker, Shamim Rahim Refat, Shifat Islam,
+              <u>Tashreef Muhammad</u>, Mohammad Ashraful Hoque, Shahriar
+              Manzoor <br />
+              <a href="https://doi.org/10.48550/arXiv.2502.11198" target="_blank">DOI: 10.48550/arXiv.2502.11198</a>
+            </li>
+            <li>
+              <strong>Vashantor: A Large-scale Multilingual Benchmark Dataset for
+                Automated Translation of Bangla Regional Dialects to Bangla
+                Language</strong><br />
+              <em>arXiv</em>, 2023<br />
+              <strong>Authors:</strong> Fatema Tuj Johora Faria, Mukaffi Bin
+              Moin, Ahmed Al Wase, Mehidi Ahmmed, Md. Rabius Sani,
+              <u>Tashreef Muhammad</u> <br />
+              <a href="https://doi.org/10.48550/arXiv.2311.11142" target="_blank">DOI: 10.48550/arXiv.2311.11142</a>
+            </li>
+            <li>
+              <strong>Utilizing Technical Data to Discover Similar Companies in
+                Dhaka Stock Exchange</strong><br />
+              <em>arXiv</em>, 2023<br />
+              <strong>Authors:</strong> <u>Tashreef Muhammad</u>, Tahsin Aziz,
+              Mohammad Shafiul Alam <br />
+              <a href="https://doi.org/10.48550/arXiv.2301.04455" target="_blank">DOI: 10.48550/arXiv.2301.04455</a>
+            </li>
+            <li>
+              <strong>Frequency Distribution of Prime Numbers between an Integer
+                and its Square: A Case Study</strong><br />
+              <em>arXiv</em>, 2022<br />
+              <strong>Authors:</strong> <u>Tashreef Muhammad</u>, G. M.
+              Shahariar, Tahsin Aziz, Mohammad Shafiul Alam
+              <br />
+              <a href="https://doi.org/10.48550/arXiv.2209.12494" target="_blank">DOI: 10.48550/arXiv.2209.12494</a>
+            </li>
+            <li>
+              <strong>An Approach of Adjusting the Switch Probability based on
+                Dimension Size: A Case Study for Performance Improvement of
+                the Flower Pollination Algorithm</strong><br />
+              <em>arXiv</em>, 2022<br />
+              <strong>Authors:</strong> Tahsin Aziz, <u>Tashreef Muhammad</u>,
+              Md. Rashedul Karim Chowdhury, Mohammad Shafiul Alam <br />
+              <a href="https://doi.org/10.48550/arXiv.2208.09699" target="_blank">DOI: 10.48550/arXiv.2208.09699</a>
+            </li>
+          </ol>
+        </div>
+        <div class="research-category" id="datasets">
+          <h3 class="category-header" onclick="toggleCategory(this)">
+            Datasets
+          </h3>
+          <ol class="paper">
+            <li>
+              <strong>BIDWESH: A Bangla Regional Based Hate Speech Detection
+                Dataset</strong><br />
+              <em>Mendeley Data</em>, 2025<br />
+              <strong>Contributors:</strong> Azizul Hakim Fayaz, MD. Shorif
+              Uddin, Rayhan Uddin Bhuiyan, Zakia Sultana, Md. Samiul Islam,
+              Bidyarthi Paul, <u>Tashreef Muhammad</u>, Shahriar Manzoor
+              <br />
+              <a href="https://doi.org/10.17632/bpkrvf882k" target="_blank">DOI: 10.17632/bpkrvf882k</a>
+            </li>
+            <li>
+              <strong>ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named
+                Entity Recognition</strong><br />
+              <em>Mendeley Data</em>, 2025<br />
+              <strong>Contributors:</strong> Bidyarthi Paul, Faika Fairuj
+              Preotee, Shuvashis Sarker, Shamim Rahim Refat, Shifat Islam,
+              <u>Tashreef Muhammad</u>, Mohammad Ashraful Hoque, Shahriar
+              Manzoor <br />
+              <a href="https://doi.org/10.17632/gbkszkt8z3" target="_blank">DOI: 10.17632/gbkszkt8z3</a>
+            </li>
+            <li>
+              <strong>Vashantor: A Large-scale Multilingual Benchmark Dataset for
+                Automated Translation of Bangla Regional Dialects to Bangla
+                Language</strong><br />
+              <em>Mendeley Data</em>, 2024<br />
+              <strong>Contributors:</strong> Fatema Tuj Johora Faria, Mukaffi
+              Bin Moin, Ahmed Al Wase, Md. Rabius Sani, Mehidi Ahmmed,
+              <u>Tashreef Muhammad</u> <br />
+              <a href="https://doi.org/10.17632/bj5jgk878b" target="_blank">DOI: 10.17632/bj5jgk878b</a>
+            </li>
+            <li>
+              <strong>Dhaka Stock Exchange Historical Data</strong><br />
+              <em>Mendeley Data</em>, 2024<br />
+              <strong>Contributors:</strong> <u>Tashreef Muhammad</u>, Rakibul
+              Islam, Mohammad Shafiul Alam <br />
+              <a href="https://doi.org/10.17632/23553sm4tn" target="_blank">DOI: 10.17632/23553sm4tn</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="my-5">
+      <h2>Achievements</h2>
+      <ul>
+        <li>20+ peer-reviewed publications (IEEE, Scopus, ACM)</li>
+        <li>Google Scholar Citations: 100+ | Scopus Citations: 40+</li>
+        <li>
+          Developed innovative Numerical Methods course with ML applications
+        </li>
+        <li>Successfully mentored 50+ students in final year projects</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 mb-3">
+      <hr />
+      <p>
+        © 2025 Tashreef Muhammad |
+        <a href="https://github.com/TashreefMuhammad" target="_blank">GitHub</a>
+      </p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="JS/programs.js"></script>
+</body>
+
 </html>
