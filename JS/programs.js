@@ -110,3 +110,14 @@ const config = {
 };
 
 new Chart(document.getElementById('experienceChart').getContext('2d'), config);
+
+  window.addEventListener('scroll', function () {
+    const icons = document.getElementById('navbar-icons');
+    const scrollThreshold = 500; // adjust as needed
+
+    if (window.scrollY > scrollThreshold) {
+      icons.classList.remove('hidden');
+    } else {
+      icons.classList.add('hidden');
+    }
+  });
