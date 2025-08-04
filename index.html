@@ -40,50 +40,46 @@
   </div>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
-    <a class="navbar-brand font-weight-bold" href="#">Tashreef Muhammad</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a href="#myself" class="nav-link">About</a></li>
-        <li class="nav-item">
-          <a href="#research-profiles" class="nav-link">Research Profiles</a>
-        </li>
-        <li class="nav-item">
-          <a href="#education" class="nav-link">Education</a>
-        </li>
-        <li class="nav-item">
-          <a href="#experience" class="nav-link">Experience</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Research</a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#journal-papers">Journal Papers</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#conference-papers">Conference Papers</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#book-chapters">Book Chapters</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#conference-proceedings">Conference Proceedings</a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#preprint-papers">Preprints</a>
-            </li>
-            <li><a class="dropdown-item" href="#datasets">Datasets</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a href="#achievements" class="nav-link">Achievements</a>
-        </li>
-      </ul>
+    <div class="container-fluid">
+      <div class="d-flex align-items-center">
+        <a class="navbar-brand font-weight-bold me-2" href="#">Tashreef Muhammad</a>
+        <div id="navbar-icons" class="icon-container hidden">
+          <a href="mailto:tashreef.muhammad@gmail.com" target="_blank" class="me-2">
+            <i class="fas fa-envelope contact-icon"></i>
+          </a>
+          <a href="https://linkedin.com/in/tashreefmuhammad" target="_blank">
+            <i class="fab fa-linkedin contact-icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#myself" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Research</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#journal-papers">Journal Papers</a></li>
+              <li><a class="dropdown-item" href="#conference-papers">Conference Papers</a></li>
+              <li><a class="dropdown-item" href="#book-chapters">Book Chapters</a></li>
+              <li><a class="dropdown-item" href="#conference-proceedings">Conference Proceedings</a></li>
+              <li><a class="dropdown-item" href="#preprint-papers">Preprints</a></li>
+              <li><a class="dropdown-item" href="#datasets">Datasets</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
+
 
   <!-- Main Content -->
   <div class="container pt-5 mt-5">
@@ -118,7 +114,8 @@
       </div>
       <div class="row align-items-center">
         <!-- Contact Icons below Image -->
-        <div class="col-md-4 d-flex justify-content-center align-items-center contact-info">
+        <div id="profile-icons"
+          class="col-md-4 d-flex justify-content-center align-items-center contact-info icon-container">
           <a href="mailto:tashreef.muhammad@gmail.com" target="_blank" title="Email">
             <i class="fas fa-envelope contact-icon"></i>
           </a>
@@ -140,31 +137,60 @@
       </div>
     </section>
 
-    <section id="skills" class="my-5">
-      <div class="container">
-        <h2 class="section-title text-center">Skills</h2>
-        <div class="profile-scroll-container row text-center mt-4">
-          <div class="col-6 col-md-3 mb-4">
-            <img
-              src="https://www.citypng.com/public/uploads/preview/hd-python-logo-symbol-transparent-png-735811696257415dbkifcuokn.png"
-              alt="Python" class="skill-icon mb-2" />
-            <p>Python</p>
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <img
-              src="https://cdn.imgbin.com/22/13/6/imgbin-the-c-programming-language-computer-icons-computer-programming-source-code-programming-c-logo-eZjx3GXN6szp5q0e8JdmnCazc.jpg"
-              alt="C++" class="skill-icon mb-2" />
-            <p>C++</p>
-          </div>
-          <div class="col-6 col-md-3 mb-4">
-            <img src="https://icon-library.com/images/spreadsheet-icon-png/spreadsheet-icon-png-13.jpg"
-              alt="Spreadsheets" class="skill-icon mb-2" />
-            <p>Spreadsheets</p>
-          </div>
-          <!-- Add more skills similarly -->
+    <section id="skills" class="container mt-5">
+      <h2 class="mb-4 text-center fw-bold">Skills</h2>
+
+      <!-- Tab navigation -->
+      <ul class="nav nav-tabs justify-content-center rounded-pill bg-light p-2 mb-3 shadow-sm" id="skillsTab"
+        role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active rounded-pill px-4" id="languages-tab" data-bs-toggle="tab"
+            data-bs-target="#languages" type="button" role="tab" aria-controls="languages" aria-selected="true">
+            💻 Programming
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools"
+            type="button" role="tab" aria-controls="tools" aria-selected="false">
+            🧰 Tools
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link rounded-pill px-4" id="research-tab" data-bs-toggle="tab" data-bs-target="#research"
+            type="button" role="tab" aria-controls="research" aria-selected="false">
+            📚 Research
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab content -->
+      <div class="tab-content p-4 border shadow-sm bg-white rounded" id="skillsTabContent">
+        <div class="tab-pane fade show active text-center" id="languages" role="tabpanel"
+          aria-labelledby="languages-tab">
+          <span class="badge m-2" style="background-color: #577cc2cb;">C</span>
+          <span class="badge m-2" style="background-color: #577cc2cb;">C++</span>
+          <span class="badge m-2" style="background-color: #577cc2cb;">Java</span>
+          <span class="badge m-2" style="background-color: #577cc2cb;">Python</span>
+        </div>
+        <div class="tab-pane fade text-center" id="tools" role="tabpanel" aria-labelledby="tools-tab">
+          <span class="badge bg-success m-2">LaTeX</span>
+          <span class="badge bg-success m-2">Google Sheets</span>
+          <span class="badge bg-success m-2">MATLAB</span>
+          <span class="badge bg-success m-2">Jupyter Notebook</span>
+          <span class="badge bg-success m-2">VS Code</span>
+        </div>
+        <div class="tab-pane fade text-center" id="research" role="tabpanel" aria-labelledby="research-tab">
+          <span class="badge bg-info m-2">Machine Learning</span>
+          <span class="badge bg-info m-2">Computer Vision</span>
+          <span class="badge bg-info m-2">Natural Language Processing</span>
+          <span class="badge bg-info m-2">Time Series Analysis</span>
+          <span class="badge bg-info m-2">Stock Market Analysis</span>
+          <span class="badge bg-info m-2">Meta-heuristics</span>
         </div>
       </div>
     </section>
+
+
 
     <!-- Research Profiles Section -->
     <section id="research-profiles">
