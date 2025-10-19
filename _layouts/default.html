@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title }} — {% endif %}Tashreef Muhammad</title>
   <meta name="description" content="NLP & Sequence Modeling (Transformers, Time Series) · XAI for Medical/Agricultural Imaging — Lecturer, CSE @ Southeast University"/>
-  <link rel="stylesheet" href="{{ '/CSS/styles.css' | relative_url }}"/>
+  <link rel="stylesheet" href="/CSS/styles.css"/>
   <style>html{scroll-behavior:smooth}</style>
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='62' fill='%230EA5E9'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-size='68' fill='white' font-family='Segoe UI,Arial,sans-serif'%3ET%3C/text%3E%3C/svg%3E">
 </head>
@@ -13,6 +13,9 @@
   {% include header.html %}
   {{ content }}
   {% include footer.html %}
-  <script src="{{ '/JS/main.js' | relative_url }}"></script>
+
+  <!-- Give JS a base; no Liquid inside JS files -->
+  <script>window.__BASE = '';</script>
+  <script src="/JS/main.js"></script>
 </body>
 </html>
