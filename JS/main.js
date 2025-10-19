@@ -141,7 +141,7 @@ function renderProjects(items, { containerSel, featuredOnly = true, limit = 3 } 
 }
 
 function renderPublications(items, { containerSel, selectedOnly = true, limit = 5 } = {}) {
-  const ul = $(containerSel); if (!ul || !items) return; ul.innerHTML = '';
+  const ul = document.querySelector(containerSel); if (!ul || !items) return; ul.innerHTML = '';
   let list = items.slice().sort((a, b) => (b.year || 0) - (a.year || 0));
   if (selectedOnly) list = list.filter(p => p.selected);
   if (limit) list = list.slice(0, limit);
@@ -149,9 +149,10 @@ function renderPublications(items, { containerSel, selectedOnly = true, limit = 
   for (const p of list) {
     const li = document.createElement('li');
 
-    // title + type badge
+    // title + type badge + copy bibtex
     const head = document.createElement('div');
-    head.style.display = 'flex'; head.style.gap = '8px'; head.style.alignItems = 'baseline'; head.style.flexWrap = 'wrap';
+    head.style.display = 'flex'; head.style.gap = '8px'; head.style.alignItems = 'center'; head.style.flexWrap = 'wrap';
+
     const title = document.createElement('strong'); title.textContent = p.title || 'Untitled';
     head.appendChild(title);
 
@@ -160,6 +161,17 @@ function renderPublications(items, { containerSel, selectedOnly = true, limit = 
       badge.textContent = p.type.toUpperCase();
       head.appendChild(badge);
     }
+
+    if (p.bibtex) {
+      const btn = document.createElement('button'); btn.className = 'btn-mini'; btn.type = 'button';
+      btn.textContent = 'Copy BibTeX';
+      btn.addEventListener('click', async () => {
+        try { await navigator.clipboard.writeText(p.bibtex); btn.textContent = 'Copied!'; setTimeout(()=>btn.textContent='Copy BibTeX', 1200); }
+        catch { alert('Copy failed'); }
+      });
+      head.appendChild(btn);
+    }
+
     li.appendChild(head);
 
     // meta line
@@ -174,23 +186,35 @@ function renderPublications(items, { containerSel, selectedOnly = true, limit = 
       li.appendChild(metaEl);
     }
 
+    // status (under review)
+    if (p.status === 'under_review' && (p.submitted_to || p.publisher || p.journal_rank)) {
+      const st = document.createElement('div'); st.className = 'muted small';
+      const parts = ['Under review'];
+      if (p.submitted_to) parts.push(`at ${p.submitted_to}`);
+      const extra = [];
+      if (p.publisher) extra.push(p.publisher);
+      if (p.journal_rank) extra.push(p.journal_rank);
+      if (extra.length) parts.push(`(${extra.join(', ')})`);
+      st.textContent = parts.join(' ');
+      li.appendChild(st);
+    }
+
     // links
     const links = [];
-    if (p.doi)      links.push({label:'DOI', href:p.doi});
-    if (p.preprint) links.push({label:'Preprint', href:p.preprint});
-    if (p.code)     links.push({label:'Code', href:p.code});
+    if (p.doi)          links.push({label:'DOI', href:p.doi});
+    if (p.preprint)     links.push({label:'Preprint', href:p.preprint});
+    if (p.preprint_doi) links.push({label:'Preprint DOI', href:p.preprint_doi});
+    if (p.code)         links.push({label:'Code', href:p.code});
     if (links.length) {
       const linksEl = document.createElement('div'); linksEl.className = 'links';
-      links.forEach((l, i) => {
-        const a = document.createElement('a'); a.href = l.href; a.textContent = l.label; a.rel = 'noopener';
-        linksEl.appendChild(a); if (i < links.length - 1) linksEl.append(' · ');
-      });
+      links.forEach((l, i) => { const a = document.createElement('a'); a.href = l.href; a.textContent = l.label; a.rel='noopener'; linksEl.appendChild(a); if (i < links.length - 1) linksEl.append(' · '); });
       li.appendChild(linksEl);
     }
 
     ul.appendChild(li);
   }
 }
+
 
 function renderDatasets(items, { containerSel } = {}) {
   const list = $(containerSel); if (!list || !items) return; list.innerHTML = '';

@@ -351,6 +351,18 @@ a:hover {
   opacity: .9;
 }
 
+.btn-mini{
+  border:1px solid var(--line);
+  background:var(--pill-bg);
+  color:var(--fg);
+  border-radius:8px;
+  font-size:.8rem;
+  padding:4px 8px;
+  cursor:pointer;
+}
+.btn-mini:hover{ border-color:var(--brand); color:var(--brand); }
+
+
 .site-footer {
   padding: 20px 0 40px;
 }
