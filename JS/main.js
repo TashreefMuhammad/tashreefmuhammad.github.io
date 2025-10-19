@@ -1,4 +1,4 @@
-// ---------- THEME TOGGLE (Light → Dark → Auto) ----------
+// ---------- THEME TOGGLE (Light → Dark → Auto with explicit "Auto" icon) ----------
 (() => {
   const storageKey = 'theme';
   const mql = window.matchMedia('(prefers-color-scheme: dark)');
@@ -8,14 +8,18 @@
     const btn = document.getElementById(btnId);
     if (choice === 'light') {
       document.documentElement.setAttribute('data-theme', 'light');
-      if (btn) { btn.textContent = '🌙'; btn.title = 'Switch to dark'; }
+      if (btn) { btn.textContent = '🌙'; btn.title = 'Switch to dark'; btn.setAttribute('aria-label','Switch to dark theme'); }
     } else if (choice === 'dark') {
       document.documentElement.setAttribute('data-theme', 'dark');
-      if (btn) { btn.textContent = '☀️'; btn.title = 'Switch to light'; }
+      if (btn) { btn.textContent = '☀️'; btn.title = 'Switch to light'; btn.setAttribute('aria-label','Switch to light theme'); }
     } else {
-      document.documentElement.removeAttribute('data-theme');
+      document.documentElement.removeAttribute('data-theme'); // Auto = follow system
       const dark = mql.matches;
-      if (btn) { btn.textContent = dark ? '☀️' : '🌙'; btn.title = dark ? 'Switch to light' : 'Switch to dark'; }
+      if (btn) {
+        btn.textContent = '🖥️';                 // <-- explicit Auto icon
+        btn.title = `Auto (system is ${dark?'dark':'light'})`;
+        btn.setAttribute('aria-label','Auto theme (follow system)');
+      }
     }
   }
 
@@ -23,12 +27,22 @@
 
   document.addEventListener('DOMContentLoaded', () => {
     apply(choice);
+
     const btn = document.getElementById(btnId);
     if (btn) btn.addEventListener('click', () => {
       choice = (choice === 'dark') ? 'light' : (choice === 'light') ? 'auto' : 'dark';
       localStorage.setItem(storageKey, choice);
       apply(choice);
     });
+
+    // Sticky header shadow on scroll
+    const sh = document.querySelector('.site-header');
+    const onScroll = () => {
+      if (!sh) return;
+      if (window.scrollY > 8) sh.classList.add('scrolled'); else sh.classList.remove('scrolled');
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
   });
 
   mql.addEventListener('change', () => {
