@@ -1,17 +1,22 @@
 [
   {
-    "name": "Vashantor",
+    "name": "Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language",
     "blurb": "Dialect→Bangla MT",
-    "doi": "https://data.mendeley.com/datasets/bj5jgk878b/2"
+    "doi": "https://data.mendeley.com/datasets/bj5jgk878b/"
   },
   {
-    "name": "ANCHOLIK-NER",
+    "name": "ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named Entity Recognition",
     "blurb": "Regional NER (Bangla)",
-    "doi": "https://data.mendeley.com/datasets/gbkszkt8z3/3"
+    "doi": "https://data.mendeley.com/datasets/gbkszkt8z3/"
   },
   {
-    "name": "DSE Historical Data",
+    "name": "Dhaka Stock Exchange Historical Data",
     "blurb": "Dhaka Stock Exchange",
-    "doi": "https://data.mendeley.com/datasets/23553sm4tn/3"
+    "doi": "https://data.mendeley.com/datasets/23553sm4tn/"
+  },
+  {
+    "name": "BIDWESH: A Bangla Regional Based Hate Speech Detection dataset",
+    "blurb": "Bangla Regional Hate Speech Data",
+    "doi": "https://data.mendeley.com/datasets/bpkrvf882k/"
   }
 ]
