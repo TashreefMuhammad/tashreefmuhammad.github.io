@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Transformer-based Deep Learning for Stock Prediction",
+    "venue": "IJCIA",
+    "year": 2023,
+    "doi": "https://doi.org/10.1142/S146902682350013X",
+    "selected": true
+  },
+  {
+    "title": "Improving Bangla Regional Dialect Detection using BERT, LLMs & XAI",
+    "venue": "IEEE COMPAS",
+    "year": 2024,
+    "doi": "https://doi.org/10.1109/COMPAS60761.2024.10796843",
+    "selected": true
+  },
+  {
+    "title": "ViT/Transfer Learning for Brain Disease Detection (XAI)",
+    "venue": "IEEE ICCIT",
+    "year": 2024,
+    "doi": "https://doi.org/10.1109/ICCIT64611.2024.11022039",
+    "selected": true
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Vashantor",
+    "badge": "Benchmark",
+    "description": "Dialect→Bangla MT benchmark (dataset + baselines).",
+    "links": {
+      "dataset": "https://data.mendeley.com/datasets/bj5jgk878b/2",
+      "code": "https://github.com/Mukaffi28/Vashantor-A-Large-scale-Multilingual-Benchmark-Dataset"
+    },
+    "tags": [
+      "NLP",
+      "MT",
+      "Bangla"
+    ],
+    "featured": true
+  },
+  {
+    "title": "ANCHOLIK-NER",
+    "badge": "Benchmark",
+    "description": "Bangla regional NER (dialects/variants).",
+    "links": {
+      "dataset": "https://data.mendeley.com/datasets/gbkszkt8z3/3"
+    },
+    "tags": [
+      "NER",
+      "Bangla",
+      "Dataset"
+    ],
+    "featured": true
+  },
+  {
+    "title": "Stock Transformer (DSE)",
+    "badge": "Reproducible",
+    "description": "Transformer + time2vec forecasting (Dhaka Stock Exchange).",
+    "links": {
+      "paper": "https://doi.org/10.1142/S146902682350013X",
+      "dataset": "https://data.mendeley.com/datasets/23553sm4tn/3",
+      "code": "https://github.com/TashreefMuhammad/Transformer-to-predict-stock-market-using-time2vec"
+    },
+    "tags": [
+      "Time-series",
+      "Transformer",
+      "Finance"
+    ],
+    "featured": true
+  }
+]
