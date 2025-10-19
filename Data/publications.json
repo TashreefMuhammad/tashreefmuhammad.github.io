@@ -1,23 +1,103 @@
 [
   {
-    "title": "Transformer-based Deep Learning for Stock Prediction",
-    "venue": "IJCIA",
+    "title": "Transformer-based Deep Learning Model for Stock Price Prediction: A Case Study on Bangladesh Stock Market",
+    "authors": "Muhammad, T.; Aftab, A. B.; Ahsan, M. M.; Muhu, M. M. M.; Ibrahim, M.; Khan, S. I.; Alam, M. S.",
+    "venue": "International Journal of Computational Intelligence and Applications",
     "year": 2023,
+    "type": "journal",
     "doi": "https://doi.org/10.1142/S146902682350013X",
+    "preprint": "https://arxiv.org/abs/2208.08300",
+    "code": "https://github.com/TashreefMuhammad/Transformer-to-predict-stock-market-using-time2vec",
     "selected": true
   },
   {
-    "title": "Improving Bangla Regional Dialect Detection using BERT, LLMs & XAI",
+    "title": "Improving Bangla Regional Dialect Detection Using BERT, LLMs, and XAI",
+    "authors": "Paul, B.; Preotee, F. F.; Muhammad, T.; et al.",
     "venue": "IEEE COMPAS",
     "year": 2024,
+    "type": "conference",
     "doi": "https://doi.org/10.1109/COMPAS60761.2024.10796843",
+    "preprint": "",
+    "code": "",
     "selected": true
   },
   {
-    "title": "ViT/Transfer Learning for Brain Disease Detection (XAI)",
+    "title": "An Exploratory Approach Towards Investigating and Explaining Vision Transformer and Transfer Learning for Brain Disease Detection",
+    "authors": "Shuvashis, S. S.; Refat, S. R.; Preotee, F. F.; Islam, S.; Muhammad, T.; et al.",
     "venue": "IEEE ICCIT",
     "year": 2024,
+    "type": "conference",
     "doi": "https://doi.org/10.1109/ICCIT64611.2024.11022039",
+    "preprint": "",
+    "code": "",
     "selected": true
+  },
+  {
+    "title": "Advanced CNN and XAI-based Architecture for Interpretable Brain MRI Analysis",
+    "authors": "Shuvashis, S. S.; Refat, S. R.; Preotee, F. F.; Muhammad, T.",
+    "venue": "ACM ICCA",
+    "year": 2024,
+    "type": "conference",
+    "doi": "https://doi.org/10.1145/3723178.3723220",
+    "preprint": "",
+    "code": "",
+    "selected": false
+  },
+  {
+    "title": "Explainable AI-Enhanced Deep Learning for Pumpkin Leaf Disease Detection: A Comparative Analysis of CNN Architectures",
+    "authors": "Khandaker, M. A. A.; Raha, Z. S.; Islam, S.; Muhammad, T.",
+    "venue": "IEEE ICCIT",
+    "year": 2024,
+    "type": "conference",
+    "doi": "https://doi.org/10.1109/ICCIT64611.2024.11021957",
+    "preprint": "",
+    "code": "",
+    "selected": false
+  },
+
+
+  {
+    "title": "Vashantor: Large-scale Multilingual Benchmark for Translating Bangla Regional Dialects to Bangla",
+    "authors": "Faria, F. T. J.; Moin, M. B.; Wase, A. A.; Muhammad, T.; et al.",
+    "venue": "Preprint / Submitted to Elsevier Array",
+    "year": 2024,
+    "type": "preprint",
+    "doi": "",
+    "preprint": "https://arxiv.org/abs/2311.11142",
+    "code": "https://github.com/Mukaffi28/Vashantor-A-Large-scale-Multilingual-Benchmark-Dataset",
+    "selected": false
+  },
+  {
+    "title": "ANCHOLIK-NER: Bangla Regional Named Entity Recognition Benchmark",
+    "authors": "Multiple authors incl. Muhammad, T.",
+    "venue": "Preprint / Submitted to PLOS ONE",
+    "year": 2025,
+    "type": "preprint",
+    "doi": "",
+    "preprint": "https://arxiv.org/abs/2502.11198",
+    "code": "",
+    "selected": false
+  },
+  {
+    "title": "BIDWESH: Bangla Regional Hate Speech Detection Dataset",
+    "authors": "Multiple authors incl. Muhammad, T.",
+    "venue": "arXiv preprint",
+    "year": 2025,
+    "type": "preprint",
+    "doi": "",
+    "preprint": "",
+    "code": "",
+    "selected": false
+  },
+  {
+    "title": "VR-FuseNet: Fusion of Heterogeneous Fundus Data with Explainable Network for Diabetic Retinopathy",
+    "authors": "Multiple authors incl. Muhammad, T.",
+    "venue": "Submitted to Biomedical Materials and Devices",
+    "year": 2025,
+    "type": "preprint",
+    "doi": "",
+    "preprint": "",
+    "code": "",
+    "selected": false
   }
 ]

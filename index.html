@@ -4,7 +4,7 @@ title: Home
 ---
 <main class="container">
 
-  <section aria-labelledby="work-title" class="section">
+  <section aria-labelledby="work-title" class="section" id="work">
     <h2 id="work-title">What I work on</h2>
     <div class="chips">
       <span class="chip">Bangla NLP (low-resource)</span>
@@ -25,12 +25,51 @@ title: Home
 
   <section aria-labelledby="about" class="section" id="about">
     <div class="about-grid">
-      <!-- Put your image at Images/me.jpg -->
       <img src="/Images/me.jpg" alt="Tashreef Muhammad" class="avatar">
       <div>
         <h2 id="about">About</h2>
         <p>I’m a Lecturer (CSE, Southeast University) focused on low-resource Bangla NLP, sequence models for time series, and explainable deep learning for medical/agricultural imaging. I value reproducibility and clarity: most projects ship code, DOIs for datasets, and short READMEs so others can build on the work. I also mentor undergraduate research teams and integrate practical tooling (Git/GitHub, CI, documentation) into teaching.</p>
       </div>
+    </div>
+  </section>
+
+  <!-- NEW: Experience -->
+  <section aria-labelledby="experience" class="section" id="experience">
+    <h2 id="experience">Experience</h2>
+    <div class="exp-list">
+      <article class="exp">
+        <div class="exp-head">
+          <strong>Lecturer, CSE</strong>
+          <span class="muted small">Oct 2022–Present</span>
+        </div>
+        <div class="muted small">Southeast University, Dhaka</div>
+        <ul class="bullets">
+          <li>Supervise UG research in NLP, time-series, and XAI; publishable results with open code/data.</li>
+          <li>Course infrastructure: hands-on Git/GitHub, documentation; practical coding walkthroughs.</li>
+        </ul>
+      </article>
+
+      <article class="exp">
+        <div class="exp-head">
+          <strong>Adjunct Faculty</strong>
+          <span class="muted small">Feb 2022–Sep 2022</span>
+        </div>
+        <div class="muted small">Ahsanullah University of Science and Technology (AUST), Dhaka</div>
+        <ul class="bullets">
+          <li>Taught software development (MVC, C#), advised projects.</li>
+        </ul>
+      </article>
+
+      <article class="exp">
+        <div class="exp-head">
+          <strong>IT Intern</strong>
+          <span class="muted small">Dec 2021–Feb 2022</span>
+        </div>
+        <div class="muted small">Akij Assets Limited, Dhaka</div>
+        <ul class="bullets">
+          <li>ERP feature modules (requirements → release); secure report generation; third-party API integration.</li>
+        </ul>
+      </article>
     </div>
   </section>
 

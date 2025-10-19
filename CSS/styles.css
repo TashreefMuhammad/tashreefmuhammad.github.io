@@ -172,6 +172,18 @@ a:hover {
   text-decoration: none;
 }
 
+/* Active nav link while scrolling */
+.nav a.active {
+  border-bottom: 2px solid var(--brand);
+  color: var(--brand);
+}
+
+/* Avoid sticky-header overlap when jumping to anchors */
+.section[id] {
+  scroll-margin-top: 96px;
+}
+
+
 /* ---------- Sections ---------- */
 .section {
   padding: 28px 0;
@@ -388,3 +400,7 @@ a:hover {
   --pill-bg: #0E131B;
   --pill-border: #1F2937;
 }
+
+.exp-list{ display:grid; gap:16px; }
+.exp{ border:1px solid var(--line); border-radius:12px; padding:12px; background:var(--card-bg); }
+.exp-head{ display:flex; justify-content:space-between; align-items:baseline; gap:12px; }
