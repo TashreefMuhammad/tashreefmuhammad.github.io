@@ -1,26 +1,31 @@
 <header class="site-header">
-  <div class="container header-grid">
-    <div>
-      <h1 class="title"><a href="/index.html" style="text-decoration:none;color:inherit">Tashreef Muhammad</a></h1>
+  <!-- Top utility bar: always-visible CTAs -->
+  <div class="container topbar">
+    <div class="cta-wrap">
+      <a class="cta" href="mailto:tashreef.muhammad@gmail.com" title="Email">✉️ <span>Email</span></a>
+      <a class="cta" href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ" title="Google Scholar">🎓 <span>Scholar</span></a>
+      <a class="cta" href="https://orcid.org/0000-0002-9816-2547" title="ORCID">🆔 <span>ORCID</span></a>
+      <a class="cta" href="https://www.linkedin.com/in/tashreefmuhammad" title="LinkedIn">🔗 <span>LinkedIn</span></a>
+      <a class="cta" href="https://github.com/TashreefMuhammad" title="GitHub">🐙 <span>GitHub</span></a>
+      <a class="cta strong" href="/cv/Tashreef_Muhammad_CV.pdf" title="CV (PDF)">📄 <span>CV</span></a>
+    </div>
+    <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🖥️</button>
+  </div>
+
+  <!-- Main header row: name, tagline, primary nav -->
+  <div class="container headrow">
+    <div class="brand">
+      <h1 class="title"><a href="/index.html">Tashreef Muhammad</a></h1>
       <p class="tagline">Low-resource NLP · XAI for Medical & Agricultural Imaging · Time-series Analysis</p>
     </div>
     <nav class="nav">
+      <a href="/index.html#about">About</a>
       <a href="/index.html#featured">Featured</a>
-      <a href="/index.html#publications">Publications</a>
+      <a href="/projects.html">Projects</a>
+      <a href="/publications.html">Publications</a>
       <a href="/index.html#datasets">Datasets</a>
       <a href="/index.html#teaching">Teaching</a>
       <a href="/index.html#contact">Contact</a>
-      <a href="/projects.html">Projects</a>
-      <a href="/publications.html">All Pubs</a>
-      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌙</button>
     </nav>
   </div>
-
-  {% if page.show_metrics %}
-  <div class="container metrics">
-    <span class="pill"><strong id="pubs-total">22</strong> publications (<strong id="pubs-peer">13</strong> peer-reviewed)</span>
-    <span class="pill">Citations: <strong id="cites-gs">131</strong> GS / <strong id="cites-scopus">55</strong> Scopus</span>
-    <span class="muted small" id="metrics-asof">as of Oct 2025</span>
-  </div>
-  {% endif %}
 </header>

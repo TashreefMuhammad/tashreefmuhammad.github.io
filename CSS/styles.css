@@ -1,3 +1,4 @@
+/* ---------- Theme variables ---------- */
 :root {
   --bg: #ffffff;
   --fg: #111827;
@@ -7,11 +8,10 @@
   --chip-bg: #F4F6F8;
   --card-bg: #fff;
 
-  /* header + pills */
+  /* Header */
   --header-bg: #ffffff;
-  /* solid for readability */
+  --topbar-bg: #F9FAFB;
   --pill-bg: #ffffff;
-  /* pills adapt with theme overrides */
   --pill-border: #E5E7EB;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .container {
-  width: min(1024px, 92vw);
+  width: min(1100px, 92vw);
   margin-inline: auto;
 }
 
@@ -46,22 +46,106 @@ body {
   color: var(--muted);
 }
 
-.site-header {
-  border-bottom: 1px solid var(--line);
-  padding: 28px 0 18px;
-  background: linear-gradient(180deg, #fff, #fcfdff);
+a {
+  color: var(--brand);
+  text-decoration: none;
 }
 
-.header-grid {
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Sticky header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+.site-header.scrolled {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+  border-bottom-color: transparent;
+}
+
+/* Top utility bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  background: var(--topbar-bg);
+  border-bottom: 1px solid var(--line);
+}
+
+.cta-wrap {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cta {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  border: 1px solid var(--line);
+  background: var(--pill-bg);
+  color: var(--fg);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: .92rem;
+}
+
+.cta:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+  text-decoration: none;
+}
+
+.cta.strong {
+  border-color: var(--brand);
+}
+
+/* Theme toggle button */
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.icon-btn:hover {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+
+/* Main header row */
+.headrow {
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 16px;
   align-items: end;
+  padding: 14px 0;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.85rem;
   margin: 0;
+}
+
+.title a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .tagline {
@@ -71,13 +155,12 @@ body {
 
 .nav {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .nav a {
-  text-decoration: none;
   color: var(--fg);
   border-bottom: 2px solid transparent;
   padding-bottom: 3px;
@@ -86,27 +169,10 @@ body {
 .nav a:hover {
   border-color: var(--brand);
   color: var(--brand);
+  text-decoration: none;
 }
 
-.metrics {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 12px;
-}
-
-.pill {
-  display: inline-block;
-  border: 1px solid var(--pill-border);
-  background: var(--pill-bg);
-  padding: 6px 10px;
-  border-radius: 999px;
-  font-size: .9rem;
-  color: var(--fg);
-}
-
-
+/* ---------- Sections ---------- */
 .section {
   padding: 28px 0;
   border-bottom: 1px solid var(--line);
@@ -167,6 +233,7 @@ body {
   }
 }
 
+/* ---------- Cards / lists ---------- */
 .card-grid {
   display: grid;
   gap: 16px;
@@ -193,7 +260,7 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1100px) {
   .card {
     grid-column: span 4;
   }
@@ -221,7 +288,6 @@ body {
 
 .links a {
   color: var(--brand);
-  text-decoration: none;
 }
 
 .links a:hover {
@@ -273,45 +339,11 @@ body {
   opacity: .9;
 }
 
-.icon-btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  background: transparent;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 1;
-  margin-left: 8px;
-}
-
-.icon-btn:hover {
-  border-color: var(--brand);
-  color: var(--brand);
-}
-
-.contact-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .site-footer {
   padding: 20px 0 40px;
 }
 
-a {
-  color: var(--brand);
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* System dark preference baseline (used when in Auto and system = dark) */
+/* ---------- System dark fallback (Auto when system=dark) ---------- */
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #0B0F16;
@@ -322,75 +354,13 @@ a:hover {
     --card-bg: #0E131B;
     --brand: #38BDF8;
     --header-bg: #0B0F16;
+    --topbar-bg: #0B0F16;
     --pill-bg: #0E131B;
     --pill-border: #1F2937;
   }
 }
 
-
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: var(--header-bg);
-  border-bottom: 1px solid var(--line);
-  padding: 18px 0 14px;
-}
-
-.site-header.scrolled {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
-  border-bottom-color: transparent;
-}
-
-.badge {
-  background: #0B1A22;
-  color: #9DE0FF;
-  border-color: #0F2B3A;
-}
-
-
-/* EXPLICIT THEME OVERRIDES — LAST so they win */
-:root[data-theme="light"] {
-  --bg: #fff;
-  --fg: #111827;
-  --muted: #6B7280;
-  --line: #E5E7EB;
-  --chip-bg: #F4F6F8;
-  --card-bg: #fff;
-  --brand: #0EA5E9;
-}
-
-:root[data-theme="dark"] {
-  --bg: #0B0F16;
-  --fg: #F3F4F6;
-  --muted: #9CA3AF;
-  --line: #1F2937;
-  --chip-bg: #111827;
-  --card-bg: #0E131B;
-  --brand: #38BDF8;
-}
-
-:root[data-theme="dark"] .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: var(--header-bg);
-  border-bottom: 1px solid var(--line);
-  padding: 18px 0 14px;
-}
-
-.site-header.scrolled {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
-  border-bottom-color: transparent;
-}
-
-:root[data-theme="dark"] .badge {
-  background: #0B1A22;
-  color: #9DE0FF;
-  border-color: #0F2B3A;
-}
-
-/* EXPLICIT THEME OVERRIDES — LAST so they win */
+/* ---------- Explicit overrides (win) ---------- */
 :root[data-theme="light"] {
   --bg: #fff;
   --fg: #111827;
@@ -400,6 +370,7 @@ a:hover {
   --card-bg: #fff;
   --brand: #0EA5E9;
   --header-bg: #ffffff;
+  --topbar-bg: #F9FAFB;
   --pill-bg: #ffffff;
   --pill-border: #E5E7EB;
 }
@@ -413,6 +384,7 @@ a:hover {
   --card-bg: #0E131B;
   --brand: #38BDF8;
   --header-bg: #0B0F16;
+  --topbar-bg: #0B0F16;
   --pill-bg: #0E131B;
   --pill-border: #1F2937;
 }
