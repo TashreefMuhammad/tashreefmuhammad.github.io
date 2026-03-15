@@ -362,7 +362,7 @@ ul, ol { padding-left: 18px; }
 }
 .research-pillar-num {
   font-family: var(--font-display); font-size: 2rem; font-weight: 700;
-  color: var(--line); line-height: 1; margin-bottom: 8px;
+  color: var(--muted); opacity: .35; line-height: 1; margin-bottom: 8px;
   user-select: none;
 }
 .research-pillar h3 { font-size: .95rem; margin: 0 0 6px; }
