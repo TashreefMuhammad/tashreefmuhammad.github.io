@@ -4,8 +4,23 @@ title: Publications
 ---
 <main class="container">
   <section class="section">
-    <h2>All (from JSON)</h2>
+
+    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:var(--sp-lg)">
+      <h2 class="section-title" style="margin:0">Publications</h2>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="button subtle small" href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
+        <a class="button subtle small" href="https://orcid.org/0000-0002-9816-2547" target="_blank" rel="noopener">ORCID ↗</a>
+      </div>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-tab active" data-filter="all">All <span class="pub-count">–</span></button>
+      <button class="filter-tab" data-filter="journal">Journal <span class="pub-count">–</span></button>
+      <button class="filter-tab" data-filter="conference">Conference <span class="pub-count">–</span></button>
+      <button class="filter-tab" data-filter="preprint">Preprint / Under Review <span class="pub-count">–</span></button>
+    </div>
+
     <ul class="pubs"></ul>
-    <p><a class="button subtle" href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ">Google Scholar</a></p>
+
   </section>
 </main>

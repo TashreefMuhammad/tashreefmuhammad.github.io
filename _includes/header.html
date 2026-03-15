@@ -1,59 +1,46 @@
-<header class="site-header">
-  <!-- Top utility bar: always-visible CTAs -->
-  <div class="container topbar">
-    <div class="cta-wrap">
-      <a class="cta" href="mailto:tashreef.muhammad@gmail.com" title="Email"
-        >✉️ <span>Email</span></a
-      >
-      <a
-        class="cta"
-        href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ"
-        title="Google Scholar"
-        >🎓 <span>Scholar</span></a
-      >
-      <a class="cta" href="https://orcid.org/0000-0002-9816-2547" title="ORCID"
-        >🆔 <span>ORCID</span></a
-      >
-      <a
-        class="cta"
-        href="https://www.linkedin.com/in/tashreefmuhammad"
-        title="LinkedIn"
-        >🔗 <span>LinkedIn</span></a
-      >
-      <a class="cta" href="https://github.com/TashreefMuhammad" title="GitHub"
-        >🐙 <span>GitHub</span></a
-      >
-      <a class="cta strong" href="/cv/Tashreef_Muhammad_CV.pdf" title="CV (PDF)"
-        >📄 <span>CV</span></a
-      >
-    </div>
-    <button
-      id="theme-toggle"
-      class="icon-btn"
-      aria-label="Toggle theme"
-      title="Toggle theme"
-    >
-      🖥️
-    </button>
-  </div>
+<header class="site-header" id="site-header">
+  <div class="container header-inner">
 
-  <!-- Main header row: name, tagline, primary nav -->
-  <div class="container headrow">
-    <div class="brand">
-      <h1 class="title"><a href="/index.html">Tashreef Muhammad</a></h1>
-      <p class="tagline">
-        Low-resource NLP · XAI for Medical & Agricultural Imaging · Time-series
-        Analysis
-      </p>
-    </div>
-    <nav class="nav">
+    <a href="/index.html" class="brand-link" aria-label="Tashreef Muhammad – Home">
+      <span class="brand-name">Tashreef Muhammad</span>
+      <span class="brand-role">Lecturer · CSE · Southeast University</span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary navigation">
       <a href="/index.html#about">About</a>
+      <a href="/index.html#research">Research</a>
       <a href="/index.html#experience">Experience</a>
-      <a href="/index.html#featured">Featured</a>
       <a href="/projects.html">Projects</a>
       <a href="/publications.html">Publications</a>
-      <a href="/index.html#datasets">Datasets</a>
+      <a href="/index.html#datasets">Data</a>
       <a href="/index.html#teaching">Teaching</a>
     </nav>
+
+    <div class="header-actions">
+      <a class="btn-cv" href="/cv/Tashreef_Muhammad_CV.pdf" target="_blank" rel="noopener">CV ↗</a>
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🖥️</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
   </div>
 </header>
+
+<!-- Mobile drawer -->
+<div class="mobile-nav-overlay" id="nav-overlay"></div>
+<div class="mobile-nav-drawer" id="nav-drawer" aria-label="Mobile navigation" role="dialog">
+  <button class="mobile-nav-close" id="nav-close">✕ Close</button>
+  <a href="/index.html#about">About</a>
+  <a href="/index.html#research">Research</a>
+  <a href="/index.html#experience">Experience</a>
+  <a href="/projects.html">Projects</a>
+  <a href="/publications.html">Publications</a>
+  <a href="/index.html#datasets">Datasets</a>
+  <a href="/index.html#teaching">Teaching</a>
+  <hr style="border:none;border-top:1px solid var(--line);margin:8px 0"/>
+  <a href="mailto:tashreef.muhammad@gmail.com">✉ Email</a>
+  <a href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ" target="_blank" rel="noopener">🎓 Google Scholar</a>
+  <a href="https://github.com/TashreefMuhammad" target="_blank" rel="noopener">🐙 GitHub</a>
+  <a href="/cv/Tashreef_Muhammad_CV.pdf" target="_blank" rel="noopener">📄 Download CV</a>
+</div>

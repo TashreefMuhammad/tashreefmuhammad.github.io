@@ -2,46 +2,79 @@
   {
     "title": "Vashantor",
     "badge": "Benchmark",
-    "description": "Dialect→Bangla MT benchmark (dataset + baselines).",
+    "description": "Large-scale multilingual benchmark for dialect→standard Bangla machine translation. Covers five regional dialects with parallel corpora, baseline models, and evaluation scripts.",
     "links": {
       "dataset": "https://data.mendeley.com/datasets/bj5jgk878b/2",
+      "preprint": "https://arxiv.org/abs/2311.11142",
       "code": "https://github.com/Mukaffi28/Vashantor-A-Large-scale-Multilingual-Benchmark-Dataset"
     },
-    "tags": [
-      "NLP",
-      "MT",
-      "Bangla"
-    ],
+    "tags": ["NLP", "Machine Translation", "Bangla", "Benchmark"],
     "featured": true
   },
   {
     "title": "ANCHOLIK-NER",
     "badge": "Benchmark",
-    "description": "Bangla regional NER (dialects/variants).",
+    "description": "Benchmark dataset for Named Entity Recognition in five Bangla regional dialects. Developed under the IRT/SEU institutional grant (REG-NER project). Under review at PLOS ONE (Q1).",
     "links": {
-      "dataset": "https://data.mendeley.com/datasets/gbkszkt8z3/3"
+      "dataset": "https://data.mendeley.com/datasets/gbkszkt8z3/3",
+      "preprint": "https://arxiv.org/abs/2502.11198"
     },
-    "tags": [
-      "NER",
-      "Bangla",
-      "Dataset"
-    ],
+    "tags": ["NER", "Bangla", "Dataset", "Dialects"],
     "featured": true
   },
   {
     "title": "Stock Transformer (DSE)",
     "badge": "Reproducible",
-    "description": "Transformer + time2vec forecasting (Dhaka Stock Exchange).",
+    "description": "Transformer + Time2Vec architecture for stock price forecasting on the Dhaka Stock Exchange. Includes an open historical dataset, full code, and published results in World Scientific IJCIA.",
     "links": {
       "paper": "https://doi.org/10.1142/S146902682350013X",
       "dataset": "https://data.mendeley.com/datasets/23553sm4tn/3",
-      "code": "https://github.com/TashreefMuhammad/Transformer-to-predict-stock-market-using-time2vec"
+      "code": "https://github.com/TashreefMuhammad/Transformer-to-predict-stock-market-using-time2vec",
+      "preprint": "https://arxiv.org/abs/2208.08300"
     },
-    "tags": [
-      "Time-series",
-      "Transformer",
-      "Finance"
-    ],
+    "tags": ["Time-Series", "Transformer", "Finance", "DSE"],
     "featured": true
+  },
+  {
+    "title": "BIDWESH",
+    "badge": "Dataset",
+    "description": "Bangla regional hate speech detection dataset covering dialectal variation in hateful content. Addresses a critical gap in low-resource language safety research.",
+    "links": {
+      "dataset": "https://data.mendeley.com/datasets/bpkrvf882k/",
+      "preprint": "https://arxiv.org/abs/2507.16183"
+    },
+    "tags": ["NLP", "Hate Speech", "Bangla", "Dataset"],
+    "featured": true
+  },
+  {
+    "title": "VR-FuseNet",
+    "badge": "Under Review",
+    "description": "Fusion of heterogeneous fundus image data with explainable deep learning for diabetic retinopathy classification. Under review at Biomedical Materials and Devices (Springer, Q2).",
+    "links": {
+      "preprint": "https://arxiv.org/abs/2504.21464"
+    },
+    "tags": ["XAI", "Medical Imaging", "Retinopathy", "CNN"],
+    "featured": false
+  },
+  {
+    "title": "Brain MRI XAI",
+    "badge": "Published",
+    "description": "Comparative study of Vision Transformers and CNN architectures with Grad-CAM interpretability for brain disease detection and multi-class abnormality diagnosis on Bangladeshi MRI data.",
+    "links": {
+      "paper": "https://doi.org/10.1109/ICCIT64611.2024.11022039",
+      "preprint": "https://arxiv.org/abs/2505.16039"
+    },
+    "tags": ["XAI", "Vision Transformer", "Brain MRI", "IEEE"],
+    "featured": false
+  },
+  {
+    "title": "Bangla Dialect Identification",
+    "badge": "Published",
+    "description": "BERT, large language models, and XAI applied to Bangla regional dialect detection. Published at IEEE COMPAS 2024.",
+    "links": {
+      "paper": "https://doi.org/10.1109/COMPAS60761.2024.10796843"
+    },
+    "tags": ["NLP", "BERT", "XAI", "Bangla", "IEEE"],
+    "featured": false
   }
 ]

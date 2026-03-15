@@ -2,102 +2,372 @@
 layout: default
 title: Home
 ---
+
+<!-- ================================================
+     HERO
+     ================================================ -->
+<section class="hero" id="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+
+      <p class="hero-pretitle">Academic Portfolio</p>
+      <h1 class="hero-name">Tashreef Muhammad</h1>
+
+      <div class="hero-divider">
+        <div class="hero-divider-line"></div>
+        <div class="hero-divider-dot"></div>
+      </div>
+
+      <p class="hero-role">Lecturer · Computer Science &amp; Engineering · Southeast University, Dhaka</p>
+
+      <div class="metrics-bar">
+        <div class="metric">
+          <span class="metric-value" data-count="22">22</span>
+          <span class="metric-label">Publications</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" data-count="15">15</span>
+          <span class="metric-label">Peer-Reviewed</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" data-count="131">131</span>
+          <span class="metric-label">Citations (GS)</span>
+        </div>
+        <div class="metric">
+          <span class="metric-value" data-count="4">4</span>
+          <span class="metric-label">Open Datasets</span>
+        </div>
+      </div>
+
+      <div class="hero-pillars">
+        <span class="pillar-chip"><span class="dot"></span> Low-Resource Bangla NLP</span>
+        <span class="pillar-chip"><span class="dot"></span> Time-Series Forecasting</span>
+        <span class="pillar-chip"><span class="dot"></span> Explainable AI · Imaging</span>
+      </div>
+
+      <div class="hero-ctas">
+        <a class="hero-cta primary" href="/cv/Tashreef_Muhammad_CV.pdf" target="_blank" rel="noopener">📄 Download CV</a>
+        <a class="hero-cta" href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ" target="_blank" rel="noopener">🎓 Google Scholar</a>
+        <a class="hero-cta" href="mailto:tashreef.muhammad@gmail.com">✉ Email</a>
+        <a class="hero-cta" href="https://github.com/TashreefMuhammad" target="_blank" rel="noopener">🐙 GitHub</a>
+        <a class="hero-cta" href="https://orcid.org/0000-0002-9816-2547" target="_blank" rel="noopener">🆔 ORCID</a>
+      </div>
+
+    </div>
+
+    <div class="hero-photo">
+      <img src="/Images/me.jpg" alt="Tashreef Muhammad" width="150" height="150"/>
+    </div>
+  </div>
+</section>
+
 <main class="container">
 
-  <section aria-labelledby="work-title" class="section" id="work">
-    <h2 id="work-title">What I work on</h2>
-    <div class="chips">
-      <span class="chip">Bangla NLP (low-resource)</span>
-      <span class="chip">Transformers</span>
-      <span class="chip">LLMs</span>
-      <span class="chip">Time-series modeling</span>
-      <span class="chip">XAI</span>
-      <span class="chip">ViT</span>
-      <span class="chip">Medical imaging</span>
-      <span class="chip">Plant disease</span>
-    </div>
-    <ul class="bullets">
-      <li>Low-resource <strong>Bangla NLP</strong> — datasets &amp; benchmarks (dialects, NER, hate speech).</li>
-      <li><strong>Sequence modeling</strong> for time series — transformers/time2vec (finance).</li>
-      <li><strong>Explainable AI</strong> for imaging — ViT / transfer learning + interpretability.</li>
-    </ul>
-  </section>
-
-  <section aria-labelledby="about" class="section" id="about">
+  <!-- ================================================
+       ABOUT
+       ================================================ -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <h2 id="about-heading" class="section-title">About</h2>
     <div class="about-grid">
-      <img src="/Images/me.jpg" alt="Tashreef Muhammad" class="avatar">
+      <img src="/Images/me.jpg" alt="Tashreef Muhammad" class="avatar"/>
       <div>
-        <h2 id="about">About</h2>
-        <p>I’m a Lecturer (CSE, Southeast University) focused on low-resource Bangla NLP, sequence models for time series, and explainable deep learning for medical/agricultural imaging. I value reproducibility and clarity: most projects ship code, DOIs for datasets, and short READMEs so others can build on the work. I also mentor undergraduate research teams and integrate practical tooling (Git/GitHub, CI, documentation) into teaching.</p>
+        <p>I am a Lecturer in Computer Science and Engineering at Southeast University, Dhaka (since October 2022), where I teach core undergraduate courses and supervise student research. My work spans three connected areas: building datasets and benchmarks for <strong>low-resource Bangla NLP</strong> — covering regional dialects, named entities, and hate speech; applying transformer architectures to <strong>time-series forecasting</strong> in financial markets; and developing <strong>explainable deep learning</strong> methods for medical and agricultural imaging.</p>
+        <p>I graduated from Ahsanullah University of Science and Technology (AUST) in 2022 with a CGPA of 3.77/4.00, placing in the top 2% of my cohort (Dean's List of Honour). My research outputs include 22 publications (15 peer-reviewed), four open datasets hosted on Mendeley Data, and reproducible code on GitHub. I serve as Co-Investigator on an institutional grant for the REG-NER project at Southeast University, and hold memberships in IEEE and ACM.</p>
+        <p>I value reproducibility and open science: most projects ship annotated datasets with DOIs, code repositories, and detailed documentation so others can build on the work.</p>
+        <div style="margin-top:12px">
+          <a class="button" href="/cv/Tashreef_Muhammad_CV.pdf" target="_blank" rel="noopener">📄 Full CV (PDF)</a>
+          &nbsp;
+          <a class="button subtle" href="https://www.linkedin.com/in/tashreefmuhammad" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- NEW: Experience -->
-  <section aria-labelledby="experience" class="section" id="experience">
-    <h2 id="experience">Experience</h2>
-    <div class="exp-list">
-      <article class="exp">
-        <div class="exp-head">
-          <strong>Lecturer, CSE</strong>
-          <span class="muted small">Oct 2022–Present</span>
-        </div>
-        <div class="muted small">Southeast University, Dhaka</div>
-        <ul class="bullets">
-          <li>Supervise UG research in NLP, time-series, and XAI; publishable results with open code/data.</li>
-          <li>Course infrastructure: hands-on Git/GitHub, documentation; practical coding walkthroughs.</li>
-        </ul>
-      </article>
+  <!-- ================================================
+       RESEARCH
+       ================================================ -->
+  <section class="section" id="research" aria-labelledby="research-heading">
+    <h2 id="research-heading" class="section-title">Research Focus</h2>
 
-      <article class="exp">
-        <div class="exp-head">
-          <strong>Adjunct Faculty</strong>
-          <span class="muted small">Feb 2022–Sep 2022</span>
-        </div>
-        <div class="muted small">Ahsanullah University of Science and Technology (AUST), Dhaka</div>
-        <ul class="bullets">
-          <li>Taught software development (MVC, C#), advised projects.</li>
-        </ul>
-      </article>
+    <div class="research-grid">
 
-      <article class="exp">
-        <div class="exp-head">
-          <strong>IT Intern</strong>
-          <span class="muted small">Dec 2021–Feb 2022</span>
+      <div class="research-pillar reveal">
+        <div class="research-pillar-num">01</div>
+        <h3>Low-Resource Bangla NLP</h3>
+        <p>Bangla is spoken by over 230 million people, yet computational resources for its regional variants remain scarce. I work on creating annotated datasets, evaluation benchmarks, and models for dialect machine translation, regional named entity recognition, and hate speech detection — contributing infrastructure that can advance NLP in other low-resource languages as well.</p>
+        <div class="research-tags">
+          <span class="chip small">Machine Translation</span>
+          <span class="chip small">Named Entity Recognition</span>
+          <span class="chip small">Hate Speech</span>
+          <span class="chip small">BERT / LLMs</span>
+          <span class="chip small">Benchmark Datasets</span>
         </div>
-        <div class="muted small">Akij Assets Limited, Dhaka</div>
-        <ul class="bullets">
-          <li>ERP feature modules (requirements → release); secure report generation; third-party API integration.</li>
-        </ul>
-      </article>
+      </div>
+
+      <div class="research-pillar reveal">
+        <div class="research-pillar-num">02</div>
+        <h3>Sequence Modeling &amp; Financial ML</h3>
+        <p>Transformer architectures and positional encoding techniques such as Time2Vec bring sequence modeling capabilities from NLP into financial time-series forecasting. I apply these methods to the Dhaka Stock Exchange, where market microstructure and data sparsity present distinct challenges. The work includes open dataset releases to support reproducible evaluation.</p>
+        <div class="research-tags">
+          <span class="chip small">Transformers</span>
+          <span class="chip small">Time2Vec</span>
+          <span class="chip small">Stock Forecasting</span>
+          <span class="chip small">DSE</span>
+          <span class="chip small">Time-Series</span>
+        </div>
+      </div>
+
+      <div class="research-pillar reveal">
+        <div class="research-pillar-num">03</div>
+        <h3>Explainable AI for Imaging</h3>
+        <p>Deep learning models for medical diagnosis and agricultural monitoring are only useful in practice if clinicians and practitioners can understand and trust their outputs. I pair vision transformers and CNN architectures with post-hoc interpretability methods (Grad-CAM, LIME, SHAP) for brain MRI analysis, diabetic retinopathy screening, and plant leaf disease detection.</p>
+        <div class="research-tags">
+          <span class="chip small">Vision Transformer</span>
+          <span class="chip small">Grad-CAM / SHAP</span>
+          <span class="chip small">Medical Imaging</span>
+          <span class="chip small">Plant Pathology</span>
+          <span class="chip small">Transfer Learning</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <section aria-labelledby="featured" class="section" id="featured">
-    <h2 id="featured">Featured</h2>
-    <div class="card-grid"></div>
-    <p><a class="button" href="/projects.html">See all projects</a></p>
+  <!-- ================================================
+       EDUCATION
+       ================================================ -->
+  <section class="section" id="education" aria-labelledby="edu-heading">
+    <h2 id="edu-heading" class="section-title">Education</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">
+          <div class="year">2022</div>
+          <div>Feb 2017 –<br>Feb 2022</div>
+        </div>
+        <div>
+          <div class="timeline-title">B.Sc. in Computer Science and Engineering</div>
+          <div class="timeline-subtitle">Ahsanullah University of Science and Technology (AUST) · Dhaka, Bangladesh</div>
+          <div class="timeline-badge-row">
+            <span class="t-badge gold">CGPA 3.77 / 4.00</span>
+            <span class="t-badge gold">Dean's List of Honour</span>
+            <span class="t-badge gold">Top 2% · Cohort of 139</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Thesis work on transformer-based deep learning for financial time-series prediction.</li>
+            <li>Coursework spanning algorithms, machine learning, computer vision, software engineering, and numerical methods.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <section aria-labelledby="publications" class="section" id="publications">
-    <h2 id="publications">Publications (selected)</h2>
+  <!-- ================================================
+       EXPERIENCE
+       ================================================ -->
+  <section class="section" id="experience" aria-labelledby="exp-heading">
+    <h2 id="exp-heading" class="section-title">Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">
+          <div class="year">2022</div>
+          <div>Oct 2022 –</div>
+          <div><span class="present">Present</span></div>
+        </div>
+        <div>
+          <div class="timeline-title">Lecturer, Department of CSE</div>
+          <div class="timeline-subtitle">Southeast University (SEU) · Dhaka, Bangladesh</div>
+          <div class="timeline-badge-row">
+            <span class="t-badge blue">Full-time</span>
+            <span class="t-badge">Research Supervision</span>
+            <span class="t-badge">Co-Investigator (Grant)</span>
+          </div>
+          <ul class="timeline-bullets">
+            <li>Supervise undergraduate research teams in NLP, time-series forecasting, and XAI; work routinely reaches publication in IEEE and Springer venues.</li>
+            <li>Serve as Co-Investigator on the IRT/SEU institutional research grant for the REG-NER project (regional Bangla NER corpus).</li>
+            <li>Teach six core undergraduate courses; integrate practical tooling — Git/GitHub, CI, documentation standards — into coursework.</li>
+            <li>Contributed to 20+ publications across IEEE conferences, Springer volumes, and journals as supervisor/co-author.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">
+          <div class="year">2022</div>
+          <div>Feb – Sep 2022</div>
+        </div>
+        <div>
+          <div class="timeline-title">Adjunct Faculty</div>
+          <div class="timeline-subtitle">Ahsanullah University of Science and Technology (AUST) · Dhaka</div>
+          <ul class="timeline-bullets">
+            <li>Taught software development (MVC architecture, C#/.NET) and advised final-year project groups.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-date">
+          <div class="year">2021</div>
+          <div>Dec 2021 –<br>Feb 2022</div>
+        </div>
+        <div>
+          <div class="timeline-title">IT Intern</div>
+          <div class="timeline-subtitle">Akij Assets Limited · Dhaka, Bangladesh</div>
+          <ul class="timeline-bullets">
+            <li>Developed ERP feature modules from requirements through release; built secure report generation and integrated third-party APIs.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       GRANTS & FUNDING
+       ================================================ -->
+  <section class="section" id="grants" aria-labelledby="grants-heading">
+    <h2 id="grants-heading" class="section-title">Grants &amp; Funding</h2>
+
+    <div class="grant-item reveal">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:4px">
+        <div class="grant-title">REG-NER: Bangla Regional Named Entity Recognition Corpus</div>
+        <span class="grant-role-badge">Co-Investigator</span>
+      </div>
+      <div class="grant-meta">IRT Institutional Research Grant · Southeast University, Dhaka · 2024–present</div>
+      <div class="grant-meta" style="margin-top:4px">
+        Funding the development of a large-scale annotated NER corpus covering five regional Bangla dialects. Outputs include the ANCHOLIK-NER benchmark dataset (arXiv:2502.11198, under review at PLOS ONE, Q1) and the public Mendeley Data release.
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================================================
+       FEATURED PROJECTS
+       ================================================ -->
+  <section class="section" id="featured" aria-labelledby="featured-heading">
+    <h2 id="featured-heading" class="section-title">Featured Projects</h2>
+    <div class="card-grid"></div>
+    <p style="margin-top:var(--sp-md)"><a class="button" href="/projects.html">All projects →</a></p>
+  </section>
+
+  <!-- ================================================
+       PUBLICATIONS
+       ================================================ -->
+  <section class="section" id="publications" aria-labelledby="pubs-heading">
+    <h2 id="pubs-heading" class="section-title">Selected Publications</h2>
     <ul class="pubs"></ul>
-    <p>
-      <a class="button" href="/publications.html">See all publications</a>
-      <span class="muted small"> · or </span>
-      <a class="button subtle" href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ">Google Scholar</a>
+    <p style="margin-top:var(--sp-md)">
+      <a class="button" href="/publications.html">All publications →</a>
+      <span class="muted small" style="margin-left:8px">or</span>
+      <a class="button subtle" href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ" style="margin-left:8px" target="_blank" rel="noopener">Google Scholar</a>
     </p>
   </section>
 
-  <section aria-labelledby="datasets" class="section" id="datasets">
-    <h2 id="datasets">Datasets</h2>
+  <!-- ================================================
+       DATASETS
+       ================================================ -->
+  <section class="section" id="datasets" aria-labelledby="datasets-heading">
+    <h2 id="datasets-heading" class="section-title">Open Datasets</h2>
+    <p class="muted small" style="margin:0 0 var(--sp-md)">All datasets are publicly archived on Mendeley Data with permanent DOIs.</p>
     <div class="list"></div>
   </section>
 
-  <section aria-labelledby="teaching" class="section" id="teaching">
-    <h2 id="teaching">Teaching</h2>
-    <p>Southeast University — Computer Fundamentals · Structured Programming · Discrete Math · Data Structures · Numerical Methods · Embedded Systems</p>
-    <p class="muted small">Student work gallery: <a href="https://tashreefmuhammad.github.io/SEU-Numerical-Methods-Assignment-Library/">Numerical Methods</a></p>
+  <!-- ================================================
+       AWARDS & HONORS
+       ================================================ -->
+  <section class="section" id="awards" aria-labelledby="awards-heading">
+    <h2 id="awards-heading" class="section-title">Awards &amp; Honours</h2>
+
+    <div class="award-list">
+
+      <div class="award-item reveal">
+        <div class="award-icon">🏅</div>
+        <div class="award-body">
+          <div class="award-name">Dean's List of Honour</div>
+          <div class="award-desc">Ahsanullah University of Science and Technology (AUST), 2022 — Awarded to students graduating in the top 2% of their cohort (139 graduates). Final CGPA: 3.77 / 4.00.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       MEMBERSHIPS & AFFILIATIONS
+       ================================================ -->
+  <section class="section" id="memberships" aria-labelledby="members-heading">
+    <h2 id="members-heading" class="section-title">Memberships &amp; Affiliations</h2>
+
+    <div class="membership-grid">
+
+      <div class="membership-card reveal">
+        <div class="membership-logo">⚡</div>
+        <div>
+          <div class="membership-name">IEEE</div>
+          <div class="membership-grade">Associate Member</div>
+        </div>
+      </div>
+
+      <div class="membership-card reveal">
+        <div class="membership-logo">💻</div>
+        <div>
+          <div class="membership-name">ACM</div>
+          <div class="membership-grade">Professional Member</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:var(--sp-lg)">
+      <h3 style="font-size:.95rem;margin:0 0 var(--sp-md);font-family:var(--font-display)">Language Proficiency</h3>
+      <div class="score-grid">
+        <div class="score-item reveal">
+          <div class="score-value">8.0</div>
+          <div>
+            <div class="score-name">IELTS Academic</div>
+            <div class="score-desc">Overall Band Score · Valid through Oct 2027</div>
+          </div>
+        </div>
+        <div class="score-item reveal">
+          <div class="score-value">C2</div>
+          <div>
+            <div class="score-name">Bangla</div>
+            <div class="score-desc">Native language · Research focus language</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ================================================
+       TEACHING
+       ================================================ -->
+  <section class="section" id="teaching" aria-labelledby="teaching-heading">
+    <h2 id="teaching-heading" class="section-title">Teaching</h2>
+
+    <p class="muted small" style="margin:0 0 var(--sp-md)">Department of CSE · Southeast University · Dhaka (Oct 2022 – present)</p>
+
+    <div class="course-chips">
+      <span class="course-chip">Computer Fundamentals</span>
+      <span class="course-chip">Structured Programming (C)</span>
+      <span class="course-chip">Discrete Mathematics</span>
+      <span class="course-chip">Data Structures &amp; Algorithms</span>
+      <span class="course-chip">Numerical Methods</span>
+      <span class="course-chip">Embedded Systems</span>
+    </div>
+
+    <div style="margin-top:var(--sp-lg)">
+      <h3 style="font-size:.92rem;font-family:var(--font-display);margin:0 0 6px">Student Resources &amp; Work</h3>
+      <p class="muted small" style="margin:0 0 8px">
+        I maintain a public assignment library for the Numerical Methods course to help students explore methods interactively.
+      </p>
+      <a class="button subtle small" href="https://tashreefmuhammad.github.io/SEU-Numerical-Methods-Assignment-Library/" target="_blank" rel="noopener">
+        Numerical Methods Assignment Library ↗
+      </a>
+    </div>
+
   </section>
 
 </main>
