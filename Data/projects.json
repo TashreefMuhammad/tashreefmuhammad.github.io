@@ -16,8 +16,10 @@
     "badge": "Benchmark",
     "description": "Benchmark dataset for Named Entity Recognition in five Bangla regional dialects. Developed under the IRT/SEU institutional grant (REG-NER project). Under review at PLOS ONE (Q1).",
     "links": {
+      "paper": "https://doi.org/10.1371/journal.pone.0342786",
       "dataset": "https://data.mendeley.com/datasets/gbkszkt8z3/3",
-      "preprint": "https://arxiv.org/abs/2502.11198"
+      "preprint": "https://arxiv.org/abs/2502.11198",
+      "code": "https://github.com/SapphireFang1998/ANCHOLIK-NER-A-Benchmark-Dataset-for-Bangla-Regional-Named-Entity-Recognition"
     },
     "tags": ["NER", "Bangla", "Dataset", "Dialects"],
     "featured": true
@@ -44,37 +46,29 @@
       "preprint": "https://arxiv.org/abs/2507.16183"
     },
     "tags": ["NLP", "Hate Speech", "Bangla", "Dataset"],
-    "featured": true
+    "featured": false
   },
   {
     "title": "VR-FuseNet",
-    "badge": "Under Review",
-    "description": "Fusion of heterogeneous fundus image data with explainable deep learning for diabetic retinopathy classification. Under review at Biomedical Materials and Devices (Springer, Q2).",
+    "badge": "Published",
+    "description": "Fusion of heterogeneous fundus image data with explainable deep learning for diabetic retinopathy classification. Published at Biomedical Materials and Devices (Springer, Q2).",
     "links": {
+      "paper": "https://doi.org/10.1007/s44174-026-00638-9",
       "preprint": "https://arxiv.org/abs/2504.21464"
     },
     "tags": ["XAI", "Medical Imaging", "Retinopathy", "CNN"],
-    "featured": false
+    "featured": true
   },
   {
-    "title": "Brain MRI XAI",
-    "badge": "Published",
-    "description": "Comparative study of Vision Transformers and CNN architectures with Grad-CAM interpretability for brain disease detection and multi-class abnormality diagnosis on Bangladeshi MRI data.",
+    "title": "Temporal Coverage Bias in Financial Panel Data",
+    "badge": "under_review",
+    "description": "Coverage-aware financial panel dataset framework and experiments demonstrating temporal coverage bias in volatility estimation.",
     "links": {
-      "paper": "https://doi.org/10.1109/ICCIT64611.2024.11022039",
-      "preprint": "https://arxiv.org/abs/2505.16039"
+      "code": "https://github.com/TashreefMuhammad/Dhaka-Stock-Exchange-EoD-Dataset-Metadata",
+      "paper": "",
+      "preprint": ""
     },
-    "tags": ["XAI", "Vision Transformer", "Brain MRI", "IEEE"],
-    "featured": false
-  },
-  {
-    "title": "Bangla Dialect Identification",
-    "badge": "Published",
-    "description": "BERT, large language models, and XAI applied to Bangla regional dialect detection. Published at IEEE COMPAS 2024.",
-    "links": {
-      "paper": "https://doi.org/10.1109/COMPAS60761.2024.10796843"
-    },
-    "tags": ["NLP", "BERT", "XAI", "Bangla", "IEEE"],
+    "tags": ["Financial Data", "Time Series Analysis", "Volatility Modeling"],
     "featured": false
   }
 ]

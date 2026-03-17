@@ -11,7 +11,7 @@
     "status": "",
     "submitted_to": "",
     "publisher": "World Scientific",
-    "journal_rank": "",
+    "journal_rank": "Q3",
     "selected": true,
     "bibtex": "@article{muhammad2023transformer,\n  title={Transformer-based deep learning model for stock price prediction: A case study on Bangladesh stock market},\n  author={Muhammad, Tashreef and Aftab, Anika Bintee and Ibrahim, Muhammad and Ahsan, Md Mainul and Muhu, Maishameem Meherin and Khan, Shahidul Islam and Alam, Mohammad Shafiul},\n  journal={International Journal of Computational Intelligence and Applications},\n  volume={22},\n  number={03},\n  pages={2350013},\n  year={2023},\n  publisher={World Scientific}\n}"
   },
@@ -82,18 +82,18 @@
   {
     "title": "ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named Entity Recognition",
     "authors": "Paul, B.; Preotee, F. F.; Sarker, S. R.; Refat, S. R.; Islam, S.; Muhammad, T.; Hoque, M. A.; Manzoor, S.",
-    "venue": "arXiv preprint",
+    "venue": "PLOS ONE",
     "year": 2025,
-    "type": "preprint",
-    "doi": "",
+    "type": "journal",
+    "doi": "https://doi.org/10.1371/journal.pone.0342786",
     "preprint": "https://arxiv.org/abs/2502.11198",
     "code": "",
-    "status": "under_review",
-    "submitted_to": "PLOS ONE",
+    "status": "",
+    "submitted_to": "",
     "publisher": "PLOS",
     "journal_rank": "Q1",
     "selected": true,
-    "bibtex": "@article{paul2025ancholik,\n  title={ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named Entity Recognition},\n  author={Paul, Bidyarthi and Preotee, Faika Fairuj and Sarker, Shuvashis and Refat, Shamim Rahim and Islam, Shifat and Muhammad, Tashreef and Hoque, Mohammad Ashraful and Manzoor, Shahriar},\n  journal={arXiv preprint arXiv:2502.11198},\n  year={2025}\n}"
+    "bibtex": "@article{paul2025ancholik,\n  title={ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named Entity Recognition},\n  author={Paul, Bidyarthi and Preotee, Faika Fairuj and Sarker, Shuvashis and Refat, Shamim Rahim and Islam, Shifat and Muhammad, Tashreef and Hoque, Mohammad Ashraful and Manzoor, Shahriar},\n journal={PLOS ONE},\n  volume={21},\n  number={02},\n  year={2026},\n  publisher={Public Library of Science San Francisco, CA USA}\n}"
   },
   {
     "title": "Can transformer models effectively detect software aspects in StackOverflow discussion?",
@@ -167,7 +167,7 @@
     "type": "conference",
     "doi": "https://doi.org/10.1145/3723178.3723220",
     "preprint": "",
-    "code": "",
+    "code": "https://github.com/SapphireFang1998/Advanced-CNN-and-Explainable-AI-Based-Architecture-for-Interpretable-Brain-MRI-Analysis",
     "status": "",
     "submitted_to": "",
     "publisher": "ACM",
@@ -226,18 +226,18 @@
   {
     "title": "VR-FuseNet: A Fusion of Heterogeneous Fundus Data and Explainable Deep Network for Diabetic Retinopathy Classification",
     "authors": "Refat, S. R.; Raha, Z. S.; Sarker, S.; Preotee, F. F.; Rahman, M. D.; Muhammad, T.; Alam, M. S.",
-    "venue": "arXiv preprint",
+    "venue": "Biomedical Materials and Devices",
     "year": 2025,
-    "type": "preprint",
-    "doi": "",
+    "type": "journal",
+    "doi": "https://doi.org/10.1007/s44174-026-00638-9",
     "preprint": "https://arxiv.org/abs/2504.21464",
     "code": "",
-    "status": "under_review",
-    "submitted_to": "Biomedical Materials and Devices",
+    "status": "",
+    "submitted_to": "",
     "publisher": "Springer",
     "journal_rank": "Q2",
     "selected": false,
-    "bibtex": "@article{refat2025vr,\n  title={VR-FuseNet: A Fusion of Heterogeneous Fundus Data and Explainable Deep Network for Diabetic Retinopathy Classification},\n  author={Refat, Shamim Rahim and Raha, Ziyan Shirin and Sarker, Shuvashis and Preotee, Faika Fairuj and Rahman, MD and Muhammad, Tashreef and Alam, Mohammad Shafiul},\n  journal={arXiv preprint arXiv:2504.21464},\n  year={2025}\n}"
+    "bibtex": "@article{refat2025vr,\n  title={VR-FuseNet: A Fusion of Heterogeneous Fundus Data and Explainable Deep Network for Diabetic Retinopathy Classification},\n  author={Refat, Shamim Rahim and Raha, Ziyan Shirin and Sarker, Shuvashis and Preotee, Faika Fairuj and Rahman, MD and Muhammad, Tashreef and Alam, Mohammad Shafiul},\n journal={Biomedical Materials and Devices},\n  pages={1--28},\n  year={2026},\n  publisher={Springer}\n}"
   },
   {
     "title": "A Data-Centric Method to Identify Lung Cancer Using a Variety of Machine Learning Approaches",
