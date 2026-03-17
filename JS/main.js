@@ -376,37 +376,38 @@ function initFilterTabs(allItems, containerSel) {
   const onProjects = path.endsWith('/projects.html');
   const onPubs    = path.endsWith('/publications.html');
 
-  if (onIndex && pubs && datasets && metrics) {
-    const total    = pubs.length;
-    const peer     = pubs.filter(p => p.type === 'journal' || p.type === 'conference').length;
-    const cites    = metrics.citesGS;
-    const datasetCount = datasets.length;
+  if (onIndex) {
+    if (pubs && datasets && metrics) {
+      const total        = pubs.length;
+      const peer         = pubs.filter(p => p.type === 'journal' || p.type === 'conference').length;
+      const cites        = metrics.citesGS;
+      const datasetCount = datasets.length;
 
-    const metricMap = {
-      'm-total':    total,
-      'm-peer':     peer,
-      'm-cites':    cites,
-      'm-datasets': datasetCount
-    };
+      const metricMap = {
+        'm-total':    total,
+        'm-peer':     peer,
+        'm-cites':    cites,
+        'm-datasets': datasetCount
+      };
 
-    Object.entries(metricMap).forEach(([id, val]) => {
-      const el = document.getElementById(id);
-      if (!el || val === undefined) return;
-      // Animate count-up now that real value is known
-      const duration = 900;
-      const start = performance.now();
-      function tick(now) {
-        const progress = Math.min((now - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(eased * val);
-        if (progress < 1) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-    });
-  }
-    renderProjects(projects,   { containerSel: '#featured .card-grid', featuredOnly: true, limit: 6 });
-    renderPublications(pubs,   { containerSel: '#publications .pubs', selectedOnly: true, limit: 5 });
-    renderDatasets(datasets,   { containerSel: '#datasets .list' });
+      Object.entries(metricMap).forEach(([id, val]) => {
+        const el = document.getElementById(id);
+        if (!el || val === undefined) return;
+        const duration = 900;
+        const start = performance.now();
+        function tick(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.round(eased * val);
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+
+    renderProjects(projects, { containerSel: '#featured .card-grid', featuredOnly: true, limit: 6 });
+    renderPublications(pubs, { containerSel: '#publications .pubs', selectedOnly: true, limit: 5 });
+    renderDatasets(datasets, { containerSel: '#datasets .list' });
   }
 
   if (onProjects) {
