@@ -134,33 +134,12 @@
   });
 })();
 
-// ---------- Data cache ----------
-const DATA_VERSION = '2025-10-20-03';
-const URL_FORCE_REFRESH = new URLSearchParams(location.search).has('refresh');
-
-async function getJSON(url, key, ttlMs = 3600 * 1000) {
-  const storageKey = `${key}@${DATA_VERSION}`;
-  const fetchURL = `${url}?v=${DATA_VERSION}`;
+// ---------- Data fetch (HTTP cache handles freshness automatically) ----------
+async function getJSON(url) {
   try {
-    const now = Date.now();
-    if (!URL_FORCE_REFRESH) {
-      const raw = localStorage.getItem(storageKey);
-      if (raw) {
-        const parsed = JSON.parse(raw);
-        if (parsed?.t && (now - parsed.t < ttlMs) && parsed.data) return parsed.data;
-      }
-    } else {
-      Object.keys(localStorage).forEach(k => {
-        if (k.startsWith(key + '@')) localStorage.removeItem(k);
-      });
-    }
-    const res = await fetch(fetchURL, { cache: 'no-store' });
-    if (!res.ok) throw new Error(`${fetchURL}: ${res.status}`);
-    const data = await res.json();
-    if (data && (Array.isArray(data) || typeof data === 'object')) {
-      localStorage.setItem(storageKey, JSON.stringify({ t: now, data }));
-    }
-    return data;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`${url}: ${res.status}`);
+    return await res.json();
   } catch (e) {
     console.warn('getJSON failed', e);
     return null;
@@ -387,17 +366,44 @@ function initFilterTabs(allItems, containerSel) {
 
 // ---------- INIT ----------
 (async function init() {
-  const metrics  = await getJSON('/Data/metrics.json',      'metrics.json');
-  const projects = await getJSON('/Data/projects.json',     'projects.json');
-  const pubs     = await getJSON('/Data/publications.json', 'publications.json');
-  const datasets = await getJSON('/Data/datasets.json',     'datasets.json');
+  const metrics  = await getJSON('/Data/metrics.json');
+  const projects = await getJSON('/Data/projects.json');
+  const pubs     = await getJSON('/Data/publications.json');
+  const datasets = await getJSON('/Data/datasets.json');
 
   const path      = location.pathname.toLowerCase();
   const onIndex   = path === '/' || path.endsWith('/index.html');
   const onProjects = path.endsWith('/projects.html');
   const onPubs    = path.endsWith('/publications.html');
 
-  if (onIndex) {
+  if (onIndex && pubs && datasets && metrics) {
+    const total    = pubs.length;
+    const peer     = pubs.filter(p => p.type === 'journal' || p.type === 'conference').length;
+    const cites    = metrics.citesGS;
+    const datasetCount = datasets.length;
+
+    const metricMap = {
+      'm-total':    total,
+      'm-peer':     peer,
+      'm-cites':    cites,
+      'm-datasets': datasetCount
+    };
+
+    Object.entries(metricMap).forEach(([id, val]) => {
+      const el = document.getElementById(id);
+      if (!el || val === undefined) return;
+      // Animate count-up now that real value is known
+      const duration = 900;
+      const start = performance.now();
+      function tick(now) {
+        const progress = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(eased * val);
+        if (progress < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
     renderProjects(projects,   { containerSel: '#featured .card-grid', featuredOnly: true, limit: 6 });
     renderPublications(pubs,   { containerSel: '#publications .pubs', selectedOnly: true, limit: 5 });
     renderDatasets(datasets,   { containerSel: '#datasets .list' });
