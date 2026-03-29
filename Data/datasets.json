@@ -18,5 +18,10 @@
     "name": "BIDWESH: A Bangla Regional Based Hate Speech Detection dataset",
     "blurb": "Bangla Regional Hate Speech Data",
     "doi": "https://data.mendeley.com/datasets/bpkrvf882k/"
+  },
+  {
+    "name": "AgriPriceBD: A Daily Market Price Dataset of Agricultural Commodities of Bangladesh",
+    "blurb": "Time series price data of five agricultural commodities of Bangladesh",
+    "doi": "https://data.mendeley.com/datasets/bkmxnrn3hn/"
   }
 ]

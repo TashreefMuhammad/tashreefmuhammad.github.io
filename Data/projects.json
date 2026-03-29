@@ -14,7 +14,7 @@
   {
     "title": "ANCHOLIK-NER",
     "badge": "Benchmark",
-    "description": "Benchmark dataset for Named Entity Recognition in five Bangla regional dialects. Developed under the IRT/SEU institutional grant (REG-NER project). Under review at PLOS ONE (Q1).",
+    "description": "Benchmark dataset for Named Entity Recognition in five Bangla regional dialects. Developed under the IRT/SEU institutional grant (REG-NER project). Published at PLOS ONE (Q1).",
     "links": {
       "paper": "https://doi.org/10.1371/journal.pone.0342786",
       "dataset": "https://data.mendeley.com/datasets/gbkszkt8z3/3",
@@ -66,7 +66,7 @@
     "links": {
       "code": "https://github.com/TashreefMuhammad/Dhaka-Stock-Exchange-EoD-Dataset-Metadata",
       "paper": "",
-      "preprint": ""
+      "preprint": "https://arxiv.org/abs/2603.20237"
     },
     "tags": ["Financial Data", "Time Series Analysis", "Volatility Modeling"],
     "featured": false

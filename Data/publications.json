@@ -304,6 +304,22 @@
     "bibtex": "@inproceedings{khandaker2024bridging,\n  title={Bridging Dialects: Translating Standard Bangla to Regional Variants Using Neural Models},\n  author={Khandaker, Md Arafat Alam and Raha, Ziyan Shirin and Paul, Bidyarthi and Muhammad, Tashreef},\n  booktitle={2024 27th International Conference on Computer and Information Technology (ICCIT)},\n  pages={885--890},\n  year={2024},\n  organization={IEEE}\n}"
   },
   {
+    "title": "Temporal Coverage Bias in Financial Panel Data: A Coverage-Aware Structuring Framework with Evidence from the Dhaka Stock Exchange",
+    "authors": "Muhammad, T.",
+    "venue": "arXiv preprint",
+    "year": 2026,
+    "type": "preprint",
+    "doi": "",
+    "preprint": "https://arxiv.org/abs/2603.20237",
+    "code": "",
+    "status": "",
+    "submitted_to": "",
+    "publisher": "",
+    "journal_rank": "",
+    "selected": true,
+    "bibtex": "@article{muhammad2022frequency,\n  title={Frequency Distribution of Prime Numbers between an Integer and its Square: A Case Study},\n  author={Muhammad, Tashreef and Shahariar, GM and Aziz, Tahsin and Alam, Mohammad Shafiul},\n  journal={arXiv preprint arXiv:2209.12494},\n  year={2022}\n}"
+  },
+  {
     "title": "Frequency Distribution of Prime Numbers between an Integer and its Square: A Case Study",
     "authors": "Muhammad, T.; Shahariar, G. M.; Aziz, T.; Alam, M. S.",
     "venue": "arXiv preprint",
@@ -312,8 +328,8 @@
     "doi": "",
     "preprint": "https://arxiv.org/abs/2209.12494",
     "code": "",
-    "status": "",
-    "submitted_to": "",
+    "status": "under_review",
+    "submitted_to": "PLOS One",
     "publisher": "",
     "journal_rank": "",
     "selected": false,
