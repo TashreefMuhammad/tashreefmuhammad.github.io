@@ -1,3 +1,12 @@
 title: "Tashreef Muhammad"
-# If you ever host under a subpath, set baseurl: "/subpath"
-# For user pages (tashreefmuhammad.github.io), baseurl is empty by default.
+description: "Lecturer in Computer Science and Engineering, Southeast University, Dhaka. Sequence modelling and financial machine learning, low-resource Bangla NLP, explainable AI for imaging."
+url: "https://tashreefmuhammad.github.io"
+baseurl: ""
+
+# User pages are served from the domain root, so baseurl stays empty.
+# If you ever move this to a project page, set baseurl to "/repo-name" and
+# update the absolute /CSS, /JS and /Data paths in _layouts and JS/main.js.
+
+exclude:
+  - README.md
+  - MAINTAINING.md

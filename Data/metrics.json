@@ -1,7 +1,29 @@
 {
-  "pubsTotal": 22,
-  "pubsPeer": 15,
-  "citesGS": 196,
-  "citesScopus": 81,
-  "asOf": "Mar 2026"
+  "_comment": "Publication counts are computed from publications.json automatically. Only the numbers below need manual updating. citationsByYear drives the chart on the home page.",
+
+  "asOf": "September 2026",
+
+  "scholar": {
+    "citations": 278,
+    "hIndex": 7,
+    "i10Index": 5,
+    "url": "https://scholar.google.com/citations?user=W_IaQKAAAAAJ"
+  },
+
+  "scopus": {
+    "documents": 16,
+    "citations": 115,
+    "hIndex": 4,
+    "url": "https://www.scopus.com/authid/detail.uri?authorId=57216696139"
+  },
+
+  "citationsByYear": [
+    { "year": 2022, "count": 5 },
+    { "year": 2023, "count": 17 },
+    { "year": 2024, "count": 50 },
+    { "year": 2025, "count": 117 },
+    { "year": 2026, "count": 88 }
+  ],
+
+  "chartNote": "Citations per year, Google Scholar. 2026 is a partial year, updated till 6th September 2026."
 }

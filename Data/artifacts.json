@@ -1,0 +1,100 @@
+[
+  {
+    "title": "Coverage-Aware DSE Panel",
+    "kind": "Dataset + experiments",
+    "area": "sequence",
+    "description": "Framework for building financial panels that records how much of each instrument's history actually exists, then measures how coverage choices distort volatility estimates. Ships the panel, the metadata schema, and the replication experiments.",
+    "status": "under_review",
+    "links": {
+      "preprint": "https://arxiv.org/abs/2603.20237",
+      "data": "https://data.mendeley.com/datasets/23553sm4tn/",
+      "code": "https://github.com/TashreefMuhammad/Dhaka-Stock-Exchange-EoD-Dataset-Metadata"
+    },
+    "tags": ["Panel data", "Volatility", "ARIMA / GARCH", "Reproducibility"],
+    "featured": true
+  },
+  {
+    "title": "AgriPriceBD Benchmark",
+    "kind": "Dataset + benchmark",
+    "area": "sequence",
+    "description": "Seven forecasting approaches compared on a new daily commodity price dataset for Bangladesh: classical baselines, Prophet, BiLSTM, and a Transformer with a Time2Vec ablation. Negative results on Time2Vec and Informer are reported rather than hidden.",
+    "status": "under_review",
+    "links": {
+      "preprint": "https://arxiv.org/abs/2604.06227",
+      "data": "https://data.mendeley.com/datasets/bkmxnrn3hn/",
+      "code": "https://github.com/TashreefMuhammad/Bangladesh-Agri-Price-Forecast"
+    },
+    "tags": ["Forecasting", "BiLSTM", "Transformer", "Food security"],
+    "featured": true
+  },
+  {
+    "title": "Stock Transformer with Time2Vec",
+    "kind": "Model + code",
+    "area": "sequence",
+    "description": "Transformer encoder with learned time representation for next-day price prediction on the Dhaka Stock Exchange. Full training code accompanying the IJCIA paper; the most cited of my first-author work.",
+    "status": "published",
+    "links": {
+      "paper": "https://doi.org/10.1142/S146902682350013X",
+      "preprint": "https://arxiv.org/abs/2208.08300",
+      "code": "https://github.com/TashreefMuhammad/Transformer-to-predict-stock-market-using-time2vec",
+      "data": "https://data.mendeley.com/datasets/23553sm4tn/"
+    },
+    "tags": ["Transformer", "Time2Vec", "Equity forecasting"],
+    "featured": true
+  },
+  {
+    "title": "ANCHOLIK-NER",
+    "kind": "Benchmark dataset",
+    "area": "nlp",
+    "description": "Regional Bangla named entity corpus built under the REG-NER grant, with annotation guidelines and baseline taggers. Published in PLOS ONE.",
+    "status": "published",
+    "links": {
+      "paper": "https://doi.org/10.1371/journal.pone.0342786",
+      "preprint": "https://arxiv.org/abs/2502.11198",
+      "data": "https://data.mendeley.com/datasets/gbkszkt8z3/",
+      "code": "https://github.com/SapphireFang1998/ANCHOLIK-NER-A-Benchmark-Dataset-for-Bangla-Regional-Named-Entity-Recognition"
+    },
+    "tags": ["Named entity recognition", "Dialects", "Annotation"],
+    "featured": true
+  },
+  {
+    "title": "Vashantor",
+    "kind": "Benchmark dataset",
+    "area": "nlp",
+    "description": "Parallel corpora for translating Bangla regional dialects into standard Bangla, with baseline neural models across several dialect pairs.",
+    "status": "under_review",
+    "links": {
+      "preprint": "https://arxiv.org/abs/2311.11142",
+      "data": "https://data.mendeley.com/datasets/bj5jgk878b/",
+      "code": "https://github.com/Mukaffi28/Vashantor-A-Large-scale-Multilingual-Benchmark-Dataset"
+    },
+    "tags": ["Machine translation", "Dialects", "Benchmark"],
+    "featured": false
+  },
+  {
+    "title": "VR-FuseNet",
+    "kind": "Model",
+    "area": "xai",
+    "description": "Fuses heterogeneous fundus image sources for diabetic retinopathy grading and reports interpretability alongside accuracy. Published in Biomedical Materials & Devices.",
+    "status": "published",
+    "links": {
+      "paper": "https://doi.org/10.1007/s44174-026-00638-9",
+      "preprint": "https://arxiv.org/abs/2504.21464"
+    },
+    "tags": ["Diabetic retinopathy", "Grad-CAM", "Fusion"],
+    "featured": false
+  },
+  {
+    "title": "BIDWESH",
+    "kind": "Dataset",
+    "area": "nlp",
+    "description": "Hate speech annotations for regional Bangla, covering dialectal expressions that standard-Bangla classifiers systematically miss.",
+    "status": "preprint",
+    "links": {
+      "preprint": "https://arxiv.org/abs/2507.16183",
+      "data": "https://data.mendeley.com/datasets/bpkrvf882k/"
+    },
+    "tags": ["Hate speech", "Content safety", "Dialects"],
+    "featured": false
+  }
+]

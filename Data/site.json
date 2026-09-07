@@ -1,0 +1,95 @@
+{
+  "_comment": "Edit this file to change identity, links, hero copy and display rules. Nothing here requires touching HTML or CSS.",
+
+  "profile": {
+    "name": "Tashreef Muhammad",
+    "role": "Lecturer, Computer Science and Engineering",
+    "affiliation": "Southeast University, Dhaka",
+    "affiliationUrl": "https://cse.seu.edu.bd/employee/profile/MDAzMDI3",
+    "location": "Dhaka, Bangladesh",
+    "photo": "/Images/me.jpg",
+    "positioning": "I build sequence models and the datasets they are missing.",
+    "summary": "My main line of work is time-series and financial machine learning — transformer architectures, temporal representation, and the measurement problems that appear when panel data is unevenly covered. Alongside it I build annotated corpora for low-resource Bangla and work on explainable deep learning for medical and agricultural imaging.",
+    "seeking": "Seeking for funded PhD opportunities in time-series and sequence modelling, starting Fall 2027."
+  },
+
+  "links": {
+    "email": "tashreef.muhammad@gmail.com",
+    "emailAlt": "tashreef.muhammad@seu.edu.bd",
+    "scholar": "https://scholar.google.com/citations?user=W_IaQKAAAAAJ",
+    "orcid": "https://orcid.org/0000-0002-9816-2547",
+    "scopus": "https://www.scopus.com/authid/detail.uri?authorId=57216696139",
+    "github": "https://github.com/TashreefMuhammad",
+    "linkedin": "https://www.linkedin.com/in/tashreefmuhammad",
+    "cv": "/cv/Tashreef_Muhammad_CV.pdf",
+    "arise": "https://ariserl.org/people/tashreef-muhammad"
+  },
+
+  "display": {
+    "_comment": "showPreprints=false hides status:'preprint' entries from the site and from all counts. Set true to bring them back.",
+    "showPreprints": false,
+    "selectedPublicationCount": 5,
+    "featuredArtifactCount": 4,
+    "animations": true
+  },
+
+  "areas": {
+    "_comment": "Order here sets the order of the research section and the filter chips. Keys are used as the 'area' value in publications.json / artifacts.json.",
+    "sequence": {
+      "label": "Sequence Modelling & Financial ML",
+      "short": "Sequence & Finance",
+      "colorVar": "--series-a"
+    },
+    "nlp": {
+      "label": "Low-Resource Bangla NLP",
+      "short": "Bangla NLP",
+      "colorVar": "--series-b"
+    },
+    "xai": {
+      "label": "Explainable AI for Imaging",
+      "short": "Explainable AI",
+      "colorVar": "--series-c"
+    },
+    "other": {
+      "label": "Other",
+      "short": "Other",
+      "colorVar": "--series-d"
+    }
+  },
+
+  "research": [
+    {
+      "area": "sequence",
+      "heading": "Sequence modelling and financial machine learning",
+      "body": "Transformers and learned temporal encodings such as Time2Vec were built for language; moving them into financial forecasting exposes problems that language never had — irregular coverage, regime change, and thin markets. I work on the Dhaka Stock Exchange because those problems are unavoidable there, and I release the panel data and coverage metadata so results can actually be reproduced.",
+      "threads": [
+        "Transformer forecasting with learned time representation",
+        "Temporal coverage bias in panel construction",
+        "Regime-adaptive models for emerging markets",
+        "Benchmarking classical and deep forecasters on commodity prices"
+      ]
+    },
+    {
+      "area": "nlp",
+      "heading": "Low-resource Bangla NLP",
+      "body": "Bangla has more than 230 million speakers and almost no computational resources for its regional varieties. I build the annotated corpora first — dialect translation pairs, regional named entities, dialectal hate speech — and then the baselines, so that the benchmark outlives any single model.",
+      "threads": [
+        "Regional dialect machine translation",
+        "Cross-dialect named entity recognition",
+        "Dialectal hate speech detection",
+        "Benchmark design for low-resource evaluation"
+      ]
+    },
+    {
+      "area": "xai",
+      "heading": "Explainable AI for medical and agricultural imaging",
+      "body": "A diagnostic model that cannot show its reasoning does not get used by the people it was built for. I pair vision transformers and CNN ensembles with post-hoc interpretation, and evaluate whether the explanations land on the anatomy or the lesion a specialist would point at.",
+      "threads": [
+        "Diabetic retinopathy screening from heterogeneous fundus data",
+        "Brain MRI abnormality classification",
+        "Plant leaf disease detection for smallholder agriculture",
+        "Grad-CAM, LIME and SHAP as evaluation targets, not decoration"
+      ]
+    }
+  ]
+}

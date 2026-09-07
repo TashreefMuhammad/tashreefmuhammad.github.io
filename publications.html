@@ -1,26 +1,31 @@
 ---
 layout: default
 title: Publications
+description: "Peer-reviewed papers and manuscripts under review by Tashreef Muhammad, filterable by status, type and research area."
 ---
-<main class="container">
-  <section class="section">
 
-    <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:12px;margin-bottom:var(--sp-lg)">
-      <h2 class="section-title" style="margin:0">Publications</h2>
-      <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a class="button subtle small" href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ" target="_blank" rel="noopener">Google Scholar ↗</a>
-        <a class="button subtle small" href="https://orcid.org/0000-0002-9816-2547" target="_blank" rel="noopener">ORCID ↗</a>
-      </div>
+<section class="section" id="all-publications" aria-labelledby="pubs-h">
+  <div class="container">
+
+    <div class="section-head">
+      <h2 class="section-title" id="pubs-h">Publications</h2>
+      <p class="section-note">Sorted with manuscripts under review first, then by year.</p>
+    </div>
+    <div class="tick-rule"></div>
+
+    <div class="filter-bar" id="mount-pub-filters"></div>
+    <p class="result-line" id="result-line"></p>
+
+    <div id="mount-all-pubs"></div>
+
+    <div class="empty-state" id="pub-empty" hidden>
+      <p>No publications match those filters. Clear the search box or switch a filter back to “All”.</p>
     </div>
 
-    <div class="filter-tabs">
-      <button class="filter-tab active" data-filter="all">All <span class="pub-count">–</span></button>
-      <button class="filter-tab" data-filter="journal">Journal <span class="pub-count">–</span></button>
-      <button class="filter-tab" data-filter="conference">Conference <span class="pub-count">–</span></button>
-      <button class="filter-tab" data-filter="preprint">Preprint / Under Review <span class="pub-count">–</span></button>
-    </div>
+    <p class="small muted" id="preprint-note" hidden style="margin-top:32px;padding-top:16px;border-top:1px solid var(--rule)">
+      <span id="preprint-count">0</span> further manuscripts exist as preprints that have not yet been submitted, and are not listed here.
+      They are listed on <a href="https://scholar.google.com/citations?user=W_IaQKAAAAAJ" target="_blank" rel="noopener">Google Scholar</a>.
+    </p>
 
-    <ul class="pubs"></ul>
-
-  </section>
-</main>
+  </div>
+</section>

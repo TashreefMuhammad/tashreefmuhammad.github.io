@@ -1,27 +1,57 @@
 [
   {
-    "name": "Vashantor: A Large-scale Multilingual Benchmark Dataset for Automated Translation of Bangla Regional Dialects to Bangla Language",
-    "blurb": "Dialect→Bangla MT",
-    "doi": "https://data.mendeley.com/datasets/bj5jgk878b/"
+    "name": "AgriPriceBD",
+    "fullName": "A Daily Market Price Dataset of Agricultural Commodities of Bangladesh",
+    "blurb": "Daily prices for five staple commodities, assembled from national market reports and used as the benchmark for the commodity forecasting study.",
+    "area": "sequence",
+    "year": 2026,
+    "repository": "Mendeley Data",
+    "doi": "https://data.mendeley.com/datasets/bkmxnrn3hn/",
+    "paper": "agri-price-benchmark",
+    "code": "https://github.com/TashreefMuhammad/Bangladesh-Agri-Price-Forecast"
   },
   {
-    "name": "ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named Entity Recognition",
-    "blurb": "Regional NER (Bangla)",
-    "doi": "https://data.mendeley.com/datasets/gbkszkt8z3/"
+    "name": "DSE End-of-Day Panel",
+    "fullName": "Dhaka Stock Exchange End-of-Day Financial Dataset with Coverage Metadata",
+    "blurb": "End-of-day equity data for the Dhaka Stock Exchange, shipped with per-instrument coverage metadata so that panel construction choices can be audited rather than assumed.",
+    "area": "sequence",
+    "year": 2026,
+    "repository": "Mendeley Data",
+    "doi": "https://data.mendeley.com/datasets/23553sm4tn/",
+    "paper": "coverage-bias-dse",
+    "code": "https://github.com/TashreefMuhammad/Dhaka-Stock-Exchange-EoD-Dataset-Metadata"
   },
   {
-    "name": "Dhaka Stock Exchange End-of-Day Financial Dataset with Coverage Metadata",
-    "blurb": "Dhaka Stock Exchange",
-    "doi": "https://data.mendeley.com/datasets/23553sm4tn/"
+    "name": "ANCHOLIK-NER",
+    "fullName": "A Benchmark Dataset for Bangla Regional Named Entity Recognition",
+    "blurb": "Named entity annotations across five regional Bangla varieties. Produced under the REG-NER institutional grant and published with the PLOS ONE paper.",
+    "area": "nlp",
+    "year": 2025,
+    "repository": "Mendeley Data",
+    "doi": "https://data.mendeley.com/datasets/gbkszkt8z3/",
+    "paper": "ancholik-ner",
+    "code": "https://github.com/SapphireFang1998/ANCHOLIK-NER-A-Benchmark-Dataset-for-Bangla-Regional-Named-Entity-Recognition"
   },
   {
-    "name": "BIDWESH: A Bangla Regional Based Hate Speech Detection dataset",
-    "blurb": "Bangla Regional Hate Speech Data",
-    "doi": "https://data.mendeley.com/datasets/bpkrvf882k/"
+    "name": "Vashantor",
+    "fullName": "A Large-scale Multilingual Benchmark Dataset for Bangla Regional Dialect Translation",
+    "blurb": "Parallel dialect-to-standard Bangla corpora covering multiple regional varieties, with baseline translation models and evaluation scripts.",
+    "area": "nlp",
+    "year": 2023,
+    "repository": "Mendeley Data",
+    "doi": "https://data.mendeley.com/datasets/bj5jgk878b/",
+    "paper": "vashantor",
+    "code": "https://github.com/Mukaffi28/Vashantor-A-Large-scale-Multilingual-Benchmark-Dataset"
   },
   {
-    "name": "AgriPriceBD: A Daily Market Price Dataset of Agricultural Commodities of Bangladesh",
-    "blurb": "Time series price data of five agricultural commodities of Bangladesh",
-    "doi": "https://data.mendeley.com/datasets/bkmxnrn3hn/"
+    "name": "BIDWESH",
+    "fullName": "A Bangla Regional Based Hate Speech Detection Dataset",
+    "blurb": "Dialectal hate speech annotations, addressing a safety gap that standard-Bangla resources do not cover.",
+    "area": "nlp",
+    "year": 2025,
+    "repository": "Mendeley Data",
+    "doi": "https://data.mendeley.com/datasets/bpkrvf882k/",
+    "paper": "bidwesh",
+    "code": ""
   }
 ]

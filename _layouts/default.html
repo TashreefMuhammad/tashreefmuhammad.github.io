@@ -2,24 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>{% if page.title %}{{ page.title }} — {% endif %}Tashreef Muhammad</title>
-  <meta name="description" content="Lecturer in CSE at Southeast University, Dhaka — Low-resource Bangla NLP · Time-series Forecasting · Explainable AI for Medical and Agricultural Imaging."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <title>{% if page.title and page.title != "Home" %}{{ page.title }} — {% endif %}Tashreef Muhammad</title>
+  <meta name="description" content="{{ page.description | default: 'Tashreef Muhammad — Lecturer in Computer Science and Engineering at Southeast University, Dhaka. Sequence modelling and financial machine learning, low-resource Bangla NLP, and explainable AI for imaging.' }}"/>
   <meta name="author" content="Tashreef Muhammad"/>
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} — {% endif %}Tashreef Muhammad"/>
-  <meta property="og:description" content="Lecturer · CSE · Southeast University, Dhaka — NLP · Time-series · XAI"/>
-  <meta property="og:type" content="website"/>
+
+  <meta property="og:type" content="profile"/>
+  <meta property="og:title" content="{% if page.title and page.title != 'Home' %}{{ page.title }} — {% endif %}Tashreef Muhammad"/>
+  <meta property="og:description" content="{{ page.description | default: 'Sequence modelling and financial machine learning, low-resource Bangla NLP, and explainable AI for imaging.' }}"/>
+  <meta property="og:image" content="https://tashreefmuhammad.github.io/Images/me.jpg"/>
+  <meta name="twitter:card" content="summary"/>
+
+  <link rel="canonical" href="https://tashreefmuhammad.github.io{{ page.url }}"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap"/>
   <link rel="stylesheet" href="/CSS/styles.css"/>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Ccircle cx='64' cy='64' r='62' fill='%23B45309'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-size='64' fill='white' font-family='Georgia,serif'%3ET%3C/text%3E%3C/svg%3E"/>
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%231C6B58'/%3E%3Cpath d='M10 42 L22 30 L32 36 L42 18 L54 24' fill='none' stroke='white' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Tashreef Muhammad",
+    "jobTitle": "Lecturer, Computer Science and Engineering",
+    "affiliation": { "@type": "Organization", "name": "Southeast University, Dhaka" },
+    "url": "https://tashreefmuhammad.github.io/",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=W_IaQKAAAAAJ",
+      "https://orcid.org/0000-0002-9816-2547",
+      "https://github.com/TashreefMuhammad",
+      "https://www.linkedin.com/in/tashreefmuhammad"
+    ]
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   {% include header.html %}
-  {{ content }}
+  <main id="main">
+    {{ content }}
+  </main>
   {% include footer.html %}
-  <script>window.__BASE = '';</script>
   <script src="/JS/main.js"></script>
 </body>
 </html>

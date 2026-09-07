@@ -1,0 +1,208 @@
+{
+  "_comment": "Education, experience, grants, teaching and service. Every array here renders in order; add or remove entries freely. Set 'present': true to show an open-ended date.",
+
+  "education": [
+    {
+      "degree": "M.Sc. in Computer Science and Engineering",
+      "institution": "Ahsanullah University of Science and Technology (AUST)",
+      "location": "Dhaka, Bangladesh",
+      "from": "2023",
+      "to": "",
+      "present": true,
+      "badges": ["CGPA 3.50 / 4.00", "In progress"],
+      "notes": [
+        "Coursework and research in machine learning and emerging computing topics, taken alongside full-time teaching."
+      ]
+    },
+    {
+      "degree": "B.Sc. in Computer Science and Engineering",
+      "institution": "Ahsanullah University of Science and Technology (AUST)",
+      "location": "Dhaka, Bangladesh",
+      "from": "Feb 2017",
+      "to": "Feb 2022",
+      "present": false,
+      "badges": ["CGPA 3.77 / 4.00", "Ranked 3rd of 139 · Top 3%", "Dean's List of Honour"],
+      "notes": [
+        "Undergraduate thesis on transformer-based deep learning for financial time-series prediction, later published in IJCIA.",
+        "Coursework across algorithms, machine learning, computer vision, numerical methods and software engineering."
+      ]
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Lecturer, Department of Computer Science and Engineering",
+      "org": "Southeast University (SEU)",
+      "orgUrl": "https://seu.edu.bd/",
+      "location": "Dhaka, Bangladesh",
+      "from": "Oct 2022",
+      "to": "",
+      "present": true,
+      "badges": ["Full-time", "Research supervision", "Co-Investigator"],
+      "notes": [
+        "Supervise undergraduate research groups in time-series forecasting, low-resource NLP and explainable imaging; supervised work has reached IEEE, ACM, Springer and PLOS ONE venues.",
+        "Co-Investigator on the REG-NER institutional research grant, which produced the ANCHOLIK-NER corpus.",
+        "Teach six core undergraduate courses and maintain public course repositories so students work in the open from the first semester."
+      ]
+    },
+    {
+      "role": "Co-Founder, Deputy Director and Treasurer",
+      "org": "A.R.i.S.E — Articulated Research Institute for Scientific Excellence",
+      "orgUrl": "https://ariserl.org",
+      "location": "Dhaka, Bangladesh",
+      "from": "2024",
+      "to": "",
+      "present": true,
+      "badges": ["Non-profit", "Co-Founder"],
+      "notes": [
+        "Co-founded a non-profit research institute to give early-career researchers in Bangladesh the mentorship structure their institutions do not provide; partially funded by the founders.",
+        "Lead the Financial ML Studies group, coordinating time-series and emerging-market forecasting work across members.",
+        "As Treasurer, manage grant disbursement, conference fees, infrastructure costs and budget reconciliation."
+      ]
+    },
+    {
+      "role": "Technical Consultant",
+      "org": "EXITO",
+      "orgUrl": "",
+      "location": "Dhaka, Bangladesh",
+      "from": "2025",
+      "to": "",
+      "present": true,
+      "badges": ["Part-time", "Industry"],
+      "notes": [
+        "Advise on architecture, delivery and engineering practice for client web and data products, including work for international clients."
+      ]
+    },
+    {
+      "role": "Adjunct Faculty",
+      "org": "Ahsanullah University of Science and Technology (AUST)",
+      "orgUrl": "https://www.aust.edu/",
+      "location": "Dhaka, Bangladesh",
+      "from": "Feb 2022",
+      "to": "Sep 2022",
+      "present": false,
+      "badges": [],
+      "notes": [
+        "Taught software development with MVC architecture in C#/.NET and advised final-year project groups."
+      ]
+    },
+    {
+      "role": "IT Intern",
+      "org": "Akij Assets Limited",
+      "orgUrl": "",
+      "location": "Dhaka, Bangladesh",
+      "from": "Dec 2021",
+      "to": "Feb 2022",
+      "present": false,
+      "badges": [],
+      "notes": [
+        "Built ERP feature modules from requirements to release, including secure report generation and third-party API integration."
+      ]
+    }
+  ],
+
+  "grants": [
+    {
+      "id": "reg-ner",
+      "title": "REG-NER: Bangla Regional Named Entity Recognition Corpus",
+      "role": "Co-Investigator",
+      "funder": "Institutional Research Grant, Southeast University",
+      "period": "2024 – present",
+      "summary": "Funds the construction of a large annotated named entity corpus spanning five regional Bangla varieties, together with the baseline models and evaluation protocol.",
+      "outcomes": [
+        {
+          "text": "ANCHOLIK-NER: A Benchmark Dataset for Bangla Regional Named Entity Recognition — PLOS ONE (Q1)",
+          "url": "https://doi.org/10.1371/journal.pone.0342786",
+          "note": ""
+        },
+        {
+          "text": "ANCHOLIK-NER dataset release on Mendeley Data with permanent DOI",
+          "url": "https://data.mendeley.com/datasets/gbkszkt8z3/",
+          "note": ""
+        },
+        {
+          "text": "Cross-Dialect NER for Bangla Regional Dialects Using Leave-One-Dialect-Out Cross-Validation and Explainable AI — accepted for presentation at COMPAS 2026",
+          "url": "",
+          "note": "Grant outcome; I am not an author on this paper."
+        }
+      ]
+    }
+  ],
+
+  "teaching": {
+    "context": "Department of Computer Science and Engineering, Southeast University — since October 2022",
+    "courses": [
+      { "name": "Data Structures and Algorithms", "code": "" },
+      { "name": "Numerical Methods", "code": "CSE261" },
+      { "name": "Embedded Systems", "code": "CSE382" },
+      { "name": "Discrete Mathematics", "code": "" },
+      { "name": "Structured Programming (C)", "code": "" },
+      { "name": "Computer Fundamentals", "code": "" }
+    ],
+    "note": "I ask students to work in public from the start — version control, readable commits, and repositories that outlive the semester. The course material below is open.",
+    "resources": [
+      {
+        "name": "Numerical Methods student tutorial",
+        "description": "Walkthroughs of root finding, interpolation, regression and ODE solvers with runnable code.",
+        "url": "https://tashreefmuhammad.github.io/CSE261-Student-Tutorial/"
+      },
+      {
+        "name": "Numerical Methods assignment library",
+        "description": "Collected assignment repositories from the Summer 2025 cohort, published with student consent.",
+        "url": "https://tashreefmuhammad.github.io/SEU-Numerical-Methods-Assignment-Library/"
+      },
+      {
+        "name": "Embedded Systems lab codes",
+        "description": "Microcontroller, sensor interfacing and IoT lab material for CSE382.",
+        "url": "https://github.com/TashreefMuhammad/SEU-Introduction-to-Embedded-System-Lab-Codes"
+      },
+      {
+        "name": "CO-PO Question Builder",
+        "description": "Desktop tool for building outcome-mapped exam questions with Bloom's taxonomy checks, written for BAETE accreditation work.",
+        "url": "https://github.com/TashreefMuhammad/COPO-QuestionBuilder"
+      }
+    ]
+  },
+
+  "service": [
+    {
+      "role": "Branch Chapter Advisor",
+      "org": "IEEE Computational Intelligence Society, Southeast University Student Branch",
+      "period": "Present",
+      "note": "Advise the student chapter on activities, technical events and member development."
+    },
+    {
+      "role": "Deputy Director and Treasurer",
+      "org": "A.R.i.S.E — Articulated Research Institute for Scientific Excellence",
+      "period": "2024 – present",
+      "note": "Institute governance, research group coordination and financial administration."
+    },
+    {
+      "role": "Co-Investigator",
+      "org": "REG-NER institutional research grant, Southeast University",
+      "period": "2024 – present",
+      "note": "Corpus design, annotation protocol and publication pipeline."
+    }
+  ],
+
+  "memberships": [
+    { "org": "IEEE", "grade": "Associate Member", "detail": "" },
+    { "org": "IEEE Computational Intelligence Society", "grade": "Member", "detail": "" },
+    { "org": "ACM", "grade": "Professional Member", "detail": "" },
+    { "org": "ACM SIGAI", "grade": "Member", "detail": "Special Interest Group on Artificial Intelligence" }
+  ],
+
+  "awards": [
+    {
+      "name": "Dean's List of Honour",
+      "issuer": "Ahsanullah University of Science and Technology",
+      "year": "2022",
+      "detail": "Ranked 3rd of 139 graduates (top 3%), final CGPA 3.77 / 4.00."
+    }
+  ],
+
+  "languages": [
+    { "name": "English", "level": "IELTS Academic 8.0", "detail": "Overall band score, valid through October 2027" },
+    { "name": "Bangla", "level": "Native", "detail": "Also the subject language of my NLP research" }
+  ]
+}
