@@ -3,18 +3,6 @@
 
   "education": [
     {
-      "degree": "M.Sc. in Computer Science and Engineering",
-      "institution": "Ahsanullah University of Science and Technology (AUST)",
-      "location": "Dhaka, Bangladesh",
-      "from": "2023",
-      "to": "",
-      "present": true,
-      "badges": ["CGPA 3.50 / 4.00", "In progress"],
-      "notes": [
-        "Coursework and research in machine learning and emerging computing topics, taken alongside full-time teaching."
-      ]
-    },
-    {
       "degree": "B.Sc. in Computer Science and Engineering",
       "institution": "Ahsanullah University of Science and Technology (AUST)",
       "location": "Dhaka, Bangladesh",
@@ -63,9 +51,9 @@
     {
       "role": "Technical Consultant",
       "org": "EXITO",
-      "orgUrl": "",
+      "orgUrl": "https://www.exitobd.com/",
       "location": "Dhaka, Bangladesh",
-      "from": "2025",
+      "from": "2026",
       "to": "",
       "present": true,
       "badges": ["Part-time", "Industry"],
@@ -132,12 +120,12 @@
   "teaching": {
     "context": "Department of Computer Science and Engineering, Southeast University — since October 2022",
     "courses": [
-      { "name": "Data Structures and Algorithms", "code": "" },
+      { "name": "Data Structures and Algorithms", "code": "CSE241" },
       { "name": "Numerical Methods", "code": "CSE261" },
-      { "name": "Embedded Systems", "code": "CSE382" },
-      { "name": "Discrete Mathematics", "code": "" },
-      { "name": "Structured Programming (C)", "code": "" },
-      { "name": "Computer Fundamentals", "code": "" }
+      { "name": "Embedded Systems", "code": "CSE381/CSE382" },
+      { "name": "Discrete Mathematics", "code": "CSE181" },
+      { "name": "Structured Programming (C)", "code": "CSE161" },
+      { "name": "Computer Fundamentals", "code": "CSE1102" }
     ],
     "note": "I ask students to work in public from the start — version control, readable commits, and repositories that outlive the semester. The course material below is open.",
     "resources": [
